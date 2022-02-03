@@ -527,4 +527,59 @@ plots_modelTuning <- cowplot::plot_grid(
 )
 plots_modelTuning
 
+# Extract settings that maximised AUCtest
+eval_tab <- modelEvaluation %>%
+  dplyr::arrange(desc(AUC.test)) %>%
+  dplyr::slice(1)
+eval_tab
 
+# Extract settings that minimised AUCdiff
+eval_tab <- modelEvaluation %>%
+  dplyr::arrange(AUC.diff) %>%
+  dplyr::slice(1)
+eval_tab
+
+# Extract settings that best approximated OR10
+eval_tab <- modelEvaluation %>%
+  dplyr::arrange(OR.10) %>%
+  dplyr::slice(1)
+eval_tab
+
+# Extract settings that minimised AICc
+eval_tab <- modelEvaluation %>%
+  dplyr::arrange(delta.AIC) %>%
+  dplyr::slice(1)
+eval_tab
+
+
+# -----------------------------------------------------------------------------
+# Run full MaxEnt models:
+# -----------------------------------------------------------------------------
+
+# Model 1: Default MaxEnt settings
+# - The default model for n = 77 has rm = 1 and HLQ features.
+model_Default <- dismo::maxent(
+  x = trainData,
+  p = presentBg,
+  path = paste(getwd(),
+               './models/models/optimal_settings_default',
+               sep = ''),
+  args = c(
+    'betamultiplier=1.0',
+    'linear=true',
+    'quadratic=true',
+    'product=false',
+    'threshold=false',
+    'hinge=true',
+    'threads=2',
+    'doclamp=true',
+    #'fadebyclamp=true',
+    'responsecurves=true',
+    'jackknife=true',
+    'askoverwrite=false',
+    'responsecurves=true',
+    'writemess=true',
+    'writeplotdata=true',
+    'writebackgroundpredictions=true'
+  )
+)
