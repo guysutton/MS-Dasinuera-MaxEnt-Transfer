@@ -423,8 +423,6 @@ modelTuning <- ENMevaluate(
 
 # Extract the model tuning results 
 # - Pretty messy code but meh, it works. 
-
-# Extract all the variables and statistics to identify optimal RM/FC 
 settings <- modelTuning@results$settings
 feat.class <- modelTuning@results$features
 features <- modelTuning@results$features
@@ -462,6 +460,71 @@ readr::write_csv(
 )
 
 
+# Plot AUCtest
+plot_aucTest <- ggplot(data = modelEvaluation, aes(x = rm, 
+                                                y = AUC.test,
+                                                group = feat.class)) +
+  geom_point(aes(colour = feat.class)) + 
+  geom_line(aes(colour = feat.class)) +
+  scale_colour_grey(start = 0.4, end = 0.8) +
+  #scale_y_continuous(breaks = seq(0.80, 1.00, 0.04),
+  #                   limits = c(0.80, 1.00)) +
+  labs(x = "Regularisation multiplier",
+       y = expression(paste(AUC[test])),
+       subtitle = "(a)") 
+plot_aucTest
 
+# Plot AUCdiff
+plot_aucDiff <- ggplot(data = modelEvaluation, aes(x = rm, 
+                                                y = AUC.diff,
+                                                group = feat.class)) +
+  geom_point(aes(colour = feat.class)) + 
+  geom_line(aes(colour = feat.class)) +
+  scale_colour_grey(start = 0.4, end = 0.8) +
+  #scale_y_continuous(breaks = seq(0.80, 1.00, 0.04),
+  #                   limits = c(0.80, 1.00)) +
+  labs(x = "Regularisation multiplier",
+       y = expression(paste(AUC[diff])),
+       subtitle = "(b)",
+       colour = "Feature class") +
+  theme(legend.position = c(0.8, 0.7))
+plot_aucDiff
+
+# Plot 10th percentile omission rates (OR10)
+plot_or10 <- ggplot(data = modelEvaluation, aes(x = rm, 
+                                            y = OR.10,
+                                            group = feat.class)) +
+  geom_point(aes(colour = feat.class)) + 
+  geom_line(aes(colour = feat.class)) +
+  scale_colour_grey(start = 0.4, end = 0.8) +
+  geom_hline(yintercept = 0.10, linetype = "dashed") + 
+  labs(x = "Regularisation multiplier",
+       y = expression(paste(OR[10])),
+       subtitle = "(c)") 
+plot_or10
+
+# Plot DeltaAICc
+plot_aic <- ggplot(data = modelEvaluation, aes(x = rm, 
+                                           y = delta.AIC,
+                                           group = feat.class)) +
+  geom_point(aes(colour = feat.class)) + 
+  geom_line(aes(colour = feat.class)) +
+  scale_colour_grey(start = 0.4, end = 0.8) +
+  labs(x = "Regularisation multiplier",
+       y = "AICc",
+       subtitle = "(d)") +
+  scale_y_continuous(breaks = seq(0, 800, 200),
+                     limits = c(0, 800)) 
+plot_aic
+
+# Put the model tuning plots together 
+plots_modelTuning <- cowplot::plot_grid(
+  plot_aucTest,
+  plot_aucDiff,
+  plot_or10,
+  plot_aic,
+  nrow = 2
+)
+plots_modelTuning
 
 
