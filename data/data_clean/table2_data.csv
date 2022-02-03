@@ -1,0 +1,6 @@
+Model,RM,Feature Class,AUCtest,AUCdiff,OR10
+Default,1,HLQPT,0.94,0.03,0.15
+AUCtest,1.5,HLQPT,0.95,0.02,0.15
+AUCdiff,4,HLQPT,0.94,0.01,0.14
+OR10,6,HLQ,0.92,0.02,0.1
+AICc,4,H,0.94,0.02,0.12

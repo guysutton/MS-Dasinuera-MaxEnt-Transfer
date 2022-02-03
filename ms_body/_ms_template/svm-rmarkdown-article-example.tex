@@ -1,0 +1,331 @@
+\documentclass[12pt,]{article}
+\usepackage[left=1in,top=1in,right=1in,bottom=1in]{geometry}
+\newcommand*{\authorfont}{\fontfamily{phv}\selectfont}
+\usepackage[]{mathpazo}
+
+
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+
+
+
+
+\usepackage{abstract}
+\renewcommand{\abstractname}{}    % clear the title
+\renewcommand{\absnamepos}{empty} % originally center
+
+\renewenvironment{abstract}
+ {{%
+    \setlength{\leftmargin}{0mm}
+    \setlength{\rightmargin}{\leftmargin}%
+  }%
+  \relax}
+ {\endlist}
+
+\makeatletter
+\def\@maketitle{%
+  \newpage
+%  \null
+%  \vskip 2em%
+%  \begin{center}%
+  \let \footnote \thanks
+    {\fontsize{18}{20}\selectfont\raggedright  \setlength{\parindent}{0pt} \@title \par}%
+}
+%\fi
+\makeatother
+
+
+
+
+\setcounter{secnumdepth}{0}
+
+
+
+
+ 
+
+
+
+\author{}
+
+
+\date{}
+
+\usepackage{titlesec}
+
+\titleformat*{\section}{\normalsize\bfseries}
+\titleformat*{\subsection}{\normalsize\itshape}
+\titleformat*{\subsubsection}{\normalsize\itshape}
+\titleformat*{\paragraph}{\normalsize\itshape}
+\titleformat*{\subparagraph}{\normalsize\itshape}
+
+
+
+
+
+\newtheorem{hypothesis}{Hypothesis}
+\usepackage{setspace}
+
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\usepackage{hyperref}
+\setlength\parindent{24pt}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+
+% move the hyperref stuff down here, after header-includes, to allow for - \usepackage{hyperref}
+
+\makeatletter
+\@ifpackageloaded{hyperref}{}{%
+\ifxetex
+  \PassOptionsToPackage{hyphens}{url}\usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \PassOptionsToPackage{hyphens}{url}\usepackage[draft,unicode=true]{hyperref}
+\fi
+}
+
+\@ifpackageloaded{color}{
+    \PassOptionsToPackage{usenames,dvipsnames}{color}
+}{%
+    \usepackage[usenames,dvipsnames]{color}
+}
+\makeatother
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={},
+             pdfkeywords = {},  
+            pdftitle={},
+            colorlinks=true,
+            citecolor=blue,
+            urlcolor=blue,
+            linkcolor=magenta,
+            pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+
+% Add an option for endnotes. -----
+
+
+% add tightlist ----------
+\providecommand{\tightlist}{%
+\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% add some other packages ----------
+
+% \usepackage{multicol}
+% This should regulate where figures float
+% See: https://tex.stackexchange.com/questions/2275/keeping-tables-figures-close-to-where-they-are-mentioned
+\usepackage[section]{placeins}
+
+
+\begin{document}
+	
+% \pagenumbering{arabic}% resets `page` counter to 1 
+%    
+
+
+
+
+
+\vskip -8.5pt
+
+
+ % removetitleabstract
+
+\noindent \doublespacing 
+
+\pagebreak
+
+\setlength{\parindent}{0in}
+\setlength{\leftskip}{0in}
+\setlength{\parskip}{8pt}
+\vspace*{-0.2in}
+
+\noindent
+
+\textbf{Cryptic diversity and host-specificity of \emph{Tetramesa}
+(Hymenoptera: Eurytomidae) associated with two African grasses:
+implications for biological control}
+
+Sutton, G. F.\textsuperscript{1}\(\dag\), van Steenderen,
+C.\textsuperscript{1}, Canavan, K\textsuperscript{1}, Day, M.
+D.\textsuperscript{2}, Paterson, I. D.\textsuperscript{1}
+
+~
+
+\begingroup
+\fontsize{10}{12}\selectfont
+
+\textsuperscript{1} Center for Biological Control, Department of Zoology
+and Entomology, Rhodes University, Makhanda, 6140, South Africa
+
+\textsuperscript{2} Department of Agriculture and Fisheries, GPO Box
+267, Brisbane, Australia \endgroup
+
+~
+
+\textbf{Corresponding author} \(\dag\)
+\href{mailto:g.sutton@ru.ac.za}{\nolinkurl{g.sutton@ru.ac.za}}
+
+\pagebreak
+
+\setlength\parindent{24pt}
+
+\hypertarget{abstract}{%
+\section{Abstract}\label{abstract}}
+
+\emph{Sporobolus pyramidalis} Beauv. and \emph{Sporobolus natalensis}
+(Steud.) Th. Dur. \& Schinz. (Poaceae) (giant rat tail grass), are two
+perennial African grasses that have become invasive in Australia. Field
+host-range surveys on 47 non-target grasses in the weeds native
+distribution (South Africa), between 2017 and 2019, found an apparently
+specialised and highly damaging stem-boring wasp, \emph{Tetramesa} sp.
+1. Subsequent field surveys in late 2019 found a morphologically
+indistinguishable \emph{Tetramesa} sp. on a closely-related non-target
+grass, \emph{Eragrostis curvula} (Schrad.) Nees (African lovegrass). If
+the wasps reared from the different host-plants (\emph{S. pyramidalis}
+or \emph{E. curvula}) represent the same genetic entity, this would
+preclude its use as a biological control agent. In this study, we showed
+that two morphologically cryptic \emph{Tetramesa} sp. populations
+collected from \emph{E. curvula} and \emph{S. pyramidalis},
+respectively, represent two distinct genetic clades, likely representing
+distinct species. Cross-inoculation trials indicated that each wasp
+could survive on the host plant off which it was collected. Our findings
+indicate that practitioners need to be aware of cryptic species when
+conducting field host-range surveys. Morphologically indistinguishable
+candidate agents might in fact be crytic species with their own
+restricted host ranges, and if we do not take this into account, then we
+may exclude potentially effective and host-specific agents.
+
+~
+
+\setlength{\parindent}{0in}
+\setlength{\leftskip}{0in}
+\setlength{\parskip}{8pt}
+\vspace*{-0.2in}
+
+\noindent
+
+\textbf{Keywords}: cryptic species; DNA barcoding; \emph{Eragrostis
+curvula}; giant rat's tail grass'; invasive grass; \emph{Sporobolus}
+
+\pagebreak
+\setlength\parindent{24pt}
+
+\hypertarget{introduction}{%
+\section{1. Introduction}\label{introduction}}
+
+\emph{Sporobolus pyramidalis} Beauv.
+
+Recent estimates indicate that there are approximately 7 million insect
+species on earth, albeit only about 20\% have been described to date
+(Stork, 2018). There are strong geographic and taxonomic biases in
+sampling coverage and intensity, with Afrotropical Hymenoptera being
+particularly under-studied and poorly known (van Noort et al., 2015).
+There are approximately 205 described \emph{Tetramesa} species known,
+worldwide (Al-Barrak et al., 2004), although only four species have been
+described in the Afroptropical region, none of which are known from
+South Africa (van Noort, 2019). Our study reports on two potentially
+novel \emph{Tetramesa} species from South Africa. While these wasps have
+not been formally described yet, these specimens have been sent to an
+expert taxonomist for an official scientific description, but our
+\emph{COI} barcoding and rearing trials provide strong support for the
+species status of both \emph{Tetramesa} identified during the current
+study. An additional five putative \emph{Tetramesa} species have been
+identified during our field surveys in South Africa (G.F. Sutton,
+unpublished data), and are currently undergoing further study. Surveys
+for potential biological control agents of weeds provide an exciting
+opportunity for documenting and discovering previously unknown
+biodiversity, which is particularly relevant for surveys performed in
+Africa and other relatively understudied geographic regions.
+
+\hypertarget{acknowledgements}{%
+\section{Acknowledgements}\label{acknowledgements}}
+
+\newpage
+
+\hypertarget{references}{%
+\section{References}\label{references}}
+
+\setlength{\parindent}{-0.2in}
+\setlength{\leftskip}{0.2in}
+\setlength{\parskip}{8pt}
+\vspace*{-0.2in}
+
+\noindent
+
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newenvironment{CSLReferences}%
+{\setlength{\parindent}{0pt}%
+\everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces}%
+{\par}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
+\leavevmode\hypertarget{ref-Al-Barrak2004}{}%
+Al-Barrak, M., Loxdale, H.D., Brookes, C.P., Dawah, H.A., Biron, D.G.,
+Alsagair, O., 2004. Molecular evidence using enzyme and {RAPD} markers
+for sympatric evolution in {British} species of {\emph{Tetramesa}}
+({Hymenoptera}: {Eurytomidae}). Biological Journal of the Linnean
+Society 83, 509--525.
+\url{https://doi.org/10.1111/j.1095-8312.2004.00408.x}
+
+\leavevmode\hypertarget{ref-Stork2018}{}%
+Stork, N.E., 2018. How many species of insects and other terrestrial
+arthropods are there on earth? Annual Review of Entomology 63, 31--45.
+
+\leavevmode\hypertarget{ref-VanNoort2015}{}%
+van Noort, S., Buffington, M.L., Forshage, M., 2015. Afrotropical
+{Cynipoidea} ({Hymenoptera}). ZooKeys 1--176.
+\url{https://doi.org/10.3897/zookeys.493.6353}
+
+\end{CSLReferences}
+
+\newpage
+
+\hypertarget{figure-and-table-legend}{%
+\section{Figure and table legend}\label{figure-and-table-legend}}
+
+\setlength{\parindent}{-0.2in}
+\setlength{\leftskip}{0.2in}
+\setlength{\parskip}{8pt}
+\vspace*{-0.2in}
+
+\noindent
+
+\textbf{Table 1} Results from no-choice cross-inoculation trials.
+
+\textbf{Table 2} Results from no-choice greenhouse-based host-range
+trials for \emph{Tetramesa} sp. reared from \emph{Sporobolus
+pyramidalis} and \emph{S. natalensis}.
+
+\textbf{Figure 1} Genetics of \emph{Tetramesa} spp.
+
+\newpage
+
+
+
+
+
+\newpage
+\singlespacing 
+\end{document}

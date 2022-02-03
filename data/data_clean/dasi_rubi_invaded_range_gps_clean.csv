@@ -1,0 +1,456 @@
+Latitude,Longitude,lat1,lat2,lon1,lon2,Altitude,Release Site,Release date,# released,Person res,Established or not,established,Notes & contact details,lat_converted,lon_converted
+33 37.048,19 06.042,33°37.048,33°37.048',19°06.042,19°06.042',580,Baineskloof,40332,1000 galls,"FI, JP","mel pres, Yes",1,NA,33.6175,19.1007
+33 33.350,19 08.998,33°33.350,33°33.350',19°08.998,19°08.998',252,"Baineskloof, nr Steenbokspark",40332,150 galls,"FI, JP",Chopped,NA,NA,33.5558,19.15
+33 14.383,19 08.608,33°14.383,33°14.383',19°08.608,19°08.608',231,Tulbach,40332,1000 galls,"FI, JP","mel pres, Yes",1,"Rd from Tulbach to Winterhoek, nr D'Agen creche, A. podalyriifolia & baileyana pres.",33.2397,19.1435
+33 20.745,19 09.747,33°20.745,33°20.745',19°09.747,19°09.747',205,Tulbach,40332,500 galls,"FI, JP","mel pres, Yes",1,sth Tulbach beyond Malmesbury turnoff,33.3458,19.1624
+33 32.510,19 12.509,33°32.510,33°32.510',19°12.509,19°12.509',232,Slanghoek,40332,250 galls,"FI, JP","mel pres, Yes",1,nr bridge over Brede river,33.5418,19.2085
+33 32.720,19 12.335,33°32.720,33°32.720',19°12.335,19°12.335',232,Slanghoek,40332,250 galls,"FI, JP",mel pres,1,across river from site above,33.5453,19.2056
+33 40.266,19 15.869,33°40.266,33°40.266',19°15.869,19°15.869',234,Goudini,40332,150 galls,"FI, JP",yes,1,along rd to Goudini Spa,33.6711,19.2645
+33 44.751,19 03.442,33°44.751,33°44.751',19°03.442,19°03.442',357,Du Toits Kloof,40332,500 galls,"FI, JP",Cleared 2011,NA,bottom end of pass Paarl side,33.7458,19.0574
+33 50.419,18 59.063,33°50.419,33°50.419',18°59.063,18°59.063',145,Bien Donne,40339,500 galls,"FI, JP, RL","mel pres, Yes",1,2 D.rubi galls seen after lots of searching,33.8403,18.9844
+33 51.229,19 02.443,33°51.229,33°51.229',19°02.443,19°02.443',190,Wemmershoek area,40339,500 galls,"FI, JP, RL",mel pres,1,along R303 Franschoek to Paarl,33.8538,19.0407
+33 50.116,18 58.592,33°50.116,33°50.116',18°58.592,18°58.592',134,Safariland,40339,500 galls,"FI, JP, RL","mel pres, Yes",1,1 combo gall found,33.8353,18.9765
+33 49.682,19 00.368,33°49.682,33°49.682',19°00.368,19°00.368',161,303,40339,500 galls,"FI, JP, RL",NA,NA,R303 rd from Franschoek to Paarl nr Safariland,33.828,19.0061
+33 55.102,19 07.094,33°55.102,33°55.102',19°07.094,19°07.094',272,Robertsvleipad Franschoek,40339,500 galls,"FI, JP, RL",NA,NA,NA,33.9184,19.1182
+33 55.209,19 08.226,33°55.209,33°55.209',19°08.226,19°08.226',407,Franschoek Pass,40339,500 galls,"FI, JP, RL",NA,NA,"bottom of pass nr ""Alcatraz"" turnoff",33.9202,19.1371
+34 00.198,19 16.642,34°00.198,34°00.198',19°16.642,19°16.642',327,Villiersdorp,40339,500 galls,"FI, JP, RL",yes 2011,1,outskirts of town ('grabouw side),34.0033,19.2774
+34 01.292,19 13.570,34°01.292,34°01.292',19°13.570,19°13.570',319,Opp SOS camp Theewaterskloof dam,40339,500 galls,"FI, JP, RL","mel pres, yes",1,NA,34.0215,19.2262
+34 01.755,19 12.262,34°01.755,34°01.755',19°12.262,19°12.262',319,bridge at Theewaterskloof,40339,500 galls,"FI, JP, RL",mel pres,1,Grabouw side of bridge rd from Grabouw to Villiersdorp,34.0292,19.2044
+34 09.285,19 01.026,34°09.285,34°09.285',19°01.026,19°01.026',302,outskirts of Grabouw,40339,500 galls,"FI, JP, RL",NA,NA,NA,34.1548,19.0171
+34 08.077,18 54.113,34°08.077,34°08.077',18°54.113,18°54.113',86,Gordons Bay,40339,500 galls,"FI, JP, RL",1 gall pres,1,200m down from Gordons Bay turn from N2,34.1346,18.9019
+33 50.199,22 20.913,33°50.199,33°50.199',22°20.913,22°20.913',NA,Waboomskraal,40338,1000 galls,AA. KA,yes,1,NA,33.8366,22.3485
+33 50.519,22 26.541,33°50.519,33°50.519',22°26.541,22°26.541',NA,Herold (Burnsleigh Farm),40338,1000 galls,AA. KA,Yes 2012,1,NA,33.842,22.4424
+33 50.070,22 26.307,33°50.070,33°50.070',22°26.307,22°26.307',NA,Camfer,40338,1000 galls,AA. KA,NA,NA,NA,33.8345,22.4384
+33 45.667,22 52.740,33°45.667,33°45.667',22°52.740,22°52.740',NA,Nolls Halt N9,40338,1000 galls,AA. KA,NA,NA,NA,33.7611,22.879
+33 47.579,23 38.323,33°47.579,33°47.579',23°38.323,23°38.323',NA,Louterwater R62,40338,1000 galls,AA. KA,NA,NA,NA,33.793,23.6387
+33 59.007,22 25.937,33°59.007,33°59.007',22°25.937,22°25.937',NA,George,40338,1000 galls,AA. KA,yes,1,NA,33.9834,22.4323
+34 13.338,19 26.852,34°13.338,34°13.338',19°26.852,19°26.852',352,Caledon,40346,500 galls,FI,yes,1,NA,34.2223,19.4475
+34 13.434,19 32.059,34°13.434,34°13.434',19°32.059,19°32.059',302,10km ex Caledon,40330,500 galls,FI,yes,1,NA,34.2239,19.534300000000002
+34 04.863,20 05.664,34°04.863,34°04.863',20°05.664,20°05.664',120,Stormsvlei Bonnievale,40330,500 galls,FI,yes,1,on riviersonderend,34.081,20.0944
+34 04.094,20 24.761,34°04.094,34°04.094',20°24.761,20°24.761',74,Breede Rv nr Swellendam,40330,500 galls,FI,yes,1,NA,34.0682,20.4127
+34 02.205,20 31.759,34°02.205,34°02.205',20°31.759,20°31.759',71,Buffeljags river N2,40330,500 galls,FI,yes,1,NA,34.0367,20.5293
+34 02.418,20 33.397,34°02.418,34°02.418 ',20°33.397,20°33.397',79,N2 close to site above,40330,500 galls,FI,NA,NA,NA,34.0403,20.5566
+34 08.081,21 16.601,34°08.081,34°08.081',21°16.601,21°16.601',87,Goukou rv nr Riversdale,40330,500 galls,FI,yes,1,NA,34.1347,21.2767
+34 01.362,22 20.509,34°01.362,34°01.362',22°20.509,22°20.509',125,Maalgate Rv nr Glentana,40330,500 galls,FI,yes,1,NA,34.0227,22.3418
+34 00.543,22 24.070,34°00.543,34°00.543',22°24.070,22°24.070',161,Gwaing Rv,40330,500 galls,FI,yes,1,NA,34.0091,22.4012
+33 59.298,22 32.997,33°59.298,33°59.298',22°32.997,22°32.997',41,George-Widerness Pass,40330,500 galls,FI,NA,NA,NA,33.9883,22.5499
+34 02.166,22 59.173,34°02.166,34°02.166',22°59.173,22°59.173',26,1km from Knysna estuary on pass,40330,500 galls,FI,yes,1,NA,34.0361,22.9862
+34 00.427,23 23.620,34°00.427,34°00.427',23°23.620,23°23.620',5,Bitou Rv nr Plett,40330,500 galls,FI,NA,NA,NA,34.0071,23.3937
+33 56.079,23 30.038,33°56.079,33°56.079',23°30.038,23°30.038',255,Salt Rv N2,40330,500 galls,FI,NA,NA,NA,33.9346,23.5006
+33 58.585,23 46.250,33°58.585,33°58.585',23°46.250,23°46.250',223,Elandsbos rv,40330,500 galls,FI,NA,NA,NA,33.9764,23.7708
+34 00.420,24 46.907,34°00.420,34°00.420',24°46.907,24°46.907',NA,Humandorp PE on ramp to N2,40330,500 galls,FI,yes 2012,1,NA,34.007,24.7818
+33 54.103,25 10.634,33°54.103,33°54.103',25°10.634,25°10.634',223,Van Stadens Pass PE onramp N2,40330,500 galls,FI,NA,NA,NA,33.9017,25.1772
+33 26.017,26 18.955,33°26.017,33°26.017',26°18.955,26°18.955',434,PE Grahamstown (nr Lalibela) N2,40330,500 galls,FI,yes (2012),1,NA,33.4336,26.3159
+33 16.912,26 41.712,33°16.912,33°16.912',26°41.712,26°41.712',814,Grahamstown Governers Gap,40330,500 galls,FI,yes (2012),1,Martin Moodys property,33.2819,26.6952
+32 52.652,27 35.615,32°52.652,32°52.652',27°35.615,27°35.615',478,30km out of E London N2,40330,500 galls,FI,NA,NA,from G'town side,32.8775,27.5936
+32 53.545,27 39.289,32°53.545,32°53.545',27°39.289,27°39.289',418,N2 close to East London,40330,500 galls,FI,yes (2016),1,NA,32.8924,27.6548
+32 52.169,27 59.135,32°52.169,32°52.169',27°59.135,27°59.135',149,1km before Kwelehra clinic & Brakfontein rd off N2,40330,500 galls,FI,yes (2016),1,north of East London,32.8695,27.9856
+29 30.829,29 55.406,29°30.829,29°30.829',29°55.406,29°55.406',1431,Wakecroft Farm (Dargle/Impendle rd,40695,1000 galls,FI JP,no 2014?,0,Josie Rowe Setz (jrowe@worldonline.co.za),29.5138,29.9234
+29 30.212,30 01.131,29°30.212,29°30.212',30°01.131,30°01.131',NA,Nr Dargle school,40695,500 galls,FI JP,yes (2012),1,good popn in 2019,29.5035,30.0189
+29 26.923,30 11.660,29°26.923,29°26.923',30°11.660,30°11.660',1238,Currys Post rd nr Fiddlewood guest farm,40695,500 galls,FI JP,yes (2012),1,opposite Stoneleigh farm,29.4487,30.1943
+29 21.282,29 52.373,29°21.282,29°21.282',29°52.373,29°52.373',1550,The Bend (Nottingham rd - Loteni),40695,1000 galls,FI JP,NA,NA,Sarah Tilbury 082 3354598,29.3547,29.8729
+30 13.016,29 57.555,30°13.016,30°13.016',29°57.555,29°57.555',763,P246 Ixobho-Umzingkulu rd,40695,500 galls,FI JP,yes (2012),1,have not been back,30.2169,29.9593
+30 34.678,29 56.630,30°34.678,30°34.678',29°56.630,29°56.630',955,junction of P302 (to Umzimkulu) an N2 nr Harding,40695,500 galls,FI JP,Established 2014,1,trees cleared 2016,30.578,29.9438
+33 58.431,18 56.035,33°58.431,33°58.431',18°56.035,18°56.035',NA,Jonkershoek,2011,500 galls,Deon Malherbe deonm@mto.co.za,NA,NA,Mark Wilmot 021 8661512,33.9738,18.9339
+34 11.402,19 05.741,34°11.402,34°11.402',19°05.741,19°05.741',NA,Grabouw,2011,500 galls,Deon Malherbe deonm@mto.co.za,yes,1,Mark Wilmot 021 8661512,34.19,19.0957
+34 10.806,19 04.479,34°10.806,34°10.806',19°04.479,19°04.479',NA,Grabouw,2011,500 galls,Deon Malherbe deonm@mto.co.za,yes,1,Mark Wilmot 021 8661512,34.1801,19.0746
+34 08.652,19 01.439,34°08.652,34°08.652',19°01.439,19°01.439',NA,Grabouw,2011,500 galls,Deon Malherbe deonm@mto.co.za,yes,1,Mark Wilmot 021 8661512,34.1442,19.024
+34 12.728,19 07.623,34°12.728,34°12.728',19°07.623,19°07.623',NA,Grabouw,2011,500 galls,Deon Malherbe deonm@mto.co.za,yes,1,Mark Wilmot 021 8661512,34.2121,19.1271
+34 00.56,21 13.51,34°00.56,34°00.56',21°13.51,21°13.51',NA,Garcia,2011,500 galls,Deon Malherbe deonm@mto.co.za,NA,NA,B.B. Joubert 028 7132558,34.0093,21.2252
+34 00.32,21 13.11,34°00.32,34°00.32',21°13.11,21°13.11',NA,Garcia,2011,500 galls,Deon Malherbe deonm@mto.co.za,NA,NA,B.B. Joubert 028 7132558,34.0053,21.2185
+33 55.442,21 18.559,33°55.442,33°55.442',21°18.559,21°18.559',NA,Jonkersberg Geelhoutboomberg,2011,1000 galls,Deon Malherbe deonm@mto.co.za,NA,NA,Neil Fivaz 044 6205101,33.924,21.3093
+33 55.88,22 40.44,33°55.88,33°55.88',22°40.44,22°40.44',NA,Bergplaas,2011,500 galls,Deon Malherbe deonm@mto.co.za,NA,NA,Marius Strydom 044 8501153,33.9313,22.674
+33 58.375,23 03.199,33°58.375,33°58.375',23°03.199,23°03.199',NA,Buffelsnek,2011,500 galls,Deon Malherbe deonm@mto.co.za,NA,NA,JA Basson 044 3750243,33.9729,23.0533
+33 56.73,23 00.242,33°56.73,33°56.73',23°00.242,23°00.242',NA,Yonderwood Farm Rheenendal,2011,1000 galls,Marina Devine dmdevine@telkomsa.net 0837195872,NA,NA,NA,33.9455,23.004
+33 57.252,23 00.151,33°57.252,33°57.252',23°00.151,23°00.151',NA,Woodside Farm Rheenendal,2011,1000 galls,Hubby Sandberg woodside-farm@mweb.co.za 0823767468,yes March 2012,1,and M.maculatus present,33.9542,23.0025
+33 57.318,22 59.993,33°57.318,33°57.318',22°59.993,22°59.993',NA,Woodside Farm Rheenendal,2011,1000 galls,Hubby Sandberg woodside-farm@mweb.co.za 0823767468,NA,NA,NA,33.9553,22.9999
+33 57.50,22 59.925,33°57.50,33°57.50',22°59.925,22°59.925',NA,Woodside Farm Rheenendal,2011,1000 galls,Hubby Sandberg woodside-farm@mweb.co.za 0823767468,NA,NA,NA,33.9583,22.9988
+33 57.433,22 59.635,33°57.433,33°57.433',22°59.635,22°59.635',NA,Woodside Farm Rheenendal,2011,1000 galls,Hubby Sandberg woodside-farm@mweb.co.za 0823767468,NA,NA,NA,33.9572,22.9939
+33 57.445,22 59.846,33°57.445,33°57.445',22°59.846,22°59.846',NA,Woodside Farm Rheenendal,2011,1000 galls,Hubby Sandberg woodside-farm@mweb.co.za 0823767468,NA,NA,NA,33.9574,22.9974
+33 59.115,23 00.346,33°59.115,33°59.115',23°00.346,23°00.346',NA,Candlewood Farm Rheenendal,2011,1000 galls,John Stanwix knycit@mweb.co.za 0827895051,yes March 2012,1,NA,33.9852,23.0058
+33 58.558,22 58.636,33°58.558,33°58.558',22°58.636,22°58.636',NA,Candlewood Farm Rheenendal,2011,1000 galls,John Stanwix knycit@mweb.co.za 0827895051,NA,NA,NA,33.976,22.9773
+33 59.743,23 00.228,33°59.743,33°59.743',23°00.228,23°00.228',NA,Charlesford Farm Phantom Pass,2011,1000 galls,Cathy Shearer cathy@charlesford.co.za 0723928617,yes March 2012,1,NA,33.9957,23.0038
+33 59.683,23 00.326,33°59.683,33°59.683',23°00.326,23°00.326',NA,Charlesford Farm Phantom Pass,2011,1000 galls,Cathy Shearer cathy@charlesford.co.za 0723928617,yes,1,NA,33.9947,23.0054
+34 00.319,23 00.363,34°00.319,34°00.319',23°00.363,23°00.363',NA,Westford Quarry nr Phantom Pass,2011,1000 galls,Johan Vermaak (PG Bison) jvermaak@pgbison.co.za 082436345,yes March 2012,1,and M.maculatus present,34.0053,23.006
+34 00.367,23 00.470,34°00.367,34°00.367',23°00.470,23°00.470',NA,Westford Farm at old homestead,2011,1000 galls,Johan Vermaak (PG Bison) jvermaak@pgbison.co.za 082436345,NA,NA,NA,34.006100000000004,23.0078
+33 59.758,22 39.920,33°59.758,33°59.758',22°39.920,22°39.920',NA,Langvlei Dunes Wilderness,2011,1000 galls,Eric Goodwin ewfgoodwin@ruraldevelopment.gov.za 0823779293,NA,NA,NA,33.996,22.6653
+33 52.786,23 04.055,33°52.786,33°52.786',23°04.055,23°04.055',NA,Buffelsnek,2011,1000 galls,Tom Eckley teckley@mto.co.za 044 3829772,NA,NA,NA,33.8798,23.0676
+33 53.417,23 01.986,33°53.417,33°53.417',23°01.986,23°01.986',NA,Hamtini plantation,2011,1000 galls,Marius Strydom mst@mto.co.za 0448501153,NA,NA,NA,33.8903,23.0331
+33 50.112,23 04.447,33°50.112,33°50.112',23°04.447,23°04.447',NA,Buffelsnek Farm,2011,1000 galls,Steve Louw 021 8501153 stevelouw@me.com,NA,NA,NA,33.8352,23.0741
+24 40.704,30 48.495,24°40.704,24°40.704',30°48.495,30°48.495',NA,"Dientjie, Mpumulanga",2011,1000 galls,Daleen Strydom,NA,NA,NA,24.6784,30.8083
+24 55.974,30 48.529,24°55.974,24°55.974',30°48.529,30°48.529',NA,"The Bonnet, Mpumulanga",2011,1000 galls,Daleen Strydom,NA,NA,NA,24.9329,30.8088
+25 4.55,30 47.423,25°4.55,25°4.55',30°47.423,30°47.423',NA,"Klein Sabie, Mpumulanga",2011,1000 galls,Daleen Strydom,yes May 2012,1,cleared,25.0758,30.7904
+25.37556,31.02582,NA,25°22.536',NA,31°01.549',NA,"Curlews Road, Mpumulanga",2011,1000 galls,Daleen Strydom,No - revisited over several yrs,0,NA,25.3756,31.0258
+33 58.68,22 51.96,33°58.68,33°58.68',22°51.96,22°51.96',NA,Elandskral. Oppos Serenity on tar rd,2011,1000 galls,Pam Booth 044 3562825,yes,1,NA,33.978,22.866
+33 59.21,22 51.605,33°59.21,33°59.21',22°51.605,22°51.605',NA,old bypass N of Nikki.Hanno Smit in bend of tar rd,2011,1000 galls,Pam Booth 044 3562826,NA,NA,Elandskraal district,33.9868,22.8601
+32 29.7816,26 22.0283,32°29.7816,32°29.7816 ',26°22.0283,26°22.0283',NA,Skurwekop (Ecape),2011,1000 galls,C.P.P. v\d Watt,NA,NA,Konnap river farm border,32.4964,26.3671
+32 28.853,26 25.945,32°28.853,32°28.853  ',26°25.945,26°25.945',NA,Dennegeur (E Cape),2011,1000 galls,E.F.Loots,NA,NA,NA,32.4809,26.4324
+32 32.716,26 32.166,32°32.716,32°32.716  ',26°32.166,26°32.166',NA,Killalof,2011,1000 galls,Dreyer bdy,NA,NA,NA,32.5453,26.5361
+32 34.618,26 26.32,32°34.618,32°34.618',26°26.32,26°26.32',NA,Kriusementvlei,2011,1000 galls,B.Miles,NA,NA,Along Kaalhoek river,32.577,26.4387
+32 24.993,26 30.186,32°24.993,32°24.993',26°30.186,26°30.186',NA,Fountain head,2011,1000 galls,Nigel Brunette,NA,NA,Along tierkloof river,32.4166,26.5031
+32 33.72,26 31.5516,32°33.72,32°33.72',26°31.5516,26°31.5516',NA,Kaalhoek,2011,1000 galls,Evan Summer,NA,NA,35km North East of Adelaide,32.562,26.5259
+32 24.0916,26 19.6583,32°24.0916,32°24.0916',26°19.6583,26°19.6583',NA,Emerald hill,2011,1000 galls,F.P.Wentzel,NA,NA,Along river,32.4015,26.3276
+32 28.025,26 21.725,32°28.025,32°28.025',26°21.725,26°21.725',NA,Braambos,2011,1000 galls,J.van Vuuren,NA,NA,45km from Adelaide,32.4671,26.3621
+32 29.8416,26 31.77,32°29.8416,32°29.8416',26°31.77,26°31.77',NA,Fairview,2011,1000 galls,R.N.Bennett,NA,NA,NA,32.4974,26.5295
+32 26.923,26 20.733,32°26.923,32°26.923',26°20.733,26°20.733',NA,Braambos,2011,1000 galls,David Millar,NA,NA,47km from Adelaide,32.4487,26.3455
+34 10.710,19 04.366,34°10.710,34°10.710',19°04.366,19°04.366',NA,2.3km from Peregrine farm stall,2012,spread,noted by J.Hoffmann Jan 2012,yes,1,NA,34.1785,19.0728
+29 37.65,30 25.938,29°37.65,29°37.65',30°25.938,30°25.938',739,Outskirts of Pietermaritzburg,2012,1000 galls,Rob Symons rob@broadleaze.co.za,NA,NA,NA,29.6275,30.4323
+29 37.749,30 27.425,29°37.749,29°37.749',30°27.425,30°27.425',600,Nr Pietermaritzburg banks of Msunduzi Rv,2012,1000 galls,Rob Symons rob@broadleaze.co.za,NA,NA,NA,29.6291,30.4571
+29 21.1068,29 52.5999,29°21.1068,29°21.1068',29°52.5999,29°52.5999',NA,The bend Nottingham rd - sml patch of wattle,2102,1000 galls,FI Sarah&Colin Tilbury 0823354598,NA,NA,"did not establish from initial release, but estabished later",29.3518,29.8767
+29 31.322,30 14.721,29°31.322,29°31.322',30°14.721,30°14.721',NA,Outskirts of Howick before N3,2012,1000 galls,FI/JP,No - cleared,0,FI JHH found galls in 2019 close to this,29.522,30.2453
+30 47.880,30 23.948,30°47.880,30°47.880',30°23.948,30°23.948',NA,en route to Izotsha (nr Toyota/BMW showroom,2012,1000 galls,FI/JP,No,0,cleared,30.798,30.3991
+30 45.881,30 20.087,30°45.881,30°45.881',30°20.087,30°20.087',277,Bumela (P55) opp Apostolic Faith mission,2012,1000 galls,FI/JP,NA,NA,cleared,30.7647,30.3348
+30 45.508,30 17.233,30°45.508,30°45.508',30°17.233,30°17.233',NA,Illovo property on rd to Paddock from Izotsha,2012,1000 galls,FI/JP,No,0,cleared 2019,30.7585,30.2872
+30 43.391,30 09.216,30°43.391,30°43.391',30°09.216,30°09.216',NA,Oribi Gorge area on rd to Oribi Flats (west) from N2,2012,1000 galls,FI/JP,NA,NA,NA,30.7232,30.1536
+30 25.38,29 41.76,30°25.38,30°25.38',29°41.76,29°41.76',NA,Site sth of Ashburton - Stephanie Trutter,2012,1000 galls,FI/JP,29 41.76'S 30 25.38'E,NA,NA,30.423,29.696
+29 23.573,30 13.053,29°23.573,29°23.573',30°13.053,30°13.053',NA,Mizpah Farm Karkloof area,2012,500 galls,FI/JP,No,0,Graham/Liesl Jewitt 0847170766 033 3303408,29.3929,30.2175
+34 00.0395,22 26.095,34°00.0395,34°00.0395',22°26.095,22°26.095',NA,George area,2012,1000 galls,Tony Gordon,NA,NA,NA,34.0007,22.4349
+34 00.375,22 21.023,34°00.375,34°00.375',22°21.023,22°21.023',NA,George area,2012,1000 galls,Tony Gordon,NA,NA,NA,34.0062,22.3504
+34 00.0415,22 23.1661,34°00.0415,34°00.0415',22°23.1661,22°23.1661',NA,George area,2012,1000 galls,Tony Gordon,NA,NA,NA,34.0007,22.3861
+34 01.273,22 17.717,34°01.273,34°01.273',22°17.717,22°17.717',NA,George area,2012,1000 galls,Tony Gordon,NA,NA,NA,34.0212,22.2953
+33 50.380,22 21.276,33°50.380,33°50.380',22°21.276,22°21.276',NA,George area,2012,1000 galls,Tony Gordon,NA,NA,NA,33.8397,22.3546
+33 50.5223,22 26.1225,33°50.5223,33°50.5223',22°26.1225,22°26.1225',NA,"Burnsleigh Farm, Waboomskraal",2012,1000 galls,Tony Gordon,NA,NA,NA,33.842,22.4354
+34 00.0938,22 32.2938,34°00.0938,34°00.0938',22°32.2938,22°32.2938',NA,George area,2012,1000 galls,Tony Gordon,NA,NA,NA,34.0016,22.5382
+34 08.920,19 00.358,34°08.920,34°08.920',19°00.358,19°00.358',NA,NA,2012,1000 galls,Mildred October,NA,1,Mildred makes note on sheet that agents were present in some areas but not in others,34.1487,19.006
+34 08.872,19 00.122,34°08.872,34°08.872',19°00.122,19°00.122',NA,Nr Werde Farm,2012,1000 galls,Mildred October,NA,NA,NA,34.1479,19.002
+34 08.646,19 00.03,34°08.646,34°08.646',19°00.03,19°00.03',NA,Worcester street timbers,2012,1000 galls,Mildred October,NA,NA,NA,34.1441,19.0005
+34 08.591,19 00.147,34°08.591,34°08.591',19°00.147,19°00.147',NA,NA,2012,1000 galls,Mildred October,NA,NA,NA,34.1432,19.0024
+33 55.2116,22 2.385,33°55.2116,33°55.2116',22°2.385,22°2.385',NA,"Ruitersbos, next to rugbyveld",2012,1000 galls,AnneLise Vlok (Keith & Abraham),NA,NA,NA,33.9202,22.0398
+33 56.773,22 1.548,33°56.773,33°56.773',22°1.548,22°1.548',NA,"Haelkraal road, near 'ou skooltjie'",2012,1000 galls,AnneLise Vlok (Keith & Abraham),NA,NA,NA,33.9462,22.0258
+33 51.405,22 2.276,33°51.405,33°51.405',22°2.276,22°2.276',NA,Mooihoek,2012,1000 galls,AnneLise Vlok (Keith & Abraham),NA,NA,NA,33.8568,22.0379
+34 00.380,22 21.0383,34°00.380,34°00.380',22°21.0383,22°21.0383',NA,Maalgate River,2012,1000 galls,AnneLise Vlok (Keith & Abraham),NA,NA,NA,34.0063,22.3506
+33 59.31,22 25.1216,33°59.31,33°59.31',22°25.1216,22°25.1216',NA,Gwaing River,2012,1000 galls,AnneLise Vlok (Keith & Abraham),NA,NA,NA,33.9885,22.4187
+22 24.728,22 21.263,22°24.728,22°24.728',22°21.263,22°21.263',NA,Rus en Vrede,2012,1000 galls,AnneLise Vlok (Keith & Abraham),NA,NA,lat 33 24.721S 22 21.273E,22.4121,22.3544
+33 22.605,22 3.336,33°22.605,33°22.605',22°3.336,22°3.336',NA,Matjiesrivier,2012,1000 galls,AnneLise Vlok (Keith & Abraham),NA,NA,NA,33.3768,22.0556
+34 07.297,21 38.597,34°07.297,34°07.297',21°38.597,21°38.597',NA,Garcia Pass,2012,1000 galls,Keith & Abraham,NA,NA,NA,34.1216,21.6433
+33 50.008,23 10.711,33°50.008,33°50.008',23°10.711,23°10.711',NA,Prince Alfred Pass,2012,1000 galls,Keith & Abraham,NA,NA,NA,33.8335,23.1785
+33 57.836,22 34.569,33°57.836,33°57.836',22°34.569,22°34.569',NA,Saasveld road,2012,1000 galls,Keith & Abraham,NA,NA,NA,33.9639,22.5761
+33 56.862,22 37.251,33°56.862,33°56.862',22°37.251,22°37.251',NA,George via Forest rd,2012,1000 galls,Keith & Abraham,NA,NA,NA,33.9477,22.6209
+34 00.463,22 23.846,34°00.463,34°00.463',22°23.846,22°23.846',NA,sthn cape,2012,1000 galls,Vernon Gibbs Hall,NA,NA,NA,34.0077,22.3974
+34 00.649,22 23.837,34°00.649,34°00.649',22°23.837,22°23.837',NA,sthn cape,2012,1000 galls,Vernon Gibbs Hall,NA,NA,NA,34.0108,22.3973
+34 01.578,22 20.731,34°01.578,34°01.578',22°20.731,22°20.731',NA,sthn cape,2012,1000 galls,Vernon Gibbs Hall,NA,NA,NA,34.0263,22.3455
+34 01.239,22 20.927,34°01.239,34°01.239',22°20.927,22°20.927',NA,sthn cape,2012,1000 galls,Vernon Gibbs Hall,NA,NA,NA,34.0207,22.3488
+33 58.200,22 32.807,33°58.200,33°58.200',22°32.807,22°32.807',NA,sthn cape,2012,1000 galls,Vernon Gibbs Hall,NA,NA,NA,33.97,22.5468
+33 57.972,22 33.435,33°57.972,33°57.972',22°33.435,22°33.435',NA,sthn cape,2012,1000 galls,Vernon Gibbs Hall,NA,NA,NA,33.9662,22.5572
+33 59.349,22 33.034,33°59.349,33°59.349',22°33.034,22°33.034',NA,sthn cape,2012,1000 galls,Vernon Gibbs Hall,NA,NA,NA,33.9892,22.5506
+33 59.053,22 37.038,33°59.053,33°59.053',22°37.038,22°37.038',NA,sthn cape,2012,1000 galls,Vernon Gibbs Hall,NA,NA,NA,33.9842,22.6173
+33 58.765,22 37.093,33°58.765,33°58.765',22°37.093,22°37.093',NA,sthn cape,2012,1000 galls,Vernon Gibbs Hall,NA,NA,NA,33.9794,22.6182
+33 58.198,22 37.029,33°58.198,33°58.198',22°37.029,22°37.029',NA,sthn cape,2012,1000 galls,Vernon Gibbs Hall,NA,NA,NA,33.97,22.6171
+33 57.948,22 37.482,33°57.948,33°57.948',22°37.482,22°37.482',NA,sthn cape,2012,1000 galls,Vernon Gibbs Hall,NA,NA,NA,33.9658,22.6247
+34 00.072,22 31.327,34°00.072,34°00.072',22°31.327,22°31.327',NA,sthn cape,2012,1000 galls,Vernon Gibbs Hall,NA,NA,NA,34.0012,22.5221
+34 00.255,22 31.835,34°00.255,34°00.255',22°31.835,22°31.835',NA,sthn cape,2012,1000 galls,Vernon Gibbs Hall,NA,NA,NA,34.0042,22.5306
+33 56.237,22 39.819,33°56.237,33°56.237',22°39.819,22°39.819',NA,Candlewood Farm,2012,1000 galls,John Stanwix knycit@mweb.co.za 0827895051,NA,NA,NA,33.9373,22.6637
+33 57.968,22 59.393,33°57.968,33°57.968',22°59.393,22°59.393',NA,Candlewood Farm,2012,1000 galls,John Stanwix knycit@mweb.co.za 0827895051,NA,NA,NA,33.9661,22.9899
+34 07.298,19 13.195,34°07.298,34°07.298',19°13.195,19°13.195',NA,"Welgemoed Farm,  eastern Bank of Paardevlei Rv, Caledon",2012,1000 galls,Christina Seegers Cape Nature,NA,NA,NA,34.1216,19.2199
+34 06.806,19 13.45,34°06.806,34°06.806',19°13.45,19°13.45',NA,"Van der Stel Pass, along Bot rv & Villiersdorp",2012,1000 galls,Christina Seegers Cape Nature,NA,NA,NA,34.1134,19.2242
+34 06.711,19 13.9016,34°06.711,34°06.711',19°13.9016,19°13.9016',NA,"Van der Stel Pass, along Bot rv & Villiersdorp",2012,1000 galls,Christina Seegers Cape Nature,NA,NA,NA,34.1118,19.2317
+34 06.903,19 14.12666,34°06.903,34°06.903',19°14.12666,19°14.12666',NA,"Van der Stel Pass, along Bot rv & Villiersdorp",2012,1000 galls,Christina Seegers Cape Nature,NA,NA,NA,34.115,19.2354
+34 07.311,19 14.6316,34°07.311,34°07.311',19°14.6316,19°14.6316',NA,"Van der Stel Pass, along Bot rv & Villiersdorp",2012,1000 galls,Christina Seegers Cape Nature,NA,NA,NA,34.1219,19.2439
+34 07.416,19 14.3466,34°07.416,34°07.416',19°14.3466,19°14.3466',NA,"Van der Stel Pass, along Bot rv & Villiersdorp",2012,1000 galls,Christina Seegers Cape Nature,NA,NA,NA,34.1236,19.2391
+34 08.418,19 14.878,34°08.418,34°08.418',19°14.878,19°14.878',NA,"Van der Stel Pass, along Bot rv & Villiersdorp",2012,1000 galls,Christina Seegers Cape Nature,NA,NA,NA,34.1403,19.248
+34 09.0716,19 14.165,34°09.0716,34°09.0716',19°14.165,19°14.165',NA,"Van der Stel Pass, along Bot rv & Villiersdorp",2012,1000 galls,Christina Seegers Cape Nature,NA,NA,NA,34.1512,19.2361
+34 09.5,19 13.563,34°09.5,34°09.5',19°13.563,19°13.563',NA,"Van der Stel Pass, along Bot rv & Villiersdorp",2012,1000 galls,Christina Seegers Cape Nature,NA,NA,NA,34.1583,19.2261
+34 10.665,19 13.7,34°10.665,34°10.665',19°13.7,19°13.7',NA,"Van der Stel Pass, along Bot rv & Villiersdorp",2012,1000 galls,Christina Seegers Cape Nature,NA,NA,NA,34.1778,19.2283
+34 11.561,19 13.66,34°11.561,34°11.561',19°13.66,19°13.66',NA,"Van der Stel Pass, along Bot rv & Villiersdorp",2012,1000 galls,Christina Seegers Cape Nature,NA,NA,NA,34.1927,19.2277
+34 12.255,19 12.943,34°12.255,34°12.255',19°12.943,19°12.943',NA,"Van der Stel Pass, along Bot rv & Villiersdorp",2012,1000 galls,Christina Seegers Cape Nature,NA,NA,NA,34.2042,19.2157
+34 12.42,19 12.8116,34°12.42,34°12.42',19°12.8116,19°12.8116',NA,"Van der Stel Pass, along Bot rv & Villiersdorp",2012,1000 galls,Christina Seegers Cape Nature,NA,NA,NA,34.207,19.2135
+34 12.826,19 12.593,34°12.826,34°12.826',19°12.593,19°12.593',NA,"Van der Stel Pass, along Bot rv & Villiersdorp",2012,1000 galls,Christina Seegers Cape Nature,NA,NA,NA,34.2138,19.2099
+34 13.093,19 12.256,34°13.093,34°13.093',19°12.256,19°12.256',NA,"Van der Stel Pass, along Bot rv & Villiersdorp",2012,1000 galls,Christina Seegers Cape Nature,NA,NA,NA,34.2182,19.2043
+34 23.799,20 32.446,34°23.799,34°23.799 ',20°32.446,20°32.446',NA,Potberg,2012,1000 galls,Reley & Abraham,Yes,1,NA,34.3966,20.5408
+34 23.801,20 32.457,34°23.801,34°23.801 ',20°32.457,20°32.457',NA,Potberg,2012,1000 galls,Reley & Abraham,Yes,1,NA,34.3967,20.5409
+34 23.814,20 32.459,34°23.814,34°23.814 ',20°32.459,20°32.459',NA,Potberg,2012,1000 galls,Reley & Abraham,Yes,1,NA,34.3969,20.541
+34 23.813,20 32.452,34°23.813,34°23.813 ',20°32.452,20°32.452',NA,Potberg,2012,1000 galls,Reley & Abraham,Yes,1,NA,34.3969,20.5409
+34 23.829,20 32.446,34°23.829,34°23.829 ',20°32.446,20°32.446',NA,Potberg,2012,1000 galls,Reley & Abraham,Yes,1,NA,34.3972,20.5408
+34 02.4246,21 54.1266,34°02.4246,34°02.4246',21°54.1266,21°54.1266',NA,"Gondwana Game Reserve, Mossel Bay",2012,1000 galls,John Vogel 044 6977002,NA,NA,site burnt several years later,34.0404,21.9021
+34 02.3558,21 54.1281,34°02.3558,34°02.3558',21°54.1281,21°54.1281',NA,"Gondwana Game Reserve, Mossel Bay",2012,1000 galls,John Vogel 044 6977002,NA,NA,site burnt several years later,34.0393,21.9021
+33 56.526,22 36.154,33°56.526,33°56.526',22°36.154,22°36.154',NA,"Bosplaas Farm nr Hoekwil, George",2012,5000 galls,Ludwig Strydom 083 539 9593,NA,NA,NA,33.9421,22.6026
+34 02.169,22 59.165,34°02.169,34°02.169',22°59.165,22°59.165',NA,On road to Knysna before Belvediere turn off,2012,NA,Tony Gordon,NA,NA,NA,34.0362,22.9861
+33 25.765,19 15.342,33°25.765,33°25.765',19°15.342,19°15.342',NA,Wolseley,2012,NA,Tony Gordon,NA,NA,NA,33.4294,19.2557
+33 25.789,19 15.073,33°25.789,33°25.789',19°15.073,19°15.073',NA,Wolseley,2012,NA,Tony Gordon,NA,NA,NA,33.4298,19.2512
+33 25.070,19 14.587,33°25.070,33°25.070',19°14.587,19°14.587',NA,Wolseley,2012,NA,Tony Gordon,NA,NA,NA,33.4178,19.2431
+33 28.174,18 57.657,33°28.174,33°28.174',18°57.657,18°57.657',NA,Wellington,2012,NA,Tony Gordon,NA,NA,NA,33.4696,18.961
+34 08.543,19 00.315,34°08.543,34°08.543',19°00.315,19°00.315',NA,Grabouw (next to roadside),2012,NA,Mildred October,NA,NA,NA,34.1424,19.0053
+34 08.475,19 01.101,34°08.475,34°08.475',19°01.101,19°01.101',NA,Grabouw (opp Chosen Farms),2012,NA,Mildred October,NA,NA,NA,34.1412,19.0184
+34 7.028,19 55.118,34°7.028,34°7.028',19°55.118,19°55.118',NA,Riviersonderend,2012,NA,Piet van Zyl 023 6251621,NA,NA,NA,34.1171,19.9186
+33 20.1236,26 34.107,33°20.1236,33°20.1236',26°34.107,26°34.107',NA,Grahamstown to Port Alfred rd,2012,2 carpet sq,Martin Hill,NA,NA,NA,33.3354,26.5684
+33 19.961,26 35.049,33°19.961,33°19.961',26°35.049,26°35.049',NA,Grahamstown to Port Alfred rd,2012,2 carpet sq,Martin Hill,NA,NA,NA,33.3327,26.5842
+33 21.251,26 41.198,33°21.251,33°21.251',26°41.198,26°41.198',NA,Grahamstown to Port Alfred rd,2012,2 carpet sq,Martin Hill,NA,NA,NA,33.3542,26.6866
+33 28.490,26 49.631,33°28.490,33°28.490',26°49.631,26°49.631',NA,Grahamstown to Port Alfred rd,2012,2 carpet sq,Martin Hill,NA,NA,NA,33.4748,26.8272
+33 55.489,22 52.909,33°55.489,33°55.489',22°52.909,22°52.909',NA,"Ruyte Plaas Farm, Barrington",2012,1000 galls,Oubaas Fourie 082 3334942 ruyteplaas@wispernet.co.za,NA,NA,NA,33.9248,22.8818
+33 54.360,22 54.400,33°54.360,33°54.360',22°54.400,22°54.400',NA,Kraaibosch (Along boundary fence),2012,1000 galls,Oubaas Fourie 082 3334942 ruyteplaas@wispernet.co.za,NA,NA,NA,33.906,22.9067
+33 55.792,22 49.825,33°55.792,33°55.792',22°49.825,22°49.825',NA,Karatara (stn boundary of farm),2012,1000 galls,Hannes Jaftha 082 4703295 0443562758,NA,NA,NA,33.9299,22.8304
+33 56.083,22 46.798,33°56.083,33°56.083',22°46.798,22°46.798',NA,Elandskraal,2012,1000 galls,Hanno Smit 044 3432594 hanno@elandstimber.co.za,NA,NA,NA,33.9347,22.78
+33 59.29,22 51.543,33°59.29,33°59.29',22°51.543,22°51.543',NA,Elandskraal,2012,1000 galls,Hanno Smit 044 3432594 hanno@elandstimber.co.za,NA,NA,NA,33.9882,22.859
+33 56.101,22 42.743,33°56.101,33°56.101',22°42.743,22°42.743',NA,Diepriver district alongside rd nxt to farm house,2012,1000 galls,Aidan Pomario 072 4273892 pomario@adept.co.za,NA,NA,NA,33.935,22.7124
+33 56.087,22 42.584,33°56.087,33°56.087',22°42.584,22°42.584',NA,Diepriver district,2012,1000 galls,Aidan Pomario 072 4273892 pomario@adept.co.za,NA,NA,NA,33.9348,22.7097
+33 58.419,22 34.599,33°58.419,33°58.419',22°34.599,22°34.599',NA,Oakhurst Farm,2012,1000 galls,Jake Crowther 082 4925549 jake@oakhurst.co.za,NA,NA,NA,33.9736,22.5767
+33 56.687,22 38.0885,33°56.687,33°56.687',22°38.0885,22°38.0885',NA,Westwood Farm,2012,1000 galls,Jake Crowther 082 4925549 jake@oakhurst.co.za,NA,NA,NA,33.9448,22.6348
+33 56.237,22 39.819,33°56.237,33°56.237',22°39.819,22°39.819',NA,Oakhurst Farm,2012,1000 galls,Jake Crowther 082 4925549 jake@oakhurst.co.za,NA,NA,NA,33.9373,22.6637
+33 55.138,22 48.892,33°55.138,33°55.138',22°48.892,22°48.892',NA,Lancewood farm (rented pastures)Along dam wall,2012,1000 galls,Bertus Myburgh 073 3726492 lancedairy@mweb.co.za,NA,NA,NA,33.919,22.8149
+33 56.757,22 44.193,33°56.757,33°56.757',22°44.193,22°44.193',NA,At Lancewood primary school,2012,1000 galls,Bertus Myburgh 073 3726492 lancedairy@mweb.co.za,NA,NA,NA,33.946,22.7366
+33 58.622,22 58.179,33°58.622,33°58.622',22°58.179,22°58.179',NA,Heidekruin,2012,1000 galls,Gert Byleveld heidekruin@xnets.co.za,NA,NA,NA,33.977,22.9697
+33 57.825,22 58.629,33°57.825,33°57.825',22°58.629,22°58.629',NA,Heidekruin,2012,1000 galls,Gert Byleveld heidekruin@xnets.co.za,NA,NA,NA,33.9637,22.9772
+33 59.966,23 0.155,33°59.966,33°59.966',23°0.155,23°0.155',NA,Charlesford Farm Phantom Pass,2012,1000 galls,Cathy Shearer cathy@charlesford.co.za 0723928617,NA,NA,NA,33.9994,23.0026
+34 0.084,22 59.878,34°0.084,34°0.084',22°59.878,22°59.878',NA,Charlesford Farm Phantom Pass,2012,1000 galls,Cathy Shearer cathy@charlesford.co.za 0723928617,NA,NA,NA,34.0014,22.998
+33 57.305,22 59.996,33°57.305,33°57.305',22°59.996,22°59.996',NA,Woodside Farm Rheenendal,2012,1000 galls,Hubby Sandberg woodside-farm@mweb.co.za 0823767468,NA,NA,NA,33.9551,22.9999
+33 58.482,24 35.685,33°58.482,33°58.482',24°35.685,24°35.685',NA,Thaba Manzi,2012,peat moss,John Hoffmann,NA,NA,NA,33.9747,24.5948
+33 53.995,25 15.034,33°53.995,33°53.995',25°15.034,25°15.034',NA,Lady Slipper,2012,peat moss,John Hoffmann,NA,NA,NA,33.8999,25.2506
+32 32.127,27 28.486,32°32.127,32°32.127',27°28.486,27°28.486',NA,Dohne,2012,peat moss,John Hoffmann,NA,NA,NA,32.5354,27.4748
+32 34.665,27 29.648,32°34.665,32°34.665',27°29.648,27°29.648',NA,Rob Featherstones - Kabusi,2012,peat moss,John Hoffmann,NA,NA,NA,32.5778,27.4941
+33 16.906,26 45.565,33°16.906,33°16.906',26°45.565,26°45.565',NA,Stoneyvale,2012,peat moss,John Hoffmann,NA,NA,NA,33.2818,26.7594
+33 58.441,24 35.634,33°58.441,33°58.441',24°35.634,24°35.634',NA,Thaba Manzi,2012,1000 galls,John Hoffmann,yes,1,NA,33.974,24.5939
+33 53.945,25 15.051,33°53.945,33°53.945',25°15.051,25°15.051',NA,Lady Slipper,2012,1000 galls,John Hoffmann,yes,1,NA,33.8991,25.2508
+32 32.157,27 28.424,32°32.157,32°32.157',27°28.424,27°28.424',NA,Dohne,2012,1000 galls,John Hoffmann,yes,1,NA,32.536,27.4737
+32 34.723,27 29.586,32°34.723,32°34.723',27°29.586,27°29.586',NA,Rob Featherstones - Kabusi,2012,1000 galls,John Hoffmann,yes,1,NA,32.5787,27.4931
+33 16.857,26 45.530,33°16.857,33°16.857',26°45.530,26°45.530',NA,Stoneyvale,2012,1000 galls,John Hoffmann,yes,1,NA,33.2809,26.7588
+33 17.223,26 42.700,33°17.223,33°17.223',26°42.700,26°42.700',NA,N2 between Stoneyvale & Grahamstown,2012,1000 galls,John Hoffmann,yes,1,NA,33.287,26.7117
+33 56.224,25 24.990,33°56.224,33°56.224',25°24.990,25°24.990',NA,NA,2012,carpet square,John Hoffmann,NA,NA,NA,33.9371,25.4165
+33 54.172,25 09.433,33°54.172,33°54.172',25°09.433,25°09.433',NA,NA,2012,carpet square,John Hoffmann,NA,NA,NA,33.9029,25.1572
+34 00.188,24 46.752,34°00.188,34°00.188',24°46.752,24°46.752',NA,NA,2012,carpet square,John Hoffmann,NA,NA,NA,34.0031,24.7792
+34 02.089,24 45.727,34°02.089,34°02.089',24°45.727,24°45.727',NA,NA,2012,carpet square,John Hoffmann,NA,NA,NA,34.0348,24.7621
+34 01.930,24 43.893,34°01.930,34°01.930',24°43.893,24°43.893',NA,NA,2012,carpet square,John Hoffmann,NA,NA,NA,34.0322,24.7315
+34 01.928,24 43.887,34°01.928,34°01.928',24°43.887,24°43.887',NA,NA,2012,carpet square,John Hoffmann,NA,NA,NA,34.0321,24.7314
+34 02.053,24 43.933,34°02.053,34°02.053',24°43.933,24°43.933',NA,NA,2012,carpet square,John Hoffmann,NA,NA,NA,34.0342,24.7322
+34 01.092,24 39.169,34°01.092,34°01.092',24°39.169,24°39.169',NA,NA,2012,carpet square,John Hoffmann,NA,NA,NA,34.0182,24.6528
+34 01.576,24 37.439,34°01.576,34°01.576',24°37.439,24°37.439',NA,en route to Thaba Manzi,2012,carpet square,John Hoffmann,NA,NA,NA,34.0263,24.624
+34 00.859,24 37.231,34°00.859,34°00.859',24°37.231,24°37.231',NA,en route to Thaba Manzi,2012,carpet square,John Hoffmann,NA,NA,NA,34.0143,24.6205
+26 01.108,28 58.993,26°01.108,26°01.108',28°58.993,28°58.993',NA,Mpumalanga,2012,carpet square,FI John Hoffmann,NA,NA,Burnt 2013,26.0185,28.9832
+25 11.599,31 00.305,25°11.599,25°11.599',31°00.305,31°00.305',NA,Mpumalanga side of freeway nr Ooogies,2012,carpet square,FI John Hoffmann,NA,NA,NA,25.1933,31.0051
+25 08.188,31 00.138,25°08.188,25°08.188',31°00.138,31°00.138',NA,Mpumalanga Edge of road at Spitskop turning,2012,carpet square,FI John Hoffmann,yes,1,site cleared in 2017,25.1365,31.0023
+32 59.915,19 03.401,32°59.915,32°59.915',19°03.401,19°03.401',NA,Groot Winterskloof,2013,carpet square,Mildred October,NA,NA,NA,32.9986,19.0567
+33 49.887,18 36.563,33°49.887,33°49.887',18°36.563,18°36.563',NA,Morgenster nr Durbanville,2013,carpet square,Mildred October,NA,NA,NA,33.8314,18.6094
+34 29.297,19 53.766,34°29.297,34°29.297',19°53.766,19°53.766',NA,Napier farm road-grannndpod na sunbird plass nr Napier,2013,carpet square,Mildred October,NA,NA,NA,34.4883,19.8961
+34 29.396,19 54.084,34°29.396,34°29.396',19°54.084,19°54.084',NA,Napier river road nr napier,2013,carpet square,Mildred October,NA,NA,NA,34.4899,19.9014
+34 29.436,19 54.015,34°29.436,34°29.436',19°54.015,19°54.015',NA,Napier river nr Napier 4,2013,carpet square,Mildred October,NA,NA,NA,34.4906,19.9002
+34 08.993,19 00.159,34°08.993,34°08.993',19°00.159,19°00.159',NA,Industrial area grabow,2013,carpet square,Mildred October,NA,NA,NA,34.1499,19.0026
+34 08.524,19 00.368,34°08.524,34°08.524',19°00.368,19°00.368',NA,Frogmorton nr Grabow,2013,carpet square,M.S. October,NA,NA,NA,34.1421,19.0061
+34 08.465,19 01.028,34°08.465,34°08.465',19°01.028,19°01.028',NA,Bellvue nr Grabow,2013,carpet square,M.S. October,NA,NA,NA,34.1411,19.0171
+33 54.333,22 51.021,33°54.333,33°54.333',22°51.021,22°51.021',NA,"Dormehl farm, Barrington",2013,carpet square,Rob Dormehl 0828028103 farmerrobd@gmail.com,NA,NA,NA,33.9055,22.8503
+33 55.230,22 49.577,33°55.230,33°55.230',22°49.577,22°49.577',NA,"Hollywood farm, Karatara",2013,carpet square,Heidi Sonnekus 073 1600802 heidi@wispernet.co.za,NA,NA,NA,33.9205,22.8263
+33 56.65,22 56.183,33°56.65,33°56.65',22°56.183,22°56.183',NA,"INDRAF Diepriver, George",2013,carpet square,Jaco Barendse 082 5116368,NA,NA,NA,33.9442,22.9364
+28 58.433,29 25.083,28°58.433,28°58.433',29°25.083,29°25.083',NA,Culfargie (boundary of the UDPWHS),2013,11 carpet square,Frik Lemmer KZNWildlife Monks cowl 082 3183433,NA,NA,placed on large mature trees near fence,28.9739,29.4181
+31 01.580,30 13.499,31°01.580,31°01.580',30°13.499,30°13.499',NA,road verge of the R62 near the Ku-Bobyi River,2013,carpet square,KZN Peter Carlton (via Ian Rushworth),NA,0,Established 2014 could not find signs again 2019,31.0263,30.225
+31 00.920,30 13.997,31°00.920,31°00.920',30°13.997,30°13.997',NA,road verge of the R62 and the South entrance turn-off to Leisure Bay,2013,carpet square,KZN Peter Carlton (via Ian Rushworth),NA,NA,NA,31.0153,30.2333
+30 59.655,30 15.592,30°59.655,30°59.655',30°15.592,30°15.592',NA,road verge of the R62 opposite Mac Bannas road side store,2013,carpet square,KZN Peter Carlton (via Ian Rushworth),NA,NA,NA,30.9943,30.2599
+30 50.687,30 22.418,30°50.687,30°50.687',30°22.418,30°22.418',NA,road verge of Sea Slopes Road which is the main entry road to Uvongo,2013,carpet square,KZN Peter Carlton (via Ian Rushworth),NA,NA,NA,30.8448,30.3736
+29 30.429,30 12.960,29°30.429,29°30.429',30°12.960,30°12.960',NA,Midmar just before midmar offramp on LHS of N3,2013,4 carpet squares,Ian Rushworth KZN Wildlife,NA,NA,FI note- Silver wattle not black!,29.5071,30.216
+29 29.409,30 11.812,29°29.409,29°29.409',30°11.812,30°11.812',NA,"Midmar, Maloti House",2013,4 carpet squares,Ian Rushworth KZN Wildlife,NA,NA,Ringbarked,29.4901,30.1969
+29 28.626,30 11.879,29°28.626,29°28.626',30°11.879,30°11.879',NA,Howick north/tweedie offramp heading to Howick (LHS),2013,4 carpet squares,Ian Rushworth KZN Wildlife,NA,0,couldn’t find carpet squares or galls 2014,29.4771,30.198
+29 24.968,29 24.352,29°24.968,29°24.968',29°24.352,29°24.352',NA,Karkloof falls (rd heading to falls in plantation),2013,4 carpet squares,Ian Rushworth KZN Wildlife,NA,NA,NA,29.4161,29.4059
+29 18.297,30 13.595,29°18.297,29°18.297',30°13.595,30°13.595',NA,Karkloof nature reserve,2013,4 carpet squares,Ian Rushworth KZN Wildlife,NA,NA,lots of bramble,29.305,30.2266
+29 18.779,30 13.424,29°18.779,29°18.779',30°13.424,30°13.424',NA,Karkloof nature reserve (boundary),2013,4 carpet squares,Ian Rushworth KZN Wildlife,NA,NA,NA,29.313,30.2237
+27 34.916,31 18.666,27°34.916,27°34.916',31°18.666,31°18.666',NA,Nr Ithala Game reserve Louwsburg,2013,4 carpet squares,Ian Rushworth KZN Wildlife,NA,NA,NA,27.5819,31.3111
+27 40.6,31 07.116,27°40.6,27°40.6',31°07.116,31°07.116',NA,R69 between Vryheid and Louwsburg,2013,6 carpet squares,Ian Rushworth KZN Wildlife,NA,NA,N side of rd opp entrance to the Waterfall,27.6767,31.1186
+27 43.866,31 03.666,27°43.866,27°43.866',31°03.666,31°03.666',NA,R69 between Vryheid and Louwsburg,2013,5 carpet squares,Ian Rushworth KZN Wildlife,NA,NA,NA,27.7311,31.0611
+29 35.287,30 21.166,29°35.287,29°35.287',30°21.166,30°21.166',NA,"Athlone circle, Pietermaritzburg",2013,4 carpet squares,Ian Rushworth KZN Wildlife,NA,NA,NA,29.5881,30.3528
+29 29.031,30 11.031,29°29.031,29°29.031',30°11.031,30°11.031',NA,R103 near Midmar,2013,4 carpet squares,Ian Rushworth KZN Wildlife,NA,0,Few lrge trees Lots chopping No carpet squares or galls seen 2014,29.4839,30.1838
+29 43.476,29 57.57,29°43.476,29°43.476',29°57.57,29°57.57',NA,Impendle Nature reserve,2013,4 carpet squares,Ian Rushworth KZN Wildlife,NA,NA,NA,29.7246,29.9595
+29 43.409,29 57.912,29°43.409,29°43.409',29°57.912,29°57.912',NA,Impendle Nature reserve,2013,4 carpet squares,Ian Rushworth KZN Wildlife,NA,NA,NA,29.7235,29.9652
+29 12.076,29 58.936,29°12.076,29°12.076',29°58.936,29°58.936',NA,West of Mooi river,2013,4 carpet squares,Ian Rushworth KZN Wildlife,NA,NA,NA,29.2013,29.9823
+29 15.825,29 59.445,29°15.825,29°15.825',29°59.445,29°59.445',NA,R103 between Rosetta and Mooi river,2013,4 carpet squares,Ian Rushworth KZN Wildlife,NA,NA,NA,29.2638,29.9907
+29 23.395,30 2.395,29°23.395,29°23.395',30°2.395,30°2.395',NA,R103 Michaelhouse school area,2013,4 carpet squares,Ian Rushworth KZN Wildlife,NA,NA,NA,29.3899,30.0399
+29 26.997,30 6.754,29°26.997,29°26.997',30°6.754,30°6.754',NA,R103 Lidgetton,2013,4 carpet squares,Ian Rushworth KZN Wildlife,NA,NA,NA,29.45,30.1126
+33 19.990,19 36.737,33°19.990,33°19.990',19°36.737,19°36.737',NA,Matroosberg nr Ceres,2013,carpet square,M.S. October,NA,NA,NA,33.3332,19.6123
+33 19.976,19 33.378,33°19.976,33°19.976',19°33.378,19°33.378',NA,Mitchells pass nr Ceres,2013,carpet square,M.S. October,NA,NA,NA,33.3329,19.5563
+33 19.987,19 36.740,33°19.987,33°19.987',19°36.740,19°36.740',NA,Houses Matroosberg nr Ceres,2013,carpet square,M.S. October,NA,NA,NA,33.3331,19.6123
+33 25.568,19 15.697,33°25.568,33°25.568',19°15.697,19°15.697',NA,White bridge farm nr Ceres,2013,carpet square,M.S. October,NA,NA,NA,33.4261,19.2616
+33 19.916,19 33.457,33°19.916,33°19.916',19°33.457,19°33.457',NA,Lakenvlei nr Ceres,2013,carpet square,M.S. October,NA,NA,NA,33.3319,19.5576
+33 20.112,19 36.347,33°20.112,33°20.112',19°36.347,19°36.347',NA,Hamlet road side opp witzenberg dump,2013,carpet square,M.S. October,NA,NA,NA,33.3352,19.6058
+33 19.926,19 33.412,33°19.926,33°19.926',19°33.412,19°33.412',NA,Lakenvlei nr Ceres (matroosberg),2013,carpet square,M.S. October,NA,NA,NA,33.3321,19.5569
+33 16.580,19 19.475,33°16.580,33°16.580',19°19.475,19°19.475',NA,Eitzenberg dump-roaside nr Prince Alfred Hamlet,2013,carpet square,M.S. October,NA,NA,NA,33.2763,19.3246
+33 19.998,19 36.903,33°19.998,33°19.998',19°36.903,19°36.903',NA,Matroosberg nr Ceres,2013,carpet square,M.S. October,NA,NA,NA,33.3333,19.615
+33 19.989,19 36.690,33°19.989,33°19.989',19°36.690,19°36.690',NA,Matroosberg nr Ceres,2013,carpet square,M.S. October,NA,NA,NA,33.3332,19.6115
+33 19.966,19 36.711,33°19.966,33°19.966',19°36.711,19°36.711',NA,Matroosberg nr Ceres,2013,carpet square,M.S. October,NA,NA,NA,33.3328,19.6119
+33 20.122,19 37.037,33°20.122,33°20.122',19°37.037,19°37.037',NA,Matroosberg nr Ceres,2013,carpet square,M.S. October,NA,NA,NA,33.3354,19.6173
+33 19.772,19 36.736,33°19.772,33°19.772',19°36.736,19°36.736',NA,Matroosberg nr Ceres,2013,carpet square,M.S. October,NA,NA,NA,33.3295,19.6123
+33 25.555,19 15.705,33°25.555,33°25.555',19°15.705,19°15.705',NA,White bridge roadside nr Wolseley,2013,carpet square,M.S. October,NA,NA,NA,33.4259,19.2617
+33 19.983,19 33.385,33°19.983,33°19.983',19°33.385,19°33.385',NA,Lakenvlei nr Cere/Matroosberg,2013,carpet square,M.S. October,NA,NA,NA,33.333,19.5564
+33 19.976,19 33.378,33°19.976,33°19.976',19°33.378,19°33.378',NA,Near Ceres,2013,carpet square,M.S. October,NA,NA,NA,33.3329,19.5563
+33 20.010,19 33.393,33°20.010,33°20.010',19°33.393,19°33.393',NA,Lakenvlei nr Ceres,2013,carpet square,M.S. October,NA,NA,NA,33.3335,19.5566
+34 01.861,19 12.322,34°01.861,34°01.861',19°12.322,19°12.322',NA,Arendbig???,2013,carpet square,M.S. October,NA,NA,NA,34.031,19.2054
+34 04 286,19 02.837,34°04 286,34°04.86',19°02.837,19°02.837',NA,Secrax,2013,carpet square,M.S. October,NA,NA,NA,34.081,19.0473
+33 33.606,19 20.248,33°33.606,33°33.606',19°20.248,19°20.248',NA,Fonteinnjiebay/waaihoek nr Wocester,2013,carpet square,M.S. October,NA,NA,NA,33.5601,19.3375
+33.33.606,19.20.233,33.33.606,33°33.606',19.20.233,19°20.233',NA,Renhoogte  nr Slanghoek,2013,carpet square,M.S. October,NA,NA,NA,33.5601,19.3372
+33 39.877,19 14.752,33°39.877,33°39.877',19°14.752,19°14.752',NA,Widels nr Rawsonville??,2013,carpet square,M.S. October,NA,NA,NA,33.6646,19.2459
+33 33.190,19 12.616,33°33.190,33°33.190',19°12.616,19°12.616',NA,Secrax,2013,carpet square,M.S. October,NA,NA,NA,33.5532,19.2103
+34 11.539,19 5.866,34°11.539,34°11.539',19°5.866,19°5.866',NA,Back to basics- Theewaterskloof,2013,12 bags,M.S. October,NA,NA,NA,34.1923,19.0978
+34 8.61,19 0.165,34°8.61,34°8.61',19°0.165,19°0.165',NA,Elgin Timbers,2013,14 bags,M.S. October,NA,NA,NA,34.1435,19.0027
+34 8.587,19 0.163,34°8.587,34°8.587',19°0.163,19°0.163',NA,Teslaarsdal,2013,2 bags,M.S. October,NA,NA,NA,34.1431,19.0027
+34 21.943,19 31.489,34°21.943,34°21.943',19°31.489,19°31.489',NA,Teslaardal brug,2013,3 bags,M.S. October,NA,NA,NA,34.3657,19.5248
+34 20.053,19 31.987,34°20.053,34°20.053',19°31.987,19°31.987',NA,Theewaterskloof - Caledon,2013,3 bags,M.S. October,NA,NA,NA,34.3342,19.5331
+34 8.515,19 0.39,34°8.515,34°8.515',19°0.39,19°0.39',NA,Helderberg shell garage,2013,5 bags,M.S. October,NA,NA,NA,34.1419,19.0065
+34 9.352,18 59.293,34°9.352,34°9.352',18°59.293,18°59.293',NA,Pineview north,2013,6 bags,M.S. October,NA,NA,NA,34.1559,18.9882
+33 59.722,22 25.579,33°59.722,33°59.722',22°25.579,22°25.579',NA,Borchers- George,2013,5 mats,Hersen Amill/M October,NA,NA,NA,33.9954,22.4263
+33 56.788,22 23.866,33°56.788,33°56.788',22°23.866,22°23.866',NA,Heather Park - George,2013,4  mats,Hersen Amill/M October,NA,NA,NA,33.9465,22.3978
+34 2.638,22 25.303,34°2.638,34°2.638',22°25.303,22°25.303',NA,Bush Lapa- George,2013,4  mats,Hersen Amill/M October,NA,NA,NA,34.044,22.4217
+33 56.248,22 31.203,33°56.248,33°56.248',22°31.203,22°31.203',NA,Kwarie close to witfontein,2013,6 mats,Hersen Amill/M October,NA,NA,NA,33.9375,22.5201
+33 59.701,22 30.502,33°59.701,33°59.701',22°30.502,22°30.502',NA,Gwarie behind Radermakers,2013,7 mats,Hersen Amill/M October,NA,NA,NA,33.995,22.5084
+33 58.204,22 26.727,33°58.204,33°58.204',22°26.727,22°26.727',NA,Sasveld,2013,6  mats,Hersen Amill/M October,NA,NA,NA,33.9701,22.4455
+34 1.285,22 22.972,34°1.285,34°1.285',22°22.972,22°22.972',NA,Jeerip - Pacaltsdorp,2013,6 mats,Hersen Amill/M October,NA,NA,NA,34.0214,22.3829
+34 0.868,22 25.056,34°0.868,34°0.868',22°25.056,22°25.056',NA,Platrug,2013,4  mats,Hersen Amill/M October,NA,NA,NA,34.0145,22.4176
+34 1.690,22 25.275,34°1.690,34°1.690',22°25.275,22°25.275',NA,Suiwerfontein 2,2013,4  mats,Hersen Amill/M October,NA,NA,NA,34.0282,22.4213
+34 1.393,22 25.275,34°1.393,34°1.393',22°25.275,22°25.275',NA,Suiwerfontein 1,2013,5 mats,Hersen Amill/M October,NA,NA,NA,34.0232,22.4213
+34 1.393,22 26.710,34°1.393,34°1.393',22°26.710,22°26.710',NA,Olympia School roadside,2013,5 mats,Hersen Amill/M October,NA,NA,NA,34.0232,22.4452
+33 57.418,22 25.522,33°57.418,33°57.418',22°25.522,22°25.522',NA,On field,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.957,22.4254
+33 56.684,22 24.292,33°56.684,33°56.684',22°24.292,22°24.292',NA,Die pits,2013,5 mats,Hersen Amill/M October,NA,NA,NA,33.9447,22.4049
+33 56.212,22 26.752,33°56.212,33°56.212',22°26.752,22°26.752',NA,Blanco,2013,5 mats,Hersen Amill/M October,NA,NA,NA,33.9369,22.4459
+33 57.280,22 25.674,33°57.280,33°57.280',22°25.674,22°25.674',NA,"Behind ""die aarde"" field",2013,4  mats,Hersen Amill/M October,NA,NA,NA,33.9547,22.4279
+33 59.275,22 26.242,33°59.275,33°59.275',22°26.242,22°26.242',NA,Tiep,2013,6 mats,Hersen Amill/M October,NA,NA,NA,33.9879,22.4374
+33 59.704,22 27.076,33°59.704,33°59.704',22°27.076,22°27.076',NA,Pacaltsdorp Industria,2013,4  mats,Hersen Amill/M October,NA,NA,NA,33.9951,22.4513
+33 57.346,22 26.029,33°57.346,33°57.346',22°26.029,22°26.029',NA,Heatherland,2013,3 mats,Hersen Amill/M October,NA,NA,NA,33.9558,22.4338
+33 59.434,22 26.727,33°59.434,33°59.434',22°26.727,22°26.727',NA,Steinhoff,2013,5 mats,Hersen Amill/M October,NA,NA,NA,33.9906,22.4455
+34 1.285,22 25.835,34°1.285,34°1.285',22°25.835,22°25.835',NA,Jeerip - Pacaltsdorp,2013,5 mats,Hersen Amill/M October,NA,NA,NA,34.0214,22.4306
+34 0.195,22 26.242,34°0.195,34°0.195',22°26.242,22°26.242',NA,Die Meule-Oudtshoorn,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0032,22.4374
+33 59.704,22 29.014,33°59.704,33°59.704',22°29.014,22°29.014',NA,Pacaltsdorp Industria,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.9951,22.4836
+34 12.832,22 29.031,34°12.832,34°12.832',22°29.031,22°29.031',NA,Kwelanga Lodge,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.2139,22.4839
+34 12.831,22 29.050,34°12.831,34°12.831',22°29.050,22°29.050',NA,Kwelanga Lodge,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.2138,22.4842
+34 2.819,22 27.166,34°2.819,34°2.819',22°27.166,22°27.166',NA,Kwelanga Lodge,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.047,22.4528
+34 2.563,22 27.154,34°2.563,34°2.563',22°27.154,22°27.154',NA,Hansmanskraal,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0427,22.4526
+34 2.557,22 27.115,34°2.557,34°2.557',22°27.115,22°27.115',NA,Hansmanskraal,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0426,22.4519
+34 2.557,22 26.359,34°2.557,34°2.557',22°26.359,22°26.359',NA,Hansmanskraal,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0426,22.4393
+34 2.098,22 26.356,34°2.098,34°2.098',22°26.356,22°26.356',NA,Tikitaai,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.035,22.4393
+34 2.046,22 12.946,34°2.046,34°2.046',22°12.946,22°12.946',NA,Tikitaai,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0341,22.2158
+34 2.182,22 12.937,34°2.182,34°2.182',22°12.937,22°12.937',NA,Die Kop - Groot Brakrivier,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0364,22.2156
+34 2.188,22 12.928,34°2.188,34°2.188',22°12.928,22°12.928',NA,Die Kop - Groot Brakrivier,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0365,22.2155
+34 2.189,22 12.964,34°2.189,34°2.189',22°12.964,22°12.964',NA,Die Kop - Groot Brakrivier,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0365,22.2161
+34 2.209,22 12.978,34°2.209,34°2.209',22°12.978,22°12.978',NA,Die Kop - Groot Brakrivier,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0368,22.2163
+34 2.212,22 12.988,34°2.212,34°2.212',22°12.988,22°12.988',NA,Die Kop - Groot Brakrivier,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0369,22.2165
+34 2.211,22 13.107,34°2.211,34°2.211',22°13.107,22°13.107',NA,Die Kop - Groot Brakrivier,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0368,22.2185
+34 2.197,22 13.121,34°2.197,34°2.197',22°13.121,22°13.121',NA,Die Kop - Groot Brakrivier,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0366,22.2187
+34 2.188,22 13.138,34°2.188,34°2.188',22°13.138,22°13.138',NA,Die Kop - Groot Brakrivier,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0365,22.219
+34 2.199,20 34.341,34°2.199,34°2.199',20°34.341,20°34.341',NA,Die Kop - Groot Brakrivier,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0366,20.5724
+34 2.744,20 34.333,34°2.744,34°2.744',20°34.333,20°34.333',NA,Maalgate,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0457,20.5722
+34 2.746,20 34.339,34°2.746,34°2.746',20°34.339,20°34.339',NA,Maalgate,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0458,20.5723
+34 2.743,21 16.890,34°2.743,34°2.743',21°16.890,21°16.890',NA,Maalgate,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0457,21.2815
+34 6.739,21 16.915,34°6.739,34°6.739',21°16.915,21°16.915',NA,Riversdal Golf club,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.1123,21.2819
+34 6.752,20 43.585,34°6.752,34°6.752',20°43.585,20°43.585',NA,Riversdal Golf club,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.1125,20.7264
+34 5.628,20 43.585,34°5.628,34°5.628',20°43.585,20°43.585',NA,Karringmelksrivier,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0938,20.7264
+34 5.628,20 34.341,34°5.628,34°5.628',20°34.341,20°34.341',NA,Karringmelksrivier,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0938,20.5724
+34 2.744,20 34.354,34°2.744,34°2.744',20°34.354,20°34.354',NA,3km before Malgas on N2 onroute to Swellendam,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0457,20.5726
+34 2.741,22 25.306,34°2.741,34°2.741',22°25.306,22°25.306',NA,3km before Malgas on N2 onroute to Swellendam,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0457,22.4218
+33 56.248,22 25.327,33°56.248,33°56.248',22°25.327,22°25.327',NA,Witfontein Kwarie,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.9375,22.4221
+33 56.284,22 25.668,33°56.284,33°56.284',22°25.668,22°25.668',NA,Witfontein Kwarie,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.9381,22.4278
+33 56.79,22 25.588,33°56.79,33°56.79',22°25.588,22°25.588',NA,Heather Park - George,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.9465,22.4265
+33 56.821,22 20.946,33°56.821,33°56.821',22°20.946,22°20.946',NA,Heather Park - George,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.947,22.3491
+33 57.427,22 20.947,33°57.427,33°57.427',22°20.947,22°20.947',NA,Geelhoutsboom,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.9571,22.3491
+33 57.421,22 19.879,33°57.421,33°57.421',22°19.879,22°19.879',NA,Geelhoutsboom,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.957,22.3313
+33 57.412,22 26.326,33°57.412,33°57.412',22°26.326,22°26.326',NA,Geelhoutsboom,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.9569,22.4388
+33 57.335,22 26.328,33°57.335,33°57.335',22°26.328,22°26.328',NA,Kleinfontein,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.9556,22.4388
+33 57.925,22 26.324,33°57.925,33°57.925',22°26.324,22°26.324',NA,Kleinfontein,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.9654,22.4387
+33 57.916,22 26.359,33°57.916,33°57.916',22°26.359,22°26.359',NA,Kleinfontein,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.9653,22.4393
+34 2.063,22 57.793,34°2.063,34°2.063',22°57.793,22°57.793',NA,Jakkalskop- De Vlugt,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0344,22.9632
+33 45.994,22 57.484,33°45.994,33°45.994',22°57.484,22°57.484',NA,Jakkalskop- De Vlugt,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.7666,22.9581
+33 46.443,22 57.483,33°46.443,33°46.443',22°57.483,22°57.483',NA,Decoezan (roadside),2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.7741,22.958
+33 46.453,22 54.007,33°46.453,33°46.453',22°54.007,22°54.007',NA,Decoezan (roadside),2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.7742,22.9001
+33 46.348,22 53.191,33°46.348,33°46.348',22°53.191,22°53.191',NA,Nollsholte,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.7725,22.8865
+33 46.341,22 42.978,33°46.341,33°46.341',22°42.978,22°42.978',NA,Nollsholte,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.7724,22.7163
+33 46.416,22 43.038,33°46.416,33°46.416',22°43.038,22°43.038',NA,Gaanzekraal,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.7736,22.7173
+33 46.399,22 27.062,33°46.399,33°46.399',22°27.062,22°27.062',NA,Gaanzekraal,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.7733,22.451
+33 49.837,22 27.016,33°49.837,33°49.837',22°27.016,22°27.016',NA,Paardepoort,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.8306,22.4503
+33 49.804,22 26.860,33°49.804,33°49.804',22°26.860,22°26.860',NA,Paardepoort,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.8301,22.4477
+33 50.769,22 26.862,33°50.769,33°50.769',22°26.862,22°26.862',NA,Montagu Pass,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.8462,22.4477
+33 50.727,22 26.290,33°50.727,33°50.727',22°26.290,22°26.290',NA,Montagu Pass,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.8454,22.4382
+33 50.686,22 26.238,33°50.686,33°50.686',22°26.238,22°26.238',NA,Burnsleigh,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.8448,22.4373
+33 50.682,22 26.238,33°50.682,33°50.682',22°26.238,22°26.238',NA,Burnsleigh,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.8447,22.4373
+33 50.682,22 26.694,33°50.682,33°50.682',22°26.694,22°26.694',NA,Franken school,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.8447,22.4449
+33 50.482,22 22.866,33°50.482,33°50.482',22°22.866,22°22.866',NA,Franken school,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.8414,22.3811
+33 49.285,22 22.907,33°49.285,33°49.285',22°22.907,22°22.907',NA,Roadside close to Agri,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.8214,22.3818
+33 49.305,22 21.656,33°49.305,33°49.305',22°21.656,22°21.656',NA,Roadside close to Agri,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.8218,22.3609
+33 51.118,22 21.664,33°51.118,33°51.118',22°21.664,22°21.664',NA,Tranquility,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.852,22.3611
+33 51.106,22 32.170,33°51.106,33°51.106',22°32.170,22°32.170',NA,Tranquility,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.8518,22.5362
+33 59.449,22 32.194,33°59.449,33°59.449',22°32.194,22°32.194',NA,Tranquility,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.9908,22.5366
+33 59.436,22 38.937,33°59.436,33°59.436',22°38.937,22°38.937',NA,Tranquility,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.9906,22.6489
+33 56.176,22 38.931,33°56.176,33°56.176',22°38.931,22°38.931',NA,Colenshoek ( Roadside),2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.9363,22.6488
+33 56.167,22 37.249,33°56.167,33°56.167',22°37.249,22°37.249',NA,Colenshoek ( Roadside),2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.9361,22.6208
+33 56.861,22 37.247,33°56.861,33°56.861',22°37.247,22°37.247',NA,Mandela Square,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.9477,22.6208
+33 56.851,22 34.435,33°56.851,33°56.851',22°34.435,22°34.435',NA,Mandela Square,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.9475,22.5739
+33 58.735,22 34.456,33°58.735,33°58.735',22°34.456,22°34.456',NA,Wilderness Hoogte,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.9789,22.5743
+33 58.768,22 34.458,33°58.768,33°58.768',22°34.458,22°34.458',NA,Wilderness Hoogte,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.9795,22.5743
+33 58.770,22 30.517,33°58.770,33°58.770',22°30.517,22°30.517',NA,Wilderness Hoogte,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.9795,22.5086
+33 58.195,22 30.514,33°58.195,33°58.195',22°30.514,22°30.514',NA,Sasveld ( Roadside),2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.9699,22.5086
+33 58.203,23 2.415,33°58.203,33°58.203',23°2.415,23°2.415',NA,Sasveld ( Roadside),2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.97,23.0403
+34 0.222,23 2.419,34°0.222,34°0.222',23°2.419,23°2.419',NA,Golf club- Simola,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0037,23.0403
+34 0.217,22 59.920,34°0.217,34°0.217',22°59.920,22°59.920',NA,Golf club- Simola,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0036,22.9987
+34 1.110,22 59.906,34°1.110,34°1.110',22°59.906,22°59.906',NA,Rooibrug,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0185,22.9984
+34 1.124,22 59.316,34°1.124,34°1.124',22°59.316,22°59.316',NA,Rooibrug,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0187,22.9886
+33 57.958,22 59.391,33°57.958,33°57.958',22°59.391,22°59.391',NA,Rheenendal-Candlewood,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.966,22.9899
+33 57.968,22 58.369,33°57.968,33°57.968',22°58.369,22°58.369',NA,Rheenendal-Candlewood,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.9661,22.9728
+34 1.496,22 58.383,34°1.496,34°1.496',22°58.383,22°58.383',NA,Rheenendal Roadside,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0249,22.9731
+34 1.491,22 50.147,34°1.491,34°1.491',22°50.147,22°50.147',NA,Rheenendal Roadside,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0248,22.8358
+33 59.359,22 50.152,33°59.359,33°59.359',22°50.152,22°50.152',NA,Karatara,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.9893,22.8359
+33 59.374,22 50.152,33°59.374,33°59.374',22°50.152,22°50.152',NA,Karatara,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.9896,22.8359
+33 59.359,22 30.967,33°59.359,33°59.359',22°30.967,22°30.967',NA,Radermaker kwarie,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.9893,22.5161
+33 59.794,22 30.979,33°59.794,33°59.794',22°30.979,22°30.979',NA,Radermaker kwarie,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.9966,22.5163
+33 59.791,22 32.170,33°59.791,33°59.791',22°32.170,22°32.170',NA,Radermaker kwarie,2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.9965,22.5362
+33 59.458,22 32.176,33°59.458,33°59.458',22°32.176,22°32.176',NA,Kaaimanskraal ( roadside),2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.991,22.5363
+33 59.449,23 21.059,33°59.449,33°59.449',23°21.059,23°21.059',NA,Kaaimanskraal ( roadside),2013,2 mats,Hersen Amill/M October,NA,NA,NA,33.9908,23.351
+34 13.345,23 21.082,34°13.345,34°13.345',23°21.082,23°21.082',NA,Piesang Valley (roadside),2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.2224,23.3514
+34 3.350,23 19.173,34°3.350,34°3.350',23°19.173,23°19.173',NA,Piesang Valley (roadside),2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0558,23.3195
+34 2.680,23 19.221,34°2.680,34°2.680',23°19.221,23°19.221',NA,Plettenberg bay Christian school,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0447,23.3204
+34 2.695,23 19.182,34°2.695,34°2.695',23°19.182,23°19.182',NA,Plettenberg bay Christian school,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0449,23.3197
+34 2.614,23 18.073,34°2.614,34°2.614',23°18.073,23°18.073',NA,Plettenberg bay Christian school,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0436,23.3012
+34 2.664,23 18.073,34°2.664,34°2.664',23°18.073,23°18.073',NA,Plettenberg (roadside),2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0444,23.3012
+34 2.664,23 13.750,34°2.664,34°2.664',23°13.750,23°13.750',NA,Plettenberg (roadside),2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0444,23.2292
+34 2.469,23 13.780,34°2.469,34°2.469',23°13.780,23°13.780',NA,Harkerville sand quarry,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0412,23.2297
+34 2.479,23 4.319,34°2.479,34°2.479',23°4.319,23°4.319',NA,Harkerville sand quarry,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0413,23.072
+34 2.469,23 4.312,34°2.469,34°2.469',23°4.312,23°4.312',NA,Knysna Pottery house,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0412,23.0719
+34 2.435,23 2.869,34°2.435,34°2.435',23°2.869,23°2.869',NA,Knysna Pottery house,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0406,23.0478
+34 1.654,23 2.884,34°1.654,34°1.654',23°2.884,23°2.884',NA,Epilepsy,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0276,23.0481
+34 1.648,23 2.920,34°1.648,34°1.648',23°2.920,23°2.920',NA,Epilepsy,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0275,23.0487
+34 1.618,23 2.902,34°1.618,34°1.618',23°2.902,23°2.902',NA,Epilepsy,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.027,23.0484
+34 1.606,23 2.902,34°1.606,34°1.606',23°2.902,23°2.902',NA,Epilepsy,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0268,23.0484
+34 1.598,23 2.902,34°1.598,34°1.598',23°2.902,23°2.902',NA,Epilepsy,2013,2 mats,Hersen Amill/M October,NA,NA,NA,34.0266,23.0484
+29 21.1883,29 52.5966,29°21.1883,29°21.1883',29°52.5966,29°52.5966',NA,The bend Nottingham rd - sml patch of wattle,2014,10 carpets,FI sent to Sarah Tilbury,NA,1,Found a gall 2015!,29.3531,29.8766
+23 47.976,29 56.272,23°47.976,23°47.976',29°56.272,29°56.272',NA,Kuriso Moya nr Haenertsburg Limpopo Grave point,2014,3 carpets,FI sent to Lisa 0822004596,NA,NA,NA,23.7996,29.9379
+23 48.213,29 55.668,23°48.213,23°48.213',29°55.668,29°55.668',NA,Kuriso Moya nr Haenertsburg Limpopo herat attack hill,2014,3 carpets,FI sent to Lisa 0822004596,NA,NA,NA,23.8036,29.9278
+23 48.448,29 56.445,23°48.448,23°48.448',29°56.445,29°56.445',NA,Kuriso Moya nr Haenertsburg Limpopo 4x4 track,2014,4 carpets,FI sent to Lisa 0822004596,NA,NA,NA,23.8075,29.9408
+27.1539834234864,30.1672452595085,NA,27°09.238',NA,30°10.034',NA,Winterskraal (R. Moller),2014,10 carpets,FI sent to Daleen Strydom,NA,0,"Established 2015, present for a few years but then no furthr signs",27.154,30.1672
+34 2.8075,23 2.8075,34°2.8075,34°2.8075',23°2.8075,23°2.8075',NA,Ferdinand st. Formosa Village Plett,2015,galls,via Pam Booth - galls collected in the s cape,NA,NA,NA,34.0468,23.0468
+34 2.1168,23 22.269,34°2.1168,34°2.1168',23°22.269,23°22.269',NA,"Sewage plant, Old Nicks, Plett",2015,galls,via Pam Booth - galls collected in the s cape,NA,NA,NA,34.0353,23.3712
+34 3.888,23 21.888,34°3.888,34°3.888',23°21.888,23°21.888',NA,"Piesangs rivier Firebreak near pool, Plett",2015,galls,via Pam Booth - galls collected in the s cape,NA,NA,NA,34.0648,23.3648
+34 0.322,22 58.9005,34°0.322,34°0.322',22°58.9005,22°58.9005',NA,NA,2015,galls,via Pam Booth - galls collected in the s cape Howard Butcher,NA,NA,NA,34.0054,22.9817
+33  47.278,24  01.4938,33° 47.278,33° 47.278',24° 01.4938,24° 01.4938',NA,"Kouga river, north bank. Degraded fynbos.",2015,galls,via Pam Booth - galls collected in the s cape Dick Carr,NA,NA,NA,33.788,24.0249
+33  45.229,23  52.0336,33° 45.229,33° 45.229',23° 52.0336,23° 52.0336',NA,"Tributary to Kouga river, east of road. Degraded fynbos.",2015,galls,via Pam Booth - galls collected in the s cape Dick Carr,NA,NA,NA,33.7538,23.8672
+33  45.199,23  54.029,33° 45.199,33° 45.199',23° 54.029,23° 54.029',NA,"Tributary to Kouga river, south of road, east of stream. Surrounded by agricultural lands",2015,galls,via Pam Booth - galls collected in the s cape Dick Carr,NA,NA,NA,33.7533,23.9005
+33  46.694,23  48.9608,33° 46.694,33° 46.694',23° 48.9608,23° 48.9608',NA,"Tributary to Kouga river, south of road. Degraded fynbos and agriculture.",2015,galls,via Pam Booth - galls collected in the s cape Dick Carr,NA,NA,NA,33.7782,23.816
+33  42.134,23  24.907,33° 42.134,33° 42.134',23° 24.907,23° 24.907',NA,"Tributary to Kouga river, south of road, north of stream. Fynbos.",2015,galls,via Pam Booth - galls collected in the s cape Dick Carr,NA,NA,NA,33.7022,23.4151
+33  40.266,23  20.204,33° 40.266,33° 40.266',23° 20.204,23° 20.204',NA,"Upper Kouga river, north of road. Fynbos",2015,galls,via Pam Booth - galls collected in the s cape Dick Carr,NA,NA,NA,33.6711,23.3367
+33  43.4058,22  48.029,33° 43.4058,33° 43.4058',22° 48.029,22° 48.029',NA,"Kammanassie river, north bank. Degraded fynbos, agriculture",2015,galls,via Pam Booth - galls collected in the s cape Dick Carr,NA,NA,NA,33.7234,22.8005
+33  43.758,22  42.968,33° 43.758,33° 43.758',22° 42.968,22° 42.968',NA,"Kammanassie river, north bank. Degraded fynbos, agriculture",2015,galls,via Pam Booth - galls collected in the s cape Dick Carr,NA,NA,NA,33.7293,22.7161
+33  43.452,22  36.972,33° 43.452,33° 43.452',22° 36.972,22° 36.972',NA,"Kammanassie river, south bank. Degraded fynbos.",2015,galls,via Pam Booth - galls collected in the s cape Dick Carr,NA,NA,NA,33.7242,22.6162
+33 56.831,22 26.051,33°56.831,33°56.831',22°26.051,22°26.051',NA,Herold wine farm,2015,galls,Nico Fourie  083 653 5770,NA,NA,NA,33.9472,22.4342
+33 58.643,22 33.900,33°58.643,33°58.643',22°33.900,22°33.900',NA,Erica road Wilderness Heights,2015,galls,"Wendy Adams 044 877 0213 078 912 3210
+",NA,NA,NA,33.9774,22.565
+33 44.223,19 29.258,33°44.223,33°44.223',19°29.258,19°29.258',NA,Breerivier nr Worcester,2015,Galls,Vrolijkheid Field rangers Cape Nature acupido@capenature.co.za,NA,NA,NA,33.737,19.4876
+33 54.342,19 20.015,33°54.342,33°54.342',19°20.015,19°20.015',NA,"Bellvue Farm, nr Worcester",2015,galls,Vrolijkheid Field rangers Cape Nature acupido@capenature.co.za,NA,NA,NA,33.9057,19.3336
+34 00.210,22 43.191,34°00.210,34°00.210',22°43.191,22°43.191',NA,Rondevlei Sedgefield,2015,galls,via Pam Booth - Gray Rutherford  3 bags of galls,NA,NA,NA,34.0035,22.7199
+33 21.5964,22 9.471,33°21.5964,33°21.5964',22°9.471,22°9.471',985,"De Hoek area, Swartberg S Cape",2016,galls,Jenny Potgeiter Outramps George,NA,NA,NA,33.3599,22.1578
+34 4.352,22 10.3404,34°4.352,34°4.352',22°10.3404,22°10.3404',NA,Groot Brak-Klein Brak 6 releases between this & site below Scape,2016,galls,Wendy Wiles Outcamps CREW,NA,NA,NA,34.0725,22.1723
+34 3.8129,22 11.9022,34°3.8129,34°3.8129',22°11.9022,22°11.9022',NA,Groot Brak-Klein Brak 6 releases between this & siteabove,2016,galls,Wendy Wiles Outcamps CREW,NA,NA,NA,34.0635,22.1984
+33 51.674,22 27.956,33°51.674,33°51.674',22°27.956,22°27.956',NA,"Herold Winery, sthn cape",2016,galls,Mare Collett,NA,NA,NA,33.8612,22.4659
+33 55.139,22 24.969,33°55.139,33°55.139',22°24.969,22°24.969',NA,"Montagu Pass, Ou Tolhuis Stn Cape",2016,galls,Mare Collett,NA,NA,NA,33.919,22.4162
+33 16.738,26 41.760,33°16.738,33°16.738',26°41.760,26°41.760',NA,EC,2015,galls,JHH,NA,NA,NA,33.279,26.696
+32 34.978,27 29.559,32°34.978,32°34.978',27°29.559,27°29.559',NA,Rob Featherstones nr Kabusi river EC,2015,galls,JHH,yes in 2018 but very few,1,NA,32.583,27.4927
+33 11.516,27 07.226,33°11.516,33°11.516',27°07.226,27°07.226',NA,Outskirts of Peddie along N2 EC,2015,galls,JHH,NA,NA,NA,33.1919,27.1204
+33 39.256,24 47.583,33°39.256,33°39.256',24°47.583,24°47.583',NA,Rd from Patensie to Klotz farm Elandsriver EC,2016,galls,FI & JHH,yes 2017,1,NA,33.6543,24.7931
+33 40.148,25 00.546,33°40.148,33°40.148',25°00.546,25°00.546',NA,Along road from Klotz farm towards PE Elandsriver EC,2016,galls,FI & JHH,NA,NA,NA,33.6691,25.0091
+32 32.404,27 26.252,32°32.404,32°32.404',27°26.252,27°26.252',NA,Rd from Stutterheim to Dohne EC,2016,galls,FI & JHH,yes 2017,1,NA,32.5401,27.4375
+32 37.741,27 28.846,32°37.741,32°37.741',27°28.846,27°28.846',NA,Outskirts of Stutterhein - rd to Elondon EC,2016,galls,FI & JHH,NA,NA,NA,32.629,27.4808
+32 45.714,27 40.702,32°45.714,32°45.714',27°40.702,27°40.702',NA,Rd from Stutterheim to East London EC,2016,galls,FI & JHH,yes 2017,1,NA,32.7619,27.6784
+32 53.602,27 51.369,32°53.602,32°53.602',27°51.369,27°51.369',NA,sml patch of trees on turn off from main Stutt E London rd,2016,galls,FI & JHH,yes 2017,1,NA,32.8934,27.8561
+32 54.576,27 53.595,32°54.576,32°54.576',27°53.595,27°53.595',NA,Rd from Stutterheim to East London EC,2016,galls,FI & JHH,yes 2017,1,NA,32.9096,27.8932
+32 32.818,27 22.311,32°32.818,32°32.818',27°22.311,27°22.311',NA,Outskirts of Stutterheim EC,2016,bag of litter,FI & JHH,yes 2017,1,NA,32.547,27.3718
+29 43.045,30 26.810,29°43.045,29°43.045',30°26.810,30°26.810',NA,Enaleni Farm nr Pmb KZN,2016,10 carpets,FI,carpets were never put out! Galls and mats released 2019 JHH FI,NA,NA,29.7174,30.4468
+30 45.291,30 17.304,30°45.291,32°53.602',30°17.304,30°17.304',NA,Paddock Illovo property,2017,early galls,FI/JHH,no,0,trees later cleared,32.8934,30.2884
+33 56.2125,22 28.412,33°56.2125,32°54.576',22°28.412,22°28.412',249,George area,2017,NA,Berg en dal hiking club George,NA,NA,NA,32.9096,22.4735
+33 56.2339,22 28.7712,33°56.2339,32°32.818',22°28.7712,22°28.7712',241,George area,2017,NA,Berg en dal hiking club George,NA,NA,NA,32.547,22.4795
+33 56.2165,22 28.9732,33°56.2165,33°56.2165',22°28.9732,22°28.9732',266,George area,2017,NA,Berg en dal hiking club George,NA,NA,NA,33.9369,22.4829
+33 56.1769,22 28.9708,33°56.1769,32°53.602',22°28.9708,22°28.9708',275,George area,2017,NA,Berg en dal hiking club George,NA,NA,NA,32.8934,22.4828
+33 56.2136,22 29.819,33°56.2136,32°54.576',22°29.819,22°29.819',295,George area,2017,NA,Berg en dal hiking club George,NA,NA,NA,32.9096,22.497
+33 56.320,22 29.7904,33°56.320,32°32.818',22°29.7904,22°29.7904',255,George area,2017,NA,Berg en dal hiking club George,NA,NA,NA,32.547,22.4965
+34 00.408,20 26.526,34°00.408,34°00.408',20°26.526,20°26.526',NA,"Just outside Marloth Nat Reserve, Swellendam",2017,NA,Cape Nature Vicki Hudson team,NA,NA,NA,34.0068,20.4421
+34 00.554,22 24.232,34°00.554,32°53.602',22°24.232,22°24.232',NA,NA,2017,NA,Henk Alting carpalt.henk@gmail.com,NA,NA,NA,32.8934,22.4039
+33 56.716,22 23.319,33°56.716,32°54.576',22°23.319,22°23.319',NA,NA,2017,NA,Henk Alting carpalt.henk@gmail.com,NA,NA,NA,32.9096,22.3886
+33 58.309,22 31.512,33°58.309,32°32.818',22°31.512,22°31.512',NA,NA,2017,NA,Henk Alting carpalt.henk@gmail.com,NA,NA,NA,32.547,22.5252
+33 56.572,23 26.595,33°56.572,32°54.576',23°26.595,23°26.595',NA,Plett area. Cialee Oosthuizen farm,2017,NA,Sharon van Hees 0834097556,NA,NA,NA,32.9096,23.4432
+33 56.880,23 27.988,33°56.880,32°32.818',23°27.988,23°27.988',NA,Plett area. Sean Macbean farm,2017,NA,Sharon van Hees 0834097556,NA,NA,NA,32.547,23.4665
