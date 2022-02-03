@@ -234,7 +234,6 @@ plot(bgPoints,
 bgPoints <- raster::as.data.frame(bgPoints)
 head(bgPoints)
 
-
 # --------------------------------------------------------------------------
 # Reduce multicollinearity between environmental predictors:
 #
@@ -328,7 +327,8 @@ speciesThinned <- spThin::thin(
 )
 
 # Import the thinned GPS records
-speciesThinned <- readr::read_csv(here::here("./data/data_clean/dasi_rubi_native_thinned.csv"))
+speciesThinned <-
+  readr::read_csv(here::here("./data/data_clean/dasi_rubi_native_thinned.csv"))
 head(speciesThinned)
 
 # How many records were removed?
@@ -337,7 +337,6 @@ nrow(speciesThinned)
 
 # Just for ease, make species_thinned = species
 species <- speciesThinned
-
 
 # --------------------------------------------------------------------
 # Set up data to run MaxEnt models:
@@ -422,7 +421,45 @@ modelTuning <- ENMevaluate(
   algorithm = "maxent.jar"
 )
 
+# Extract the model tuning results 
+# - Pretty messy code but meh, it works. 
 
+# Extract all the variables and statistics to identify optimal RM/FC 
+settings <- modelTuning@results$settings
+feat.class <- modelTuning@results$features
+features <- modelTuning@results$features
+rm <- modelTuning@results$rm
+AUC.calibrate <- modelTuning@results$train.AUC
+AUC.test <- modelTuning@results$avg.test.AUC
+AUC.diff <- modelTuning@results$avg.diff.AUC
+OR.10 <- modelTuning@results$avg.test.or10pct
+OR.min <- modelTuning@results$avg.test.orMTP
+AICc <- modelTuning@results$AICc
+delta.AIC <- modelTuning@results$delta.AICc
+parameters <-  modelTuning@results$parameters
+modelEvaluation <- as.data.frame(cbind(settings, 
+                                        rm, 
+                                        AUC.calibrate, 
+                                        AUC.test, 
+                                        AUC.diff, 
+                                        OR.10, 
+                                        OR.min, 
+                                        AICc, 
+                                        delta.AIC,
+                                        parameters))
+modelEvaluation$feat.class <- as.factor(feat.class)
+modelEvaluation$rm <- as.numeric(rm)
+modelEvaluation$AUC.calibrate <- as.numeric(AUC.calibrate)
+modelEvaluation$AUC.test <- as.numeric(AUC.test)
+modelEvaluation$AUC.diff <- as.numeric(AUC.diff)
+modelEvaluation$OR.10 <- as.numeric(OR.10)
+modelEvaluation$delta.AIC <- as.numeric(delta.AIC)
+
+# Save model tuning results to file for later use
+readr::write_csv(
+  x = modelEvaluation,
+  file = here::here("./models/model_tuning/model_tuning_results.csv")
+)
 
 
 
