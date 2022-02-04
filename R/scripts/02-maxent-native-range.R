@@ -610,7 +610,7 @@ model_Default <- dismo::maxent(
 )
 
 # Model 2: Optimise AUC.test
-# - The top performing model by AUC.test had rm = 2 and all features (HLPQT).
+# - The top performing model by AUC.test had rm = 6 and hinge features only.
 # Fit model with optimally tuned settings based on AICc
 model_AUCtest <- dismo::maxent(
   x = trainData,
@@ -619,7 +619,35 @@ model_AUCtest <- dismo::maxent(
                './models/models/optimal_settings_AUCtest',
                sep = ''),
   args = c(
-    'betamultiplier=2.0',
+    'betamultiplier=6.0',
+    'linear=false',
+    'quadratic=false',
+    'product=false',
+    'threshold=false',
+    'hinge=true',
+    'threads=2',
+    'doclamp=true',
+    #'fadebyclamp=true',
+    'responsecurves=true',
+    'jackknife=true',
+    'askoverwrite=false',
+    'responsecurves=true',
+    'writemess=true',
+    'writeplotdata=true',
+    'writebackgroundpredictions=true'
+  )
+)
+
+# Model 3: Optimise AUC.diff
+# - The top performing model by AUC.diff had rm = 4 and HLQPT features.
+model_AUCdiff <- dismo::maxent(
+  x = trainData,
+  p = presentBg,
+  path = paste(getwd(),
+               './models/models/optimal_settings_AUCdiff',
+               sep = ''),
+  args = c(
+    'betamultiplier=4',
     'linear=true',
     'quadratic=true',
     'product=true',
@@ -638,37 +666,8 @@ model_AUCtest <- dismo::maxent(
   )
 )
 
-# Model 3: Optimise AUC.diff
-# - The top performing model by AUC.diff had rm = 1.5 and only H features.
-model_AUCdiff <- dismo::maxent(
-  x = trainData,
-  p = presentBg,
-  path = paste(getwd(),
-               './models/models/optimal_settings_AUCdiff',
-               sep = ''),
-  args = c(
-    'betamultiplier=1.5',
-    'linear=false',
-    'quadratic=false',
-    'product=false',
-    'threshold=false',
-    'hinge=true',
-    'threads=2',
-    'doclamp=true',
-    #'fadebyclamp=true',
-    'responsecurves=true',
-    'jackknife=true',
-    'askoverwrite=false',
-    'responsecurves=true',
-    'writemess=true',
-    'writeplotdata=true',
-    'writebackgroundpredictions=true'
-  )
-)
-
 # Model 4: Optimise OR10
-# - The top performing model by OR10 had rm = 1.5 and only H features.
-# Fit model with optimally tuned settings based on AICc
+# - The top performing model by OR10 had rm = 1 and only HLQPT features.
 model_OR10 <- dismo::maxent(
   x = trainData,
   p = presentBg,
@@ -676,11 +675,11 @@ model_OR10 <- dismo::maxent(
                './models/models/optimal_settings_OR10',
                sep = ''),
   args = c(
-    'betamultiplier=1.5',
-    'linear=false',
-    'quadratic=false',
-    'product=false',
-    'threshold=false',
+    'betamultiplier=1.0',
+    'linear=true',
+    'quadratic=true',
+    'product=true',
+    'threshold=true',
     'hinge=true',
     'threads=2',
     'doclamp=true',
@@ -696,7 +695,7 @@ model_OR10 <- dismo::maxent(
 )
 
 # Model 5: Optimise AICc
-# - The top performing model by AICc had rm = 4 and only H features.
+# - The top performing model by AICc had rm = 8 and only H features.
 # Fit model with optimally tuned settings based on AICc
 model_AICc <- dismo::maxent(
   x = trainData,
@@ -705,7 +704,7 @@ model_AICc <- dismo::maxent(
                './models/models/optimal_settings_AICc',
                sep = ''),
   args = c(
-    'betamultiplier=4.0',
+    'betamultiplier=8.0',
     'linear=false',
     'quadratic=false',
     'product=false',
