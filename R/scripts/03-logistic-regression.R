@@ -32,7 +32,6 @@ pacman::p_load(
   sf,
   ggspatial,
   raster,
-  rms,
   here,
   tidytext,
   ggtext,
@@ -110,19 +109,8 @@ print(mod_lrm_default)
 summary(mod_lrm_default)
 
 # Calculate beta for 0.01 unit increase in clim_match
-beta = 7.53 # Input the effect from clim_match row here 
+beta = 4.65 # Input the effect from clim_match row here 
 exp(beta * 0.01)
-
-# Validate model on out-of-sample AUC
-d <- clim_data %>%
-  dplyr::select(clim_match, established)
-y <- clim_data %>%
-  dplyr::select(established)
-pred.logit <- predict(mod_lrm_default, d)
-phat <- 1/(1+exp(-pred.logit))
-v <- val.prob(phat, 
-              y[1:77, ])
-print(v)
 
 # Calculate uncertainty
 set.seed(48572)
@@ -168,7 +156,6 @@ ndata <- bind_cols(ndata, setNames(as_tibble(predict(mod,
                                    c("fit_link", "se_link")))
 head(ndata)
 
-
 # Create the confidence interval and back-transform
 ndata <- ndata %>%
   dplyr::mutate(
@@ -187,12 +174,12 @@ logit_default <- ggplot(data = ndata) +
               alpha = 0.2) +
   geom_line(aes(x = clim_match, 
                 y = fit_resp)) +
-  geom_rug(data = subset(clim_data, established == 1),
-           aes(x = clim_match),
-           sides = "t") +
-  geom_rug(data = subset(clim_data, established == 0),
-           aes(x = clim_match),
-           sides = "b") +
+  #geom_rug(data = subset(clim_data, established == 1),
+  #         aes(x = clim_match),
+  #         sides = "t") +
+  #geom_rug(data = subset(clim_data, established == 0),
+  #         aes(x = clim_match),
+  #         sides = "b") +
   coord_cartesian(clip = "off") + 
   labs(x = "Maxent suitability score \n(climatic similarity to native range)",
        y = expression(paste("Probability of ",italic("D. rubiformis "), establishment)),
@@ -257,19 +244,8 @@ print(mod_lrm_AUCtest)
 summary(mod_lrm_AUCtest)
 
 # Calculate beta for 0.01 unit increase in clim_match
-beta = 9.02 # Input the effect from clim_match row here 
+beta = 2.76 # Input the effect from clim_match row here 
 exp(beta * 0.01)
-
-# Validate model on out-of-sample AUC
-d <- clim_data %>%
-  dplyr::select(clim_match, established)
-y <- clim_data %>%
-  dplyr::select(established)
-pred.logit <- predict(mod_lrm_AUCtest, d)
-phat <- 1/(1+exp(-pred.logit))
-v <- val.prob(phat, 
-              y[1:77, ])
-print(v)
 
 # Calculate uncertainty
 set.seed(48572)
@@ -334,12 +310,12 @@ logit_AUCtest <- ggplot(data = ndata) +
               alpha = 0.2) +
   geom_line(aes(x = clim_match, 
                 y = fit_resp)) +
-  geom_rug(data = subset(clim_data, established == 1),
-           aes(x = clim_match),
-           sides = "t") +
-  geom_rug(data = subset(clim_data, established == 0),
-           aes(x = clim_match),
-           sides = "b") +
+  #geom_rug(data = subset(clim_data, established == 1),
+  #         aes(x = clim_match),
+  #         sides = "t") +
+  #geom_rug(data = subset(clim_data, established == 0),
+  #         aes(x = clim_match),
+  #         sides = "b") +
   coord_cartesian(clip = "off") + 
   labs(x = "Maxent suitability score \n(climatic similarity to native range)",
        y = expression(paste("Probability of ",italic("D. rubiformis "), establishment)),
@@ -406,19 +382,8 @@ print(mod_lrm_AUCdiff)
 summary(mod_lrm_AUCdiff)
 
 # Calculate beta for 0.01 unit increase in clim_match
-beta = 2.09 # Input the effect from clim_match row here
+beta = 2.14 # Input the effect from clim_match row here
 exp(beta * 0.01)
-
-# Validate model on out-of-sample AUC
-d <- clim_data %>%
-  dplyr::select(clim_match, established)
-y <- clim_data %>%
-  dplyr::select(established)
-pred.logit <- predict(mod_lrm_AUCdiff, d)
-phat <- 1 / (1 + exp(-pred.logit))
-v <- val.prob(phat,
-              y[1:77,])
-print(v)
 
 # Calculate uncertainty
 set.seed(48572)
@@ -485,12 +450,12 @@ logit_AUCdiff <- ggplot(data = ndata) +
   ) +
   geom_line(aes(x = clim_match,
                 y = fit_resp)) +
-  geom_rug(data = subset(clim_data, established == 1),
-           aes(x = clim_match),
-           sides = "t") +
-  geom_rug(data = subset(clim_data, established == 0),
-           aes(x = clim_match),
-           sides = "b") +
+  #geom_rug(data = subset(clim_data, established == 1),
+  #         aes(x = clim_match),
+  #         sides = "t") +
+  #geom_rug(data = subset(clim_data, established == 0),
+  #         aes(x = clim_match),
+  #         sides = "b") +
   coord_cartesian(clip = "off") +
   labs(x = "Maxent suitability score \n(climatic similarity to native range)",
        y = expression(paste(
@@ -561,19 +526,8 @@ print(mod_lrm_OR10)
 summary(mod_lrm_OR10)
 
 # Calculate beta for 0.01 unit increase in clim_match
-beta = 2.01 # Input the effect from clim_match row here
+beta = 4.65 # Input the effect from clim_match row here
 exp(beta * 0.01)
-
-# Validate model on out-of-sample AUC
-d <- clim_data %>%
-  dplyr::select(clim_match, established)
-y <- clim_data %>%
-  dplyr::select(established)
-pred.logit <- predict(mod_lrm_AUCdiff, d)
-phat <- 1 / (1 + exp(-pred.logit))
-v <- val.prob(phat,
-              y[1:77,])
-print(v)
 
 # Calculate uncertainty
 set.seed(48572)
@@ -639,12 +593,12 @@ logit_OR10 <- ggplot(data = ndata) +
   ) +
   geom_line(aes(x = clim_match,
                 y = fit_resp)) +
-  geom_rug(data = subset(clim_data, established == 1),
-           aes(x = clim_match),
-           sides = "t") +
-  geom_rug(data = subset(clim_data, established == 0),
-           aes(x = clim_match),
-           sides = "b") +
+  #geom_rug(data = subset(clim_data, established == 1),
+  #         aes(x = clim_match),
+  #         sides = "t") +
+  #geom_rug(data = subset(clim_data, established == 0),
+  #         aes(x = clim_match),
+  #         sides = "b") +
   coord_cartesian(clip = "off") +
   labs(x = "Maxent suitability score \n(climatic similarity to native range)",
        y = expression(paste(
@@ -715,7 +669,7 @@ print(mod_lrm_AICc)
 summary(mod_lrm_AICc)
 
 # Calculate beta for 0.01 unit increase in clim_match
-beta = 2.88 # Input the effect from clim_match row here
+beta = 2.57 # Input the effect from clim_match row here
 exp(beta * 0.01)
 
 # Calculate uncertainty
@@ -782,12 +736,12 @@ logit_AICc <- ggplot(data = ndata) +
   ) +
   geom_line(aes(x = clim_match,
                 y = fit_resp)) +
-  geom_rug(data = subset(clim_data, established == 1),
-           aes(x = clim_match),
-           sides = "t") +
-  geom_rug(data = subset(clim_data, established == 0),
-           aes(x = clim_match),
-           sides = "b") +
+  #geom_rug(data = subset(clim_data, established == 1),
+  #         aes(x = clim_match),
+  #         sides = "t") +
+  #geom_rug(data = subset(clim_data, established == 0),
+  #         aes(x = clim_match),
+  #         sides = "b") +
   coord_cartesian(clip = "off") +
   labs(x = "Maxent suitability score \n(climatic similarity to native range)",
        y = expression(paste(
