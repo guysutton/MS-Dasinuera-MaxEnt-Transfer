@@ -291,7 +291,7 @@ corData <- speciesEnv[ , redPred] %>%
 
 # Combine background points with species GPS data 
 spatialData <- dplyr::bind_cols(corData,
-                                 species) 
+                                species) 
 head(spatialData)
 
 # At what distance does spatial autocorrelation occur?
@@ -391,7 +391,6 @@ presentBg <- ifelse(dummyTraindata$presence=='present', 1, 0)
 trainData <- rbind(speciesSwd[ , climPred], 
                    bgPoints[ , climPred])
 
-
 # -----------------------------------------------------------------------------
 # Tune models using the 'ENMeval' package
 # -----------------------------------------------------------------------------
@@ -405,7 +404,8 @@ trainData <- rbind(speciesSwd[ , climPred],
 reducedPred <- raster::subset(predictors, climPred)
 
 # Run evaluation
-# - This can take > 1 hour on my terrible PC
+# - This can take 30 minutes on my terrible PC
+set.seed(2012)
 modelTuning <- ENMevaluate(
   occ = species[, 2:3],
   env = reducedPred,
@@ -459,104 +459,130 @@ readr::write_csv(
   file = here::here("./models/model_tuning/model_tuning_results.csv")
 )
 
-
 # Plot AUCtest
-plot_aucTest <- ggplot(data = modelEvaluation, aes(x = rm, 
-                                                y = AUC.test,
-                                                group = feat.class)) +
-  geom_point(aes(colour = feat.class)) + 
+plot_aucTest <- ggplot(data = modelEvaluation, aes(x = rm,
+                                                   y = AUC.test,
+                                                   group = feat.class)) +
+  geom_point(aes(colour = feat.class)) +
   geom_line(aes(colour = feat.class)) +
   scale_colour_grey(start = 0.4, end = 0.8) +
   #scale_y_continuous(breaks = seq(0.80, 1.00, 0.04),
   #                   limits = c(0.80, 1.00)) +
   labs(x = "Regularisation multiplier",
        y = expression(paste(AUC[test])),
-       subtitle = "(a)") 
+       subtitle = "(a)")
 plot_aucTest
 
 # Plot AUCdiff
-plot_aucDiff <- ggplot(data = modelEvaluation, aes(x = rm, 
-                                                y = AUC.diff,
-                                                group = feat.class)) +
-  geom_point(aes(colour = feat.class)) + 
+plot_aucDiff <- ggplot(data = modelEvaluation, aes(x = rm,
+                                                   y = AUC.diff,
+                                                   group = feat.class)) +
+  geom_point(aes(colour = feat.class)) +
   geom_line(aes(colour = feat.class)) +
   scale_colour_grey(start = 0.4, end = 0.8) +
   #scale_y_continuous(breaks = seq(0.80, 1.00, 0.04),
   #                   limits = c(0.80, 1.00)) +
-  labs(x = "Regularisation multiplier",
-       y = expression(paste(AUC[diff])),
-       subtitle = "(b)",
-       colour = "Feature class") +
+  labs(
+    x = "Regularisation multiplier",
+    y = expression(paste(AUC[diff])),
+    subtitle = "(b)",
+    colour = "Feature class"
+  ) +
   theme(legend.position = c(0.8, 0.7))
 plot_aucDiff
 
 # Plot 10th percentile omission rates (OR10)
-plot_or10 <- ggplot(data = modelEvaluation, aes(x = rm, 
-                                            y = OR.10,
-                                            group = feat.class)) +
-  geom_point(aes(colour = feat.class)) + 
+plot_or10 <- ggplot(data = modelEvaluation, aes(x = rm,
+                                                y = OR.10,
+                                                group = feat.class)) +
+  geom_point(aes(colour = feat.class)) +
   geom_line(aes(colour = feat.class)) +
   scale_colour_grey(start = 0.4, end = 0.8) +
-  geom_hline(yintercept = 0.10, linetype = "dashed") + 
+  geom_hline(yintercept = 0.10, linetype = "dashed") +
   labs(x = "Regularisation multiplier",
        y = expression(paste(OR[10])),
-       subtitle = "(c)") 
+       subtitle = "(c)")
 plot_or10
 
 # Plot DeltaAICc
-plot_aic <- ggplot(data = modelEvaluation, aes(x = rm, 
-                                           y = delta.AIC,
-                                           group = feat.class)) +
-  geom_point(aes(colour = feat.class)) + 
+plot_aic <- ggplot(data = modelEvaluation, aes(x = rm,
+                                               y = delta.AIC,
+                                               group = feat.class)) +
+  geom_point(aes(colour = feat.class)) +
   geom_line(aes(colour = feat.class)) +
   scale_colour_grey(start = 0.4, end = 0.8) +
   labs(x = "Regularisation multiplier",
        y = "AICc",
        subtitle = "(d)") +
   scale_y_continuous(breaks = seq(0, 800, 200),
-                     limits = c(0, 800)) 
+                     limits = c(0, 800))
 plot_aic
 
-# Put the model tuning plots together 
-plots_modelTuning <- cowplot::plot_grid(
-  plot_aucTest,
-  plot_aucDiff,
-  plot_or10,
-  plot_aic,
-  nrow = 2
-)
+# Put the model tuning plots together
+plots_modelTuning <- cowplot::plot_grid(plot_aucTest,
+                                        plot_aucDiff,
+                                        plot_or10,
+                                        plot_aic,
+                                        nrow = 2)
 plots_modelTuning
 
+# Save optimal model settings to file 
 # Extract settings that maximised AUCtest
-eval_tab <- modelEvaluation %>%
+eval_tab_AUCtest <- modelEvaluation %>%
   dplyr::arrange(desc(AUC.test)) %>%
-  dplyr::slice(1)
-eval_tab
+  dplyr::slice(1) %>%
+  dplyr::mutate(model = "AUCtest") %>%
+  dplyr::select(model, rm, feat.class, AUC.test, AUC.diff, OR.10, delta.AIC) 
+eval_tab_AUCtest
 
 # Extract settings that minimised AUCdiff
-eval_tab <- modelEvaluation %>%
+eval_tab_AUCdiff <- modelEvaluation %>%
   dplyr::arrange(AUC.diff) %>%
-  dplyr::slice(1)
-eval_tab
+  dplyr::slice(1) %>%
+  dplyr::mutate(model = "AUCdiff") %>%
+  dplyr::select(model, rm, feat.class, AUC.test, AUC.diff, OR.10, delta.AIC) 
+eval_tab_AUCdiff
 
 # Extract settings that best approximated OR10
-eval_tab <- modelEvaluation %>%
+eval_tab_OR10 <- modelEvaluation %>%
   dplyr::arrange(OR.10) %>%
-  dplyr::slice(1)
-eval_tab
+  dplyr::slice(1) %>%
+  dplyr::mutate(model = "OR10") %>%
+  dplyr::select(model, rm, feat.class, AUC.test, AUC.diff, OR.10, delta.AIC) 
+eval_tab_OR10
 
 # Extract settings that minimised AICc
-eval_tab <- modelEvaluation %>%
+eval_tab_AICc <- modelEvaluation %>%
   dplyr::arrange(delta.AIC) %>%
-  dplyr::slice(1)
-eval_tab
+  dplyr::slice(1) %>%
+  dplyr::mutate(model = "AICc") %>%
+  dplyr::select(model, rm, feat.class, AUC.test, AUC.diff, OR.10, delta.AIC)
+eval_tab_AICc
+
+# Default settings (default model for n > 80 GPS points has 
+# rm = 1 and HLQPT features)
+eval_tab_default <-modelEvaluation %>%
+  dplyr::filter(rm == 1 & feat.class == "HLQPT") %>%
+  dplyr::mutate(model = "Default settings") %>%
+  dplyr::select(model, rm, feat.class, AUC.test, AUC.diff, OR.10, delta.AIC)
+eval_tab_default
+
+# Put the settings configurations together in a table
+settings_table <- dplyr::bind_rows(
+  eval_tab_default,
+  eval_tab_AUCtest,
+  eval_tab_AUCdiff,
+  eval_tab_OR10,
+  eval_tab_AICc
+)
+settings_table
 
 # -----------------------------------------------------------------------------
 # Run full MaxEnt models:
 # -----------------------------------------------------------------------------
 
 # Model 1: Default MaxEnt settings
-# - The default model for n = 77 has rm = 1 and HLQ features.
+# - The default model for n > 80 has rm = 1 and HLQPT features.
 model_Default <- dismo::maxent(
   x = trainData,
   p = presentBg,
@@ -567,6 +593,63 @@ model_Default <- dismo::maxent(
     'betamultiplier=1.0',
     'linear=true',
     'quadratic=true',
+    'product=true',
+    'threshold=true',
+    'hinge=true',
+    'threads=2',
+    'doclamp=true',
+    #'fadebyclamp=true',
+    'responsecurves=true',
+    'jackknife=true',
+    'askoverwrite=false',
+    'responsecurves=true',
+    'writemess=true',
+    'writeplotdata=true',
+    'writebackgroundpredictions=true'
+  )
+)
+
+# Model 2: Optimise AUC.test
+# - The top performing model by AUC.test had rm = 2 and all features (HLPQT).
+# Fit model with optimally tuned settings based on AICc
+model_AUCtest <- dismo::maxent(
+  x = trainData,
+  p = presentBg,
+  path = paste(getwd(),
+               './models/models/optimal_settings_AUCtest',
+               sep = ''),
+  args = c(
+    'betamultiplier=2.0',
+    'linear=true',
+    'quadratic=true',
+    'product=true',
+    'threshold=true',
+    'hinge=true',
+    'threads=2',
+    'doclamp=true',
+    #'fadebyclamp=true',
+    'responsecurves=true',
+    'jackknife=true',
+    'askoverwrite=false',
+    'responsecurves=true',
+    'writemess=true',
+    'writeplotdata=true',
+    'writebackgroundpredictions=true'
+  )
+)
+
+# Model 3: Optimise AUC.diff
+# - The top performing model by AUC.diff had rm = 1.5 and only H features.
+model_AUCdiff <- dismo::maxent(
+  x = trainData,
+  p = presentBg,
+  path = paste(getwd(),
+               './models/models/optimal_settings_AUCdiff',
+               sep = ''),
+  args = c(
+    'betamultiplier=1.5',
+    'linear=false',
+    'quadratic=false',
     'product=false',
     'threshold=false',
     'hinge=true',
@@ -581,4 +664,483 @@ model_Default <- dismo::maxent(
     'writeplotdata=true',
     'writebackgroundpredictions=true'
   )
+)
+
+# Model 4: Optimise OR10
+# - The top performing model by OR10 had rm = 1.5 and only H features.
+# Fit model with optimally tuned settings based on AICc
+model_OR10 <- dismo::maxent(
+  x = trainData,
+  p = presentBg,
+  path = paste(getwd(),
+               './models/models/optimal_settings_OR10',
+               sep = ''),
+  args = c(
+    'betamultiplier=1.5',
+    'linear=false',
+    'quadratic=false',
+    'product=false',
+    'threshold=false',
+    'hinge=true',
+    'threads=2',
+    'doclamp=true',
+    #'fadebyclamp=true',
+    'responsecurves=true',
+    'jackknife=true',
+    'askoverwrite=false',
+    'responsecurves=true',
+    'writemess=true',
+    'writeplotdata=true',
+    'writebackgroundpredictions=true'
+  )
+)
+
+# Model 5: Optimise AICc
+# - The top performing model by AICc had rm = 4 and only H features.
+# Fit model with optimally tuned settings based on AICc
+model_AICc <- dismo::maxent(
+  x = trainData,
+  p = presentBg,
+  path = paste(getwd(),
+               './models/models/optimal_settings_AICc',
+               sep = ''),
+  args = c(
+    'betamultiplier=4.0',
+    'linear=false',
+    'quadratic=false',
+    'product=false',
+    'threshold=false',
+    'hinge=true',
+    'threads=2',
+    'doclamp=true',
+    #'fadebyclamp=true',
+    'responsecurves=true',
+    'jackknife=true',
+    'askoverwrite=false',
+    'responsecurves=true',
+    'writemess=true',
+    'writeplotdata=true',
+    'writebackgroundpredictions=true'
+  )
+)
+
+# -----------------------------------------------------------------------------
+# Plot map - Default settings
+# -----------------------------------------------------------------------------
+
+# Get map of South Africa to project our model over
+world <- rnaturalearth::ne_countries(scale = "medium",
+                                     returnclass = "sf") %>%
+  dplyr::filter(name == "South Africa")
+
+# Extract MaxEnt raster output
+# - Project MaxEnt scores over South Africa
+afrExtent <- raster::mask(reducedPred, world)
+predictMaxent <- raster::predict(model_Default, afrExtent)
+
+# MaxEnt scores are in a raster layer above, but we need the MaxEnt scores
+# in a dataframe. 
+# - Below, create dataframe of MaxEnt model projection/scores
+rcp <- raster::rasterToPoints(predictMaxent)
+rcpdf <- base::data.frame(rcp)
+colnames(rcpdf) <- c("Longitude", "Latitude", "Species")
+
+# Plot map
+final_map_default <- ggplot(data=rcpdf) +
+  # Plot MaxEnt scores
+  geom_tile(data = rcpdf, aes(x = Longitude,
+                              y = Latitude, 
+                              fill = Species)) +
+  # Colour each grid cell according the MaxEnt scores
+  # Scores close to 1 = High climatic suitability (good)
+  # Scores close to 0 = Low climatic suitability (bad)
+  scale_fill_gradientn(colours=c("white", "blue", "lightgreen",
+                                 "yellow", "orange", "red"),
+                       breaks = c(0, 0.2, 0.4, 0.6, 0.8, 1.0),
+                       limits = c(0, 1)) +
+  # Plot the shapefile of Africa
+  geom_sf(data = world, fill = NA) +
+  #scale_x_continuous(limits = c(10, 40)) + 
+  #scale_y_continuous(limits = c(-35, -28)) +
+  # Crops Africa to just the geographic extent of South Africa
+  coord_sf(xlim = c(15, 33.5), 
+           ylim = c(-35, -21.5), 
+           crs = 4326, 
+           expand = FALSE) +
+  # Create title for the legend
+  labs(fill = "Climatic similarity") + 
+  # Add scale bar to bottom-right of map
+  annotation_scale(location = "br", # 'br' = bottom right
+                   style = "ticks", 
+                   width_hint = 0.2) +
+  # Add north arrow
+  annotation_north_arrow(location = "br", 
+                         which_north = "true", 
+                         pad_x = unit(0.135, "in"), 
+                         pad_y = unit(0.3, "in"),
+                         style = north_arrow_fancy_orienteering) +
+  # Apply the theme for the map we defined above. 
+  theme_opts +
+  theme(legend.position = "right") +
+  # Change appearance of the legend
+  guides(fill = guide_colorbar(ticks = FALSE),
+         colour = guide_legend(order = 2))
+final_map_default
+
+# Save the plot to your PC 
+ggsave("./models/figures/map_maxent_default.png",
+       width = 8,
+       height = 6,
+       dpi = 600)
+
+# Save raster
+raster::writeRaster(
+  predictMaxent,
+  filename = "./models/rasters/raster_default",
+  options = "interleave=band",
+  overwrite = T
+)
+raster::writeRaster(
+  predictMaxent,
+  filename = "./models/rasters/raster_default",
+  format = "GTiff",
+  overwrite = T
+)
+raster::writeRaster(
+  predictMaxent,
+  filename = "./models/rasters/raster_default",
+  format = "ascii",
+  overwrite = T
+)
+
+# -----------------------------------------------------------------------------
+# Plot map - AUCtest
+# -----------------------------------------------------------------------------
+
+# Extract MaxEnt raster output
+# - Project MaxEnt scores over South Africa
+predictMaxent <- raster::predict(model_AUCtest, afrExtent)
+
+# MaxEnt scores are in a raster layer above, but we need the MaxEnt scores
+# in a dataframe. 
+# - Below, create dataframe of MaxEnt model projection/scores
+rcp <- raster::rasterToPoints(predictMaxent)
+rcpdf <- base::data.frame(rcp)
+colnames(rcpdf) <- c("Longitude", "Latitude", "Species")
+
+# Plot map
+final_map_AUCtest <- ggplot(data=rcpdf) +
+  # Plot MaxEnt scores
+  geom_tile(data = rcpdf, aes(x = Longitude,
+                              y = Latitude, 
+                              fill = Species)) +
+  # Colour each grid cell according the MaxEnt scores
+  # Scores close to 1 = High climatic suitability (good)
+  # Scores close to 0 = Low climatic suitability (bad)
+  scale_fill_gradientn(colours=c("white", "blue", "lightgreen",
+                                 "yellow", "orange", "red"),
+                       breaks = c(0, 0.2, 0.4, 0.6, 0.8, 1.0),
+                       limits = c(0, 1)) +
+  # Plot the shapefile of Africa
+  geom_sf(data = world, fill = NA) +
+  #scale_x_continuous(limits = c(10, 40)) + 
+  #scale_y_continuous(limits = c(-35, -28)) +
+  # Crops Africa to just the geographic extent of South Africa
+  coord_sf(xlim = c(15, 33.5), 
+           ylim = c(-35, -21.5), 
+           crs = 4326, 
+           expand = FALSE) +
+  # Create title for the legend
+  labs(fill = "Climatic similarity") + 
+  # Add scale bar to bottom-right of map
+  annotation_scale(location = "br", # 'br' = bottom right
+                   style = "ticks", 
+                   width_hint = 0.2) +
+  # Add north arrow
+  annotation_north_arrow(location = "br", 
+                         which_north = "true", 
+                         pad_x = unit(0.135, "in"), 
+                         pad_y = unit(0.3, "in"),
+                         style = north_arrow_fancy_orienteering) +
+  # Apply the theme for the map we defined above. 
+  theme_opts +
+  theme(legend.position = "right") +
+  # Change appearance of the legend
+  guides(fill = guide_colorbar(ticks = FALSE),
+         colour = guide_legend(order = 2))
+final_map_AUCtest
+
+# Save the plot to your PC 
+ggsave("./models/figures/map_maxent_AUCtest.png",
+       width = 8,
+       height = 6,
+       dpi = 600)
+
+# Save raster
+raster::writeRaster(
+  predictMaxent,
+  filename = "./models/rasters/raster_AUCtest",
+  options = "interleave=band",
+  overwrite = T
+)
+raster::writeRaster(
+  predictMaxent,
+  filename = "./models/rasters/raster_AUCtest",
+  format = "GTiff",
+  overwrite = T
+)
+raster::writeRaster(
+  predictMaxent,
+  filename = "./models/rasters/raster_AUCtest",
+  format = "ascii",
+  overwrite = T
+)
+
+# -----------------------------------------------------------------------------
+# Plot map - AUCdiff
+# -----------------------------------------------------------------------------
+
+# Extract MaxEnt raster output
+# - Project MaxEnt scores over South Africa
+predictMaxent <- raster::predict(model_AUCdiff, afrExtent)
+
+# MaxEnt scores are in a raster layer above, but we need the MaxEnt scores
+# in a dataframe. 
+# - Below, create dataframe of MaxEnt model projection/scores
+rcp <- raster::rasterToPoints(predictMaxent)
+rcpdf <- base::data.frame(rcp)
+colnames(rcpdf) <- c("Longitude", "Latitude", "Species")
+
+# Plot map
+final_map_AUCdiff <- ggplot(data=rcpdf) +
+  # Plot MaxEnt scores
+  geom_tile(data = rcpdf, aes(x = Longitude,
+                              y = Latitude, 
+                              fill = Species)) +
+  # Colour each grid cell according the MaxEnt scores
+  # Scores close to 1 = High climatic suitability (good)
+  # Scores close to 0 = Low climatic suitability (bad)
+  scale_fill_gradientn(colours=c("white", "blue", "lightgreen",
+                                 "yellow", "orange", "red"),
+                       breaks = c(0, 0.2, 0.4, 0.6, 0.8, 1.0),
+                       limits = c(0, 1)) +
+  # Plot the shapefile of Africa
+  geom_sf(data = world, fill = NA) +
+  #scale_x_continuous(limits = c(10, 40)) + 
+  #scale_y_continuous(limits = c(-35, -28)) +
+  # Crops Africa to just the geographic extent of South Africa
+  coord_sf(xlim = c(15, 33.5), 
+           ylim = c(-35, -21.5), 
+           crs = 4326, 
+           expand = FALSE) +
+  # Create title for the legend
+  labs(fill = "Climatic similarity") + 
+  # Add scale bar to bottom-right of map
+  annotation_scale(location = "br", # 'br' = bottom right
+                   style = "ticks", 
+                   width_hint = 0.2) +
+  # Add north arrow
+  annotation_north_arrow(location = "br", 
+                         which_north = "true", 
+                         pad_x = unit(0.135, "in"), 
+                         pad_y = unit(0.3, "in"),
+                         style = north_arrow_fancy_orienteering) +
+  # Apply the theme for the map we defined above. 
+  theme_opts +
+  theme(legend.position = "right") +
+  # Change appearance of the legend
+  guides(fill = guide_colorbar(ticks = FALSE),
+         colour = guide_legend(order = 2))
+final_map_AUCdiff
+
+# Save the plot to your PC 
+ggsave("./models/figures/map_maxent_AUCdiff.png",
+       width = 8,
+       height = 6,
+       dpi = 600)
+
+# Save raster
+raster::writeRaster(
+  predictMaxent,
+  filename = "./models/rasters/raster_AUCdiff",
+  options = "interleave=band",
+  overwrite = T
+)
+raster::writeRaster(
+  predictMaxent,
+  filename = "./models/rasters/raster_AUCdiff",
+  format = "GTiff",
+  overwrite = T
+)
+raster::writeRaster(
+  predictMaxent,
+  filename = "./models/rasters/raster_AUCdiff",
+  format = "ascii",
+  overwrite = T
+)
+
+# -----------------------------------------------------------------------------
+# Plot map - OR10
+# -----------------------------------------------------------------------------
+
+# Extract MaxEnt raster output
+# - Project MaxEnt scores over South Africa
+predictMaxent <- raster::predict(model_OR10, afrExtent)
+
+# MaxEnt scores are in a raster layer above, but we need the MaxEnt scores
+# in a dataframe. 
+# - Below, create dataframe of MaxEnt model projection/scores
+rcp <- raster::rasterToPoints(predictMaxent)
+rcpdf <- base::data.frame(rcp)
+colnames(rcpdf) <- c("Longitude", "Latitude", "Species")
+
+# Plot map
+final_map_OR10 <- ggplot(data=rcpdf) +
+  # Plot MaxEnt scores
+  geom_tile(data = rcpdf, aes(x = Longitude,
+                              y = Latitude, 
+                              fill = Species)) +
+  # Colour each grid cell according the MaxEnt scores
+  # Scores close to 1 = High climatic suitability (good)
+  # Scores close to 0 = Low climatic suitability (bad)
+  scale_fill_gradientn(colours=c("white", "blue", "lightgreen",
+                                 "yellow", "orange", "red"),
+                       breaks = c(0, 0.2, 0.4, 0.6, 0.8, 1.0),
+                       limits = c(0, 1)) +
+  # Plot the shapefile of Africa
+  geom_sf(data = world, fill = NA) +
+  #scale_x_continuous(limits = c(10, 40)) + 
+  #scale_y_continuous(limits = c(-35, -28)) +
+  # Crops Africa to just the geographic extent of South Africa
+  coord_sf(xlim = c(15, 33.5), 
+           ylim = c(-35, -21.5), 
+           crs = 4326, 
+           expand = FALSE) +
+  # Create title for the legend
+  labs(fill = "Climatic similarity") + 
+  # Add scale bar to bottom-right of map
+  annotation_scale(location = "br", # 'br' = bottom right
+                   style = "ticks", 
+                   width_hint = 0.2) +
+  # Add north arrow
+  annotation_north_arrow(location = "br", 
+                         which_north = "true", 
+                         pad_x = unit(0.135, "in"), 
+                         pad_y = unit(0.3, "in"),
+                         style = north_arrow_fancy_orienteering) +
+  # Apply the theme for the map we defined above. 
+  theme_opts +
+  theme(legend.position = "right") +
+  # Change appearance of the legend
+  guides(fill = guide_colorbar(ticks = FALSE),
+         colour = guide_legend(order = 2))
+final_map_OR10
+
+# Save the plot to your PC 
+ggsave("./models/figures/map_maxent_OR10.png",
+       width = 8,
+       height = 6,
+       dpi = 600)
+
+# Save raster
+raster::writeRaster(
+  predictMaxent,
+  filename = "./models/rasters/raster_OR10",
+  options = "interleave=band",
+  overwrite = T
+)
+raster::writeRaster(
+  predictMaxent,
+  filename = "./models/rasters/raster_OR10",
+  format = "GTiff",
+  overwrite = T
+)
+raster::writeRaster(
+  predictMaxent,
+  filename = "./models/rasters/raster_OR10",
+  format = "ascii",
+  overwrite = T
+)
+
+# -----------------------------------------------------------------------------
+# Plot map - AICc
+# -----------------------------------------------------------------------------
+
+# Extract MaxEnt raster output
+# - Project MaxEnt scores over South Africa
+predictMaxent <- raster::predict(model_AICc, afrExtent)
+
+# MaxEnt scores are in a raster layer above, but we need the MaxEnt scores
+# in a dataframe. 
+# - Below, create dataframe of MaxEnt model projection/scores
+rcp <- raster::rasterToPoints(predictMaxent)
+rcpdf <- base::data.frame(rcp)
+colnames(rcpdf) <- c("Longitude", "Latitude", "Species")
+
+# Plot map
+final_map_AICc <- ggplot(data=rcpdf) +
+  # Plot MaxEnt scores
+  geom_tile(data = rcpdf, aes(x = Longitude,
+                              y = Latitude, 
+                              fill = Species)) +
+  # Colour each grid cell according the MaxEnt scores
+  # Scores close to 1 = High climatic suitability (good)
+  # Scores close to 0 = Low climatic suitability (bad)
+  scale_fill_gradientn(colours=c("white", "blue", "lightgreen",
+                                 "yellow", "orange", "red"),
+                       breaks = c(0, 0.2, 0.4, 0.6, 0.8, 1.0),
+                       limits = c(0, 1)) +
+  # Plot the shapefile of Africa
+  geom_sf(data = world, fill = NA) +
+  #scale_x_continuous(limits = c(10, 40)) + 
+  #scale_y_continuous(limits = c(-35, -28)) +
+  # Crops Africa to just the geographic extent of South Africa
+  coord_sf(xlim = c(15, 33.5), 
+           ylim = c(-35, -21.5), 
+           crs = 4326, 
+           expand = FALSE) +
+  # Create title for the legend
+  labs(fill = "Climatic similarity") + 
+  # Add scale bar to bottom-right of map
+  annotation_scale(location = "br", # 'br' = bottom right
+                   style = "ticks", 
+                   width_hint = 0.2) +
+  # Add north arrow
+  annotation_north_arrow(location = "br", 
+                         which_north = "true", 
+                         pad_x = unit(0.135, "in"), 
+                         pad_y = unit(0.3, "in"),
+                         style = north_arrow_fancy_orienteering) +
+  # Apply the theme for the map we defined above. 
+  theme_opts +
+  theme(legend.position = "right") +
+  # Change appearance of the legend
+  guides(fill = guide_colorbar(ticks = FALSE),
+         colour = guide_legend(order = 2))
+final_map_AICc
+
+# Save the plot to your PC 
+ggsave("./models/figures/map_maxent_AICc.png",
+       width = 8,
+       height = 6,
+       dpi = 600)
+
+# Save raster
+raster::writeRaster(
+  predictMaxent,
+  filename = "./models/rasters/raster_AICc",
+  options = "interleave=band",
+  overwrite = T
+)
+raster::writeRaster(
+  predictMaxent,
+  filename = "./models/rasters/raster_AICc",
+  format = "GTiff",
+  overwrite = T
+)
+raster::writeRaster(
+  predictMaxent,
+  filename = "./models/rasters/raster_AICc",
+  format = "ascii",
+  overwrite = T
 )
