@@ -295,36 +295,36 @@ spatialData <- dplyr::bind_cols(corData,
 head(spatialData)
 
 # At what distance does spatial autocorrelation occur?
-spatialCorAnalysis <- ecospat::ecospat.mantel.correlogram(
-  # Data frame with environmental variables
-  dfvar = spatialData,
-  # Columns containing lat/long
-  colxy = 9:10,
-  # Number of random occurrences
-  n = 100,
-  # Climate variables
-  colvar = 1:8,
-  max = 1000,
-  nclass = 100,
-  nperm = 100
-)
+#spatialCorAnalysis <- ecospat::ecospat.mantel.correlogram(
+#  # Data frame with environmental variables
+#  dfvar = spatialData,
+#  # Columns containing lat/long
+#  colxy = 9:10,
+#  # Number of random occurrences
+#  n = 100,
+#  # Climate variables
+#  colvar = 1:8,
+#  max = 1000,
+#  nclass = 100,
+#  nperm = 100
+#)
 
 # Add a species column to the GPS data
-species <- species %>%
-  dplyr::mutate(species = "D. rubiformis")
+#species <- species %>%
+#  dplyr::mutate(species = "D. rubiformis")
 
 # Thin by spatial autocorrelation value
-speciesThinned <- spThin::thin(
-  loc.data = species,
-  lat.col = "lat",
-  long.col = "lon",
-  spec.col = "species",
-  # Km unit of correlogram
-  thin.par = 0.2,
-  reps = 100,
-  max.files = 1,
-  out.dir = here::here("./data/data_clean/")
-)
+#speciesThinned <- spThin::thin(
+#  loc.data = species,
+#  lat.col = "lat",
+#  long.col = "lon",
+#  spec.col = "species",
+#  # Km unit of correlogram
+#  thin.par = 0.2,
+#  reps = 100,
+#  max.files = 1,
+#  out.dir = here::here("./data/data_clean/")
+#)
 
 # Import the thinned GPS records
 speciesThinned <-
@@ -667,7 +667,7 @@ model_AUCdiff <- dismo::maxent(
 )
 
 # Model 4: Optimise OR10
-# - The top performing model by OR10 had rm = 1 and only HLQPT features.
+# - The top performing model by OR10 had rm = 6 and only HLQPT features.
 model_OR10 <- dismo::maxent(
   x = trainData,
   p = presentBg,
@@ -675,7 +675,7 @@ model_OR10 <- dismo::maxent(
                './models/models/optimal_settings_OR10',
                sep = ''),
   args = c(
-    'betamultiplier=1.0',
+    'betamultiplier=6.0',
     'linear=true',
     'quadratic=true',
     'product=true',
