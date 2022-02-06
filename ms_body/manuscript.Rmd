@@ -4,7 +4,7 @@ output:
     keep_tex: yes
     fig_caption: yes
     latex_engine: pdflatex
-    template: ../svm-latex-ms.tex
+    template: "./_ms_template/svm-latex-ms.tex"
   html_document:
     df_print: paged
   word_document: default
@@ -18,8 +18,8 @@ header-includes:
 biblio-style: apsr
 geometry: margin=1in
 fontfamily: mathpazo
-bibliography: refs.bib
-csl: biological-control.csl
+bibliography: "./ref_list/refs.bib"
+csl: "./ref_list/biological-control.csl"
 fontsize: 12pt
 spacing: double
 indent: yes
@@ -222,7 +222,7 @@ GFS and GDM acknowledge funding from the South African Working for Water (WfW) p
 ## *Figure 1*
 
 ```{r import_fig_1, echo = FALSE}
-knitr::include_graphics(here::here("./ms_body/ms_figs/fig_1.png"), dpi = NA)
+# knitr::include_graphics(here::here("./ms_body/ms_figs/fig_1.png"), dpi = NA)
 ```
 
 \newpage
@@ -230,7 +230,7 @@ knitr::include_graphics(here::here("./ms_body/ms_figs/fig_1.png"), dpi = NA)
 ## *Figure 2*
 
 ```{r import_fig_2, echo = FALSE}
-knitr::include_graphics(here::here("./ms_body/ms_figs/fig_2.png"), dpi = NA)
+# knitr::include_graphics(here::here("./ms_body/ms_figs/fig_2.png"), dpi = NA)
 ```
 
 \newpage
@@ -238,7 +238,7 @@ knitr::include_graphics(here::here("./ms_body/ms_figs/fig_2.png"), dpi = NA)
 ## *Figure 3*
 
 ```{r import_fig_3, echo = FALSE}
-knitr::include_graphics(here::here("./ms_body/ms_figs/fig_3.png"), dpi = NA)
+# knitr::include_graphics(here::here("./ms_body/ms_figs/fig_3.png"), dpi = NA)
 ```
 
 \newpage
@@ -246,7 +246,7 @@ knitr::include_graphics(here::here("./ms_body/ms_figs/fig_3.png"), dpi = NA)
 ## *Figure 4*
 
 ```{r import_fig_4, echo = FALSE}
-knitr::include_graphics(here::here("./ms_body/ms_figs/fig_4.png"), dpi = NA)
+# knitr::include_graphics(here::here("./ms_body/ms_figs/fig_4.png"), dpi = NA)
 ```
 
 \newpage
@@ -254,7 +254,7 @@ knitr::include_graphics(here::here("./ms_body/ms_figs/fig_4.png"), dpi = NA)
 ## *Figure 5*
 
 ```{r import_fig_5, echo = FALSE}
-knitr::include_graphics(here::here("./ms_body/ms_figs/fig_5.png"), dpi = NA)
+# knitr::include_graphics(here::here("./ms_body/ms_figs/fig_5.png"), dpi = NA)
 ```
 
 \newpage
@@ -262,7 +262,7 @@ knitr::include_graphics(here::here("./ms_body/ms_figs/fig_5.png"), dpi = NA)
 ## *Figure 6*
 
 ```{r import_fig_6, echo = FALSE}
-knitr::include_graphics(here::here("./ms_body/ms_figs/fig_6.png"), dpi = NA)
+# knitr::include_graphics(here::here("./ms_body/ms_figs/fig_6.png"), dpi = NA)
 ```
 
 \newpage

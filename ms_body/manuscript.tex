@@ -1,0 +1,915 @@
+\documentclass[12pt,]{article}
+\usepackage[left=1in,top=1in,right=1in,bottom=1in]{geometry}
+\newcommand*{\authorfont}{\fontfamily{phv}\selectfont}
+\usepackage[]{mathpazo}
+
+
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+
+
+
+
+\usepackage{abstract}
+\renewcommand{\abstractname}{}    % clear the title
+\renewcommand{\absnamepos}{empty} % originally center
+
+\renewenvironment{abstract}
+ {{%
+    \setlength{\leftmargin}{0mm}
+    \setlength{\rightmargin}{\leftmargin}%
+  }%
+  \relax}
+ {\endlist}
+
+\makeatletter
+\def\@maketitle{%
+  \newpage
+%  \null
+%  \vskip 2em%
+%  \begin{center}%
+  \let \footnote \thanks
+    {\fontsize{18}{20}\selectfont\raggedright  \setlength{\parindent}{0pt} \@title \par}%
+}
+%\fi
+\makeatother
+
+
+
+
+\setcounter{secnumdepth}{0}
+
+
+
+
+ 
+
+
+
+\author{}
+
+
+\date{}
+
+\usepackage{titlesec}
+
+\titleformat*{\section}{\normalsize\bfseries}
+\titleformat*{\subsection}{\normalsize\itshape}
+\titleformat*{\subsubsection}{\normalsize\itshape}
+\titleformat*{\paragraph}{\normalsize\itshape}
+\titleformat*{\subparagraph}{\normalsize\itshape}
+
+
+
+
+
+\newtheorem{hypothesis}{Hypothesis}
+\usepackage{setspace}
+
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\usepackage{hyperref}
+\setlength\parindent{24pt}
+\usepackage{multirow}
+\usepackage{helvet}
+\usepackage{setspace}
+\renewcommand\familydefault{\sfdefault}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+
+% move the hyperref stuff down here, after header-includes, to allow for - \usepackage{hyperref}
+
+\makeatletter
+\@ifpackageloaded{hyperref}{}{%
+\ifxetex
+  \PassOptionsToPackage{hyphens}{url}\usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \PassOptionsToPackage{hyphens}{url}\usepackage[draft,unicode=true]{hyperref}
+\fi
+}
+
+\@ifpackageloaded{color}{
+    \PassOptionsToPackage{usenames,dvipsnames}{color}
+}{%
+    \usepackage[usenames,dvipsnames]{color}
+}
+\makeatother
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={},
+             pdfkeywords = {},  
+            pdftitle={},
+            colorlinks=true,
+            citecolor=blue,
+            urlcolor=blue,
+            linkcolor=magenta,
+            pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+
+% Add an option for endnotes. -----
+
+
+% add tightlist ----------
+\providecommand{\tightlist}{%
+\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% add some other packages ----------
+
+% \usepackage{multicol}
+% This should regulate where figures float
+% See: https://tex.stackexchange.com/questions/2275/keeping-tables-figures-close-to-where-they-are-mentioned
+\usepackage[section]{placeins}
+
+
+\begin{document}
+	
+% \pagenumbering{arabic}% resets `page` counter to 1 
+%    
+
+
+
+
+
+\vskip -8.5pt
+
+
+ % removetitleabstract
+
+\noindent \doublespacing 
+
+\pagebreak
+
+\setlength{\parindent}{0in}
+\setlength{\leftskip}{0in}
+\setlength{\parskip}{8pt}
+\vspace*{-0.2in}
+
+\noindent
+
+\textbf{Testing MaxEnt model performance in a novel geographic region
+using an intentionally introduced insect}
+
+Sutton, G. F.\textsuperscript{1}\(\dag\); Martin, G.D.
+\textsuperscript{1,2}
+
+\hfill\break
+
+\begingroup
+\fontsize{10}{12}\selectfont
+
+\textsuperscript{1} Center for Biological Control, Department of Zoology
+and Entomology, Rhodes University, Makhanda, 6140, South Africa
+
+\textsuperscript{2} Afromontane Research Unit and Department Zoology and
+Entomology, University of the Free State, Phuthaditjhaba, 9866, South
+Africa \endgroup
+
+\hfill\break
+
+\textbf{Corresponding author} \(\dag\)
+\href{mailto:g.sutton@ru.ac.za}{\nolinkurl{g.sutton@ru.ac.za}}
+
+\pagebreak
+
+\setlength\parindent{24pt}
+
+\hypertarget{abstract}{%
+\section{Abstract}\label{abstract}}
+
+Ecological models are important tools to support and guide the
+development and implementation of environmental policies and management
+programs. Species distributions models (SDM's), such as the popular
+MaxEnt software, are frequently used to guide conservation programmes,
+predict the potential distribution of invasive species, forecast the
+impacts of climate change and develop applied ecological research
+(e.g.~biological control). Many applications of these models require
+that SDM's are transferred in either space and/or time. However, few
+studies to date have tested the transferability, and thus usefulness, of
+MaxEnt models using fully independent data. Moreover, numerous authors
+have raised concerns over how model complexity (controlled primarily by
+feature class and regularisation multiplier settings) may affect MaxEnt
+model transferability. In this paper, we evaluated the usefulness of
+MaxEnt models transferred in space using a native Australian insect,
+\emph{Dasineura rubiformis} Kolesik (Diptera: Cecidomyiidae) that has
+been intentionally introduced as a biological control agent of the
+invasive plant, \emph{Acacia mearnsii} De Wild (Fabaceae) in South
+Africa. MaxEnt models were developed using native-range records only
+(Australia) and projected over South Africa to identify the potential
+climatic suitability for the insect, using a range of model settings
+configurations. Model transferability was assessed using independent
+post-release data from South Africa. Our results demonstrated that
+MaxEnt scores were positively correlated with increased establishment
+rates for \emph{D. rubiformis} in South Africa. However, we found that
+this pattern held only when MaxEnt models were specified with
+user-defined settings configurations. A MaxEnt model calibrated with
+default settings was overfit to the training data, and performed poorly
+when transfered in space. Our study demonstrates that MaxEnt models can
+prove useful when transferred in space, however, user-optimised model
+settings likely need to be used to control model complexity, and reduce
+the likelihood of overfitting.
+
+~
+
+\setlength{\parindent}{0in}
+\setlength{\leftskip}{0in}
+\setlength{\parskip}{8pt}
+\vspace*{-0.2in}
+
+\noindent
+
+\textbf{Keywords}: Species distribution model, biological control,
+\emph{Acacia}, \emph{Dasineura rubiformis}, model complexity, model
+transferability
+
+\setlength\parindent{24pt}
+
+\hypertarget{introduction}{%
+\section{1. Introduction}\label{introduction}}
+
+Ecological models are important tools to support and guide the
+development and implementation of environmental policies and management
+programs (\textbf{Addison2013?}; \textbf{Schuwirth2019?}). For example,
+ecological models can be used for planning conservation programs
+(\textbf{Guisan2013?}), predicting the establishment of invasive species
+(\textbf{Martin2020?}), implementing biological control programmes
+(\textbf{Mukherjee2021?}), or forecasting species responses to
+environmental change (\textbf{Bocedi2014?}). Species distribution models
+(SDM's) are an example of ecological models that have become
+increasingly popular in recent years (\textbf{Elith2009?}). SDM's
+typically take the form of correlative or mechanistic models that relate
+species presence/absences to environmental covariates to map habitats
+that may be suitable for a taxon (\textbf{Elith2011?}). The Maximum
+Entropy Species Distribution Model (hereafter `MaxEnt')
+(\textbf{Phillips2017?}) is among the most popular methods for species
+distribution modeling and has been shown to perform well compared to
+alternative modeling algorithms (\textbf{Elith2006?}). It uses maximum
+entropy to distinguish between environmental conditions where the focal
+taxon is present from environmental conditions at background locations
+where the taxons' presence is absent (or assumed absent)
+(\textbf{Elith2011?}).
+
+Despite its popularity, the usefulness of MaxEnt has been questioned
+when used to generate predictions for novel geographic regions
+(transferred in space) or time periods (transferred in time) from those
+for which the data used to build the model were collected
+(\textbf{Yates2018?}; \textbf{Blasi2021?}). To date, studies assessing
+transferability have produced contrasting results (\textbf{Randin2006?};
+\textbf{Bahn2013?}; \textbf{Capinha2018?}). Model transferability has
+typically been assessed by cross validation, whereby a fraction of the
+data is withheld to calibrate the model (i.e.~training data) and the
+remaining data is retained to validate the model (i.e.~the testing data)
+(\textbf{Wenger2012?}). However, cross validation may not provide an
+estimate of model transferability as a selected test sample may not
+provide an unbiased estimate of the full data set, and therefore may not
+reflect the heterogeneity that may exist in the underlying data in space
+or time (see \textbf{Wenger2012?}). Ideally, a direct test of model
+transferability should use an independent dataset of species
+presence/absences and environmental covariates (\textbf{Fielding1997?};
+\textbf{West2016?}). Unfortunately, very few studies, to date, have
+tested model transferability using independent datasets (e.g.
+\textbf{Costa2010?}; \textbf{Rebelo2010?}), which may have limited our
+understanding of how useful SDM's can be when transferred in space or
+time. Issues with model transferability may lead to misleading
+conclusions, which may hinder scientists abilities to address important
+ecological questions (e.g.~where could an invasive species establish?,
+where should a conservation priority be translocated?)
+(\textbf{Merow2013?}).
+
+Model complexity can affect uncertainty of model transferability in
+space and time (\textbf{Warren2014?}). Model complexity may be affected
+by numerous parameters, notably the feature classes and regularisation
+(beta) multiplier settings used to specify the MaxEnt model
+(\textbf{Elith2011?}; \textbf{Merow2013?}). MaxEnt allows users to
+specify combinations of different feature classes that modify the shape
+and complexity of species-environment functions. Moreover, MaxEnt uses a
+regularisation multiplier (a form of L\textsubscript{1}-regularisation)
+to balance model complexity with the model fit, penalising unnecessarily
+complex models (\textbf{Merow2013?}). The default MaxEnt settings use
+all feature classes in model fitting except `threshold' features
+(depending on sample size of training data) and a regularisation
+multiplier of 1 (\textbf{Phillips2017?}). Several recent studies have
+highlighted the importance of species-specific tuning of feature classes
+and regularisation multipliers for optimising model complexity
+(\textbf{Shcheglovitova2013?}; \textbf{Radosavljevic2014?}), with
+default settings often producing models that are overly complex, and
+thus, may perform poorly when transferred (\textbf{Elith2011?};
+\textbf{Merow2013?}). Despite the potential implications, surprisingly
+few studies use user-defined feature class and regularisation settings
+(e.g. \textbf{Sutton2019b?}), and as such, little is known about how
+model settings configurations may influence model transferability
+(\textbf{Moreno-Amat2015?}; \textbf{Low2021?}).
+
+In this study, we performed a retrospective assessment of the
+transferability of SDM's built using MaxEnt (\textbf{Phillips2017?}).
+Here, we modelled the potential climatic suitability of an insect that
+is native to Australia, and that has been introduced into South Africa
+as a biological control agent. The insect, \emph{Dasineura rubiformis}
+Kolesik (Diptera: Cecidomyiidae) was introduced into South Africa from
+Australia in 2013, to curb the spread of the invasive Australian
+\emph{Acacia mearnsii} De Wild (\textbf{Impson2013?}). Extensive field
+surveys have been performed in Australia (characterizing the native
+distribution of \emph{D. rubiformis}) (\textbf{Adair2004?}) and
+long-term post-release monitoring has been performed in South Africa to
+measure establishment rates of the insect, following experimental
+releases of the insect (Impson et al., 2021). As such, the availability
+of independent testing data from a separate continent to the data used
+to generate the models makes this an ideal study system for assessing
+the transferability of SDM's.
+
+We built MaxEnt models for \emph{D. rubiformis} using distribution
+records from its native distribution (Australia), and projected the
+resulting MaxEnt suitability rasters over South Africa. MaxEnt scores
+range from 0 to 100, whereby 0 represents regions predicted to be highly
+unsuitable and 100 indicating highly suitable regions. To test model
+transferability, we fit the MaxEnt scores as a covariate in a logistic
+regression model to determine whether MaxEnt scores were statistically
+relevant predictors of insect establishment rates in South Africa (with
+these data being entirely independent of the data used to build the
+MaxEnt models). A strong, positive correlation between MaxEnt scores and
+insect establishment rates would provide support that the SDM's were
+useful when transferred in space (from Australia to South Africa).
+Moreover, we tested whether model complexity and parameter tuning could
+improve the accuracy and transferability of MaxEnt by comparing the
+predictive power of MaxEnt models calibrated with default settings and
+an array of optimised settings configurations.
+
+\hypertarget{methods-and-materials}{%
+\section{2. Methods and Materials}\label{methods-and-materials}}
+
+\hypertarget{species-occurences-records}{%
+\subsection{2.1. Species occurences
+records}\label{species-occurences-records}}
+
+A total of 103 native-range records for \emph{D. rubiformis} were
+obtained from (\textbf{Adair2004?}). A total of 452 invaded-range
+records to evaluate model transferability were taken from Impson,
+Kleinjan and Hoffmann (unpublished). Distribution maps for \emph{D.
+rubiformis} for both native and invaded range are provided in Fig. 1.
+
+Spatial autocorrelation is an important factor that may affect model
+outputs. Filtering of species occurrence data may limit the inherent
+biases in the data and improve model quality (\textbf{Veloz2009?}). To
+avoid pseudo-replication, only one occurrence record per 2.5 minute grid
+cell was used for model calibration. Species occurrence datasets were
+thinned using the `spThin' package (\textbf{Aiello-Lammens2015?}), and
+spatial autocorrelation analyses were performed using the `ecospat'
+package (\textbf{DiCola2017?}).
+
+\hypertarget{environmental-predictors}{%
+\subsection{2.2. Environmental
+predictors}\label{environmental-predictors}}
+
+Climate data were obtained by downloading the standard set of 19
+bioclimatic variables from the WorldClim ver. 1.4 database
+(\textbf{Hijmans2005?}) (data available at:
+www.worldclim.org/download.html). This dataset is representative of
+annual and seasonal means and variation of temperature and precipitation
+metrics averaged over the 1950--2000 time period (current climate) at a
+5 arc minute resolution.
+
+To reduce multicollinearity between environmental predictors and thereby
+decrease the risk of calibrating overfit models, Pearson's correlation
+coefficients were computed for all pairs of predictors, whereby
+predictors which were highly correlated (\textbar{}\emph{r}\textbar{}
+\textgreater{} 0.85) were excluded from the final predictor set
+(\textbf{Capinha2011?}). The reduced set of environmental predictors
+consisted of seven climatic variables, including: bio1 -- annual mean
+temperature, bio2 -- mean diurnal temperature range (mean of monthly
+{[}max temp -- min temp{]}, bio3 -- isothermality, bio9 -- mean
+temperature of the driest quarter, bio12 -- mean annual precipitation,
+bio14 -- precipitation of the driest month and bio16 -- precipitation of
+the wettest quarter (see (\textbf{Hijmans2005?}) for further details).
+
+\hypertarget{model-calibration}{%
+\subsection{2.3. Model calibration}\label{model-calibration}}
+
+Maxent was implemented in the \texttt{dismo} package in \texttt{R}
+(\textbf{hijmans2017package?}). MaxEnt was selected as it consistently
+outperforms other modelling algorithms (\textbf{Wisz2008?}). Given that
+MaxEnt is a presence-only modelling algorithm, model calibration
+requires a user-defined geographic background to sample the climate of
+representative grid cells where the focal species is absent
+(i.e.~background points). Background definition can have a significant
+effect on model output (\textbf{VanDerWal2009?}). The background should
+ideally represent the geographic areas available to the focal species,
+omitting areas where species absence is due to historical factors,
+dispersal constraints and/or biotic interactions (\textbf{Sanin2018?}).
+Following (\textbf{Webber2011?}), we defined the model background using
+the Koppen-Geiger climate classification (Available at:
+\url{http://koeppen-geiger.vu-wien.ac.at}). Only Koppen-Geiger climate
+zones that contained at least one native-range occurrence record for
+\emph{D. rubiformis} were used as the background area from which
+pseudo-absences were drawn for model calibration. Koppen-Geiger climate
+zones were intersected using the \texttt{extract} function from the
+\texttt{R} package \texttt{raster} (\textbf{hijmans2017package?}).
+
+\hypertarget{optimal-model-settings}{%
+\subsection{2.4. Optimal model settings}\label{optimal-model-settings}}
+
+Model performance and optimal settings configurations were assessed
+using multiple metrics that reflected aspects of model (1)
+discriminatory ability (AUC\textsubscript{test}), (2) overfitting
+(AUC\textsubscript{diff}), (3) omission rates (OR\textsubscript{10}),
+and (4) overall parsimony (AICc) (\textbf{Low2021?}).
+
+\begin{enumerate}
+\def\labelenumi{(\arabic{enumi})}
+\item
+  AUC\textsubscript{test} assesses the models ability to discriminate
+  between predicted presence/absence at withheld portions of the data
+  used to test the model versus background points. The area under the
+  receiver operating characteristic curve (AUC) is one of the most
+  popular metrics used to evaluate MaxEnt models. An AUC of less than
+  0.8 is considered a poor model, between 0.8 and 0.9 is a fair model,
+  between 0.9 and 0.995 a good model, and \textgreater{} 0.995 an
+  excellent model (\textbf{Fielding1997?}). Thus, higher
+  AUC\textsubscript{test} values indicate increased ability to
+  discriminate between training and background points.
+\item
+  AUC\textsubscript{diff} calculates the difference between AUC values
+  calculated on training points only (AUC\textsubscript{train}) and
+  AUC\textsubscript{test} using cross-validation (\textbf{Warren2011?}).
+  Thus, higher AUC\textsubscript{diff} values indicate whether the
+  MaxEnt model is overfit on the training data, and thus, performs
+  poorly when evaluated against testing points.
+\item
+  OR\textsubscript{10} is the proportion of testing points that are not
+  predicted to fall within the projected model surface once the model is
+  converted into a binary prediction output (\textbf{Boria2014?}).
+  Overfit models have omission rates higher than the theoretical
+  expectation for the threshold applied (\textbf{Shcheglovitova2013?}).
+  OR10 sets the binary prediction threshold at a value that excludes the
+  10\% of the calibration localities from the model with the lowest
+  prediction values, and therefore has an expected omission rate of 0.10
+  (\textbf{Boria2014?}). As such, the OR\textsubscript{10} criterion
+  selected models calibrated with MaxEnt settings which best
+  approximated the expected 0.10 omission rate. Models with omission
+  rates increasingly higher than the expected value were considered as
+  more overfit (\textbf{Boria2017?}).
+\item
+  Lastly, optimal model settings were determined by selecting model
+  configurations which produced the lowest value for the Akaike
+  Information Criterion corrected for small sample sizes (AICc)
+  (i.e.~AICc=0; following (\textbf{Muscarella2014?})). The AICc
+  criterion simultaneously scores models according to their complexity
+  and goodness-of-fit, whereby models with the lowest AICc are selected
+  as the best models. AICc was used as the primary evaluation metric as
+  it is calculated using MaxEnt models built using the entire species
+  occurrence dataset, unlike AUC and OR\textsubscript{10} (and numerous
+  other metrics frequently used for model evaluation) which may be
+  spatially biased due to the partitioning of the species occurrence
+  dataset into training and evaluation sets (\textbf{Sanin2018?}).
+\end{enumerate}
+
+\hypertarget{assessing-model-extrapolation}{%
+\subsection{2.5. Assessing model
+extrapolation}\label{assessing-model-extrapolation}}
+
+Several authors have raised concerns over the use of correlative SDM's,
+such as MaxEnt, when projected into new geographic regions or time
+periods due to issues with extrapolation into novel/non-analogous
+climate (\textbf{Elith2009?}; \textbf{Elith2011?}; \textbf{Yates2018?}).
+To address these concerns, Multivariate environmental similarity
+surfaces (hereafter `MESS') (\textbf{Elith2010?}) were computed to
+assess whether MaxEnt models were extrapolating or interpolating. MESS
+analyses measure the similarity of any given point to a set of reference
+points (reference points were defined as only the species presence
+points used to calibrate models following \textbf{Kriticos2014?}).
+Negative MESS values indicate geographic regions outside the range of
+climate variables used to calibrate the model (i.e.~extrapolation space
+or MESS-), while MESS values between 0 and 100 indicate geographic
+regions inside the range of climatic variables used to calibrate the
+model (i.e.~interpolation space or MESS+). MESS maps are used as a
+measure of prediction uncertainty or caution against inferences in
+extrapolation space (\textbf{Elith2010?}).
+
+\hypertarget{statistical-analyses}{%
+\subsection{2.6. Statistical analyses}\label{statistical-analyses}}
+
+Five candidate MaxEnt models were specified using native-range
+(Australia) training data. The five models differed in the feature
+classes and regularisation multiplier settings used by MaxEnt to build
+the models. The five models were specified with (1) default MaxEnt
+settings, and four optimised settings configurations that maximised
+performance based on (2) AUC\textsubscript{test}, (3)
+AUC\textsubscript{diff}, (4) OR\textsubscript{10} and (5) AICc.
+
+To evaluate the predictive performance and transferability of these
+models, we evaluated whether MaxEnt climatic suitability scores were
+correlated with increased probabilities of \emph{D. rubiformis}
+establishment in South Africa. To do so, MaxEnt scores were specified as
+a continuous fixed effect and whether \emph{D. rubiformis} was recorded
+or not (present/absent) as a boolean response variable in a logistic
+general linear model (GLM), using a logit link function. MaxEnt scores,
+bounded between 0 (not climatically suitable) and 1 (highly climatically
+suitable) indicating climatic similarity between the native range
+occupied by \emph{D. rubiformis} in Australia and sites where it was
+released as a biological control agent in South Africa, were derived by
+projecting MaxEnt suitability rasters from models calibrated using
+native-range GPS records only (Australian native-range records) over
+South Africa, and extracting the MaxEnt suitability scores for each site
+where \emph{D. rubiformis} was surveyed in South Africa using the
+\texttt{extract} function from the \texttt{R} package \texttt{raster}
+(\textbf{hijmans2017package?}). GLM's were specified using the
+\texttt{rms} package in \texttt{R} (\textbf{Harrell2017package?}).
+Likelihood Ratio Tests (LRT) were performed to determine whether there
+was a statistical correlation between MaxEnt scores and the probability
+of \emph{D. rubiformis} establishment. A statistically significant,
+positive correlation between MaxEnt scores and insect establishment
+rates would provide support that the SDM's were useful and predictive of
+insect establishment, even when the insect was transferred in space.
+Out-of-sample AUC was calculated using the \texttt{rms} package, using
+500 bootstrap replicates (\textbf{Harrell2017package?}) to quantify the
+predictive performance of MaxEnt models, whereby AUC values less than
+0.80 are typically considered poor fitting models (lacks predictive
+power) (\textbf{Fielding1997?}).
+
+A similar approach was adopted to test if each occurrence record in
+South Africa was classified as being in interpolation (within the
+climate space occupied by the insect in its native range) versus
+extrapolation (outside the climate space occupied by the insect in its
+native range) was predictive of \emph{D. rubiformis} establishment.
+Interpolation/extrapolation were quantified using MESS maps using the
+\texttt{mess} function from the \texttt{dismo} package in \texttt{R}
+(\textbf{hijmans2017package?}). Interpolation versus extrapolation was
+fit as a categorical predictor and whether \emph{D. rubiformis} was
+recorded or not (present/absent) as a boolean response variable in a
+logistic GLM, using a logit link function.
+
+All modelling and statistical analyses were conducted in \texttt{R} ver.
+4.0.3 (\textbf{RCoreTeam2020?}).
+
+\hypertarget{results}{%
+\section{3. Results}\label{results}}
+
+\hypertarget{native-range-models-model-calibration}{%
+\subsection{3.1. Native-range models (model
+calibration)}\label{native-range-models-model-calibration}}
+
+Five candidate MaxEnt models were developed using native-range
+(Australia) training data for \emph{D. rubiformis}. The five models
+differed in the feature classes and regularisation multiplier settings
+used by MaxEnt to build the models. The five models were specified with
+(1) default MaxEnt settings, and four optimised settings configurations
+that (2) maximised performance based on AUC\textsubscript{test}, (3)
+AUC\textsubscript{diff}, (4) OR\textsubscript{10} and (5) AICc (Table
+S1). The AUC values for these five models ranged were ranged between
+0.82 and 0.97, depending on the MaxEnt settings configuration used. As
+such, all five candidate models were considered useful and had high
+predictive accuracy in distinguishing between \emph{D. rubiformis}
+recorded presences and background points in its native range. While
+default MaxEnt settings produced the highest discriminatory power when
+tested in the training area of Australia (AUC = 0.97), models calibrated
+with tuned settings configurations led to less overfitting (lower
+AUC\textsubscript{diff}), better omission rates (best approximated the
+expectation for OR\textsubscript{10}), and more parsimonious models
+(AICc) (Fig. 2).
+
+\hypertarget{model-transferability}{%
+\subsection{3.2. Model transferability}\label{model-transferability}}
+
+When evaluated on independent testing data in South Africa, the MaxEnt
+models showed relatively high, but variable, predictive accuracy,
+depending on the MaxEnt settings used to calibrate the model. For all
+models, the probability that \emph{D. rubiformis} was recorded at a
+field site in South Africa increased with higher MaxEnt climatic
+suitability scores (Fig. 3). The default MaxEnt model found no
+statistically significant relationship between MaxEnt climatic
+suitability scores and the probability of \emph{D. rubiformis}
+establishment in South Africa (Table. 1), and displayed low power to
+discriminate between sites where \emph{D. rubiformis} had established or
+not (AUC: 0.64 \(\pm\) 0.01) (Fig. 4). In contrast, the four models
+calibrated using optimised model settings configurations all
+demonstrated a statistically significant positive relationship between
+MaxEnt suitability scores and the probability of \emph{D. rubiformis}
+establishment in South Africa (Table. 1). All four tuned models
+displayed high power to discriminate between sites where \emph{D.
+rubiformis} had established or not (AUC: 0.83 - 0.84) than the MaxEnt
+model calibrated with default settings (AUC: 0.64 \(\pm\) 0.01) (Fig.
+4). The predicted climatic suitability for \emph{D. rubiformis} across
+South Africa varied depending on the MaxEnt settings used to calibrate
+the model (Fig. 5). Default MaxEnt settings yielded higher climatic
+suitability estimates for \emph{D. rubiformis} than the other MaxEnt
+models with tuned model settings, notably in regions where \emph{D.
+rubiformis} is absent (e.g.~the north-west coastal region bordering
+Namibia).
+
+Despite the high performance of the MaxEnt models when transferred in
+space, MESS maps indicated that the MaxEnt models were extrapolating
+climatic suitability scores for \emph{D. rubiformis} over the vast
+majority of South Africa (Fig. S1). Indeed, 54 of the 78 field sites
+surveyed for \emph{D. rubiformis} in South Africa occur in geographic
+regions where the MaxEnt models were extrapolating. \emph{Dasineura
+rubiformis} established at 23 of 24 sites in interpolation (96\%), while
+it established at 44 of 54 sites in extrapolation (82\%) (Fig. 6). We
+found no evidence that a site being in extrapolation/interpolation was a
+statistically significant predictor of \emph{D. rubiformis}
+establishment in South Africa (X\textsubscript{2} = 3.40, d.f = 1,
+\emph{P} = 0.07). Moreover, classifying sites as being in
+extrapolation/interpolation yielded lower power to discriminate to
+discriminate between sites where \emph{D. rubiformis} had established or
+not (AUC: 0.67 \(\pm\) 0.02) than all of the MaxEnt models, barring the
+model with default settings.
+
+\hypertarget{discussion}{%
+\section{4. Discussion}\label{discussion}}
+
+Species distribution models (SDM's) are becoming increasingly important
+tools to support and guide the development and implementation of
+environmental policies and management programs (\textbf{Addison2013?};
+\textbf{Schuwirth2019?}). The usefulness of SDM's is dependent on model
+performance, which is typically measured by its ability to correctly
+predict where a species is established and its capacity to distinguish
+between sites where the species is established versus a site where the
+species is absent (or assumed to be absent) (\textbf{Smith2021?}).
+However, a number of authors have called in question the usefulness of
+SDM's, notably when models are transferred in space or time
+(\textbf{Yates2018?}; \textbf{Blasi2021?}). Poor transferability may
+lead to erroneous model predictions that may have serious negative
+consequences for the application of the model, and resulting policies
+and management programmes (Soultan and Safi, 2017). Here, we report on
+the validation of a SDM for an insect, (\emph{D. rubiformis}), native to
+Australia, that has been intentionally introduced as a biological
+control agent into South Africa to reduce the invasiveness of its
+host-plant, \emph{A. mearnsii} (Impson et al., 2013). The the
+availability of independent testing data from South Africa, a separate
+continent to the data used to generate the models (Australia), makes
+this an ideal study system for assessing the transferability of SDM's.
+This study represents one of only a handful of studies to validate SDM's
+using independent testing data (\textbf{Costa2010?};
+\textbf{Rebelo2010?}; \textbf{West2016?}; \textbf{Smith2021?}).
+
+Our results indicated that MaxEnt SDM's were able to provide robust
+estimates of climatic suitability for \emph{D. rubiformis} in South
+Africa. AUC values greater than 0.80 are typically considered good
+fitting models (having high predictive power) (\textbf{Fielding1997?}).
+When MaxEnt models, calibrated using native-range records for \emph{D.
+rubiformis} from Australia, were projected over South Africa, they had
+AUC scores of 0.83 - 0.84, indicative of high power to discriminate
+between sites where \emph{D. rubiformis} had established in South Africa
+or not. Additionally, we showed that the probability that \emph{D.
+rubiformis} was recorded at a field site in South Africa increased with
+higher MaxEnt climatic suitability scores. This result demonstrates the
+usefulness of the MaxEnt SDM and that, at least for our case-study,
+SDM's can be transferred into novel geographic regions, and provide
+valuable information to guide policy making and the development of
+management programmes. For example, biological control programmes such
+as the programme in which \emph{D. rubiformis} is used to curtail the
+spread of the highly invasive weed \emph{A. mearnsii} expend many
+resources (time and money) to mass-rear insect populations that are then
+released into the field. The positive correlation between MaxEnt
+suitability scores and \emph{D. rubiformis} establishment means that
+researchers can develop and implement mass-rearing and experimental
+release programmes for the insect that prioritise releasing the insect
+at sites that are highly climatically suitable, and thus, more likely
+the insect will establish viable populations. This may assist in
+improving the level of control over the target weed and increasing the
+efficiency of resources expended by increasing the chances of
+establishing viable insect populations.
+
+Our study adds to a growing body of literature indicating that SDM model
+complexity affects model performance and transferability when being
+projected into novel geographic regions. While the default MaxEnt model
+had the highest predictive power in the training area (Australia), this
+model performed extremely poorly when transferred over South Africa. In
+contrast, the four MaxEnt models calibrated with tuned settings showed
+high predictive power when transferred. The poor transferability of the
+Default model is likely explained by default settings overfitting the
+model on the training points (\textbf{Warren2014?}). This finding
+corroborates other studies showing that high predictive power in the
+model training area is not a guarantee of transferability
+(\textbf{Warren2014?}; \textbf{Duque-Lazo2016?}). We echo that
+recommendations of (\textbf{Shcheglovitova2013?}) and
+(\textbf{Muscarella2014?}) that model tuning should be performed to
+estimate optimal model complexity when transferring MaxEnt models in
+space and/or time in order to maximise their usefulness.
+
+An additional concern with transferring MaxEnt models in space or time
+is the potential for models to significantly extrapolate predictions
+when the model is projected into non-analogous conditions to those under
+which the model was calibrated (Elith et al., 2010; Mesgaran et al.,
+2014). However, the applied use of SDM's in developing environmental
+policy, developing management programmes for invasive species and
+implementing conservation programmes often necessitate that models are
+transferred and predictions made, even when models are extrapolating
+(Elith et al., 2010). Here, we showed that \emph{D. rubiformis} was able
+to establish at many sites (82\%) in South Africa that were outside the
+range of climate space it occupies in its native range
+(i.e.~extrapolation), which was not substantially different from
+establishment rates at sites in interpolation. While our MaxEnt models
+were able to make accurate predictions of \emph{D. rubiformis}
+establishment in South Africa, even when models were extrapolating, this
+finding in no way discounts the importance of assessing model
+extrapolation when transferring models in space or time. A number of
+tools have been developed in recent years to assist SDM users with
+identifying model extrapolation, e.g.~MESS (\textbf{Elith2010?}) and
+ExDet (Mesgaran et al., 2014), and which should be an integral component
+of any SDM study.
+
+Given that the \emph{D. rubiformis} MaxEnt models showed high predictive
+accuracy when transferred in space over South Africa and the
+statistically significant positive correlation between MaxEnt scores and
+\emph{D. rubiformis} establishment, we wish to highlight how these
+models can be used in an applied setting. To visualise the potential
+geographic regions where \emph{D. rubiformis} may establish in South
+Africa, we thresholded the MaxEnt map that optimised AICc where the
+probability of establishment was \textgreater{} 50\% (i.e.~MaxEnt score
+= 0.30), given in Fig. 9. The map demonstrates that the entire south and
+east coast regions of South Africa are climatically suitable for
+\emph{D. rubiformis}. Mass-releasing and releasing weed biological
+control agents is a time-consuming and costly endeavor (Coetzee et al.,
+2021). As such, our models provide a statistically validated approach to
+optimising the redistribution of \emph{D. rubiformis} in South Africa by
+prioritising releases at field sites where MaxEnt scores are
+\textgreater{} 0.30, and therefore where the probability of
+establishment was \textgreater{} 50\%.
+
+\hypertarget{conclusions}{%
+\section{5. Conclusions}\label{conclusions}}
+
+Species distribution models are becoming increasingly popular with
+researchers, stakeholders, policy makers and land managers alike,
+particularly for making predictions in novel geographic geographic
+regions or forecasting species responses to climate change. Transfering
+SDM's in space and/or time, however, has been met with justifiable
+resilience and concerns over how well these models perform upon
+transfer. In this study, we presented a case-study demonstrating that
+MaxEnt SDM's were able to accurately predict the distribution of an
+Australian insect when introduced into South Africa. Our study is one of
+only a few studies to date validating MaxEnt models using spatially
+independent data. However, the accuracy of the MaxEnt models was
+dependent on the settings used to calibrate the models, with default
+MaxEnt programme settings having low predictive power. Our results
+demonstrate that MaxEnt can be useful in predicting where a species may
+establish, even when projected into a novel geographic area, but that
+users need to be aware of how model settings can influence model outputs
+and usefulness. Demonstrating how SDM's can be useful, while
+communicating uncertainty in their predictions and outputs, is essential
+for building confidence in the use of SDM's (Blasi et al.~2020). We
+showed how validating predictive models can be used to guide the
+implementation of a biological control programme by optimising the
+redistribution and release of \emph{D. rubiformis} in geographic areas
+that are climatically suitable and where the probability of the insect
+establishing is greater than 50\%.
+
+\hypertarget{acknowledgements}{%
+\section{Acknowledgements}\label{acknowledgements}}
+
+GFS and GDM acknowledge funding from the South African Working for Water
+(WfW) programme of the Department of Forestry, Fisheries and the
+Environment: Natural Resource Management Programmes (DFFE: NRMP).
+Funding was also provided by the South African Research Chairs
+Initiative of the Department of Science and Technology and the National
+Research Foundation (NRF) of South Africa. Any opinions, finding,
+conclusions or recommendations expressed in this material are those of
+the authors and the NRF does not accept any liability in this regard.
+
+\newpage
+
+\hypertarget{references}{%
+\section{References}\label{references}}
+
+\setlength{\parindent}{-0.0in}
+\setlength{\leftskip}{0.0in}
+\setlength{\parskip}{8pt}
+\vspace*{-0.0in}
+
+\noindent
+
+\newlength{\cslhangindent}
+\newenvironment{CSLReferences}%
+{\setlength{\parindent}{0pt}%
+\everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces}%
+{\par}
+
+\hypertarget{refs}{}
+\begin{CSLReferences}{0}{0}
+\end{CSLReferences}
+
+\newpage
+
+\hypertarget{figure-and-table-legend}{%
+\section{Figure and table legend}\label{figure-and-table-legend}}
+
+\setlength{\parindent}{-0.2in}
+\setlength{\leftskip}{0.2in}
+\setlength{\parskip}{8pt}
+\vspace*{-0.2in}
+
+\noindent
+
+\newpage
+
+\hypertarget{figure-1}{%
+\subsection{\texorpdfstring{\emph{Figure 1}}{Figure 1}}\label{figure-1}}
+
+\newpage
+
+\hypertarget{figure-2}{%
+\subsection{\texorpdfstring{\emph{Figure 2}}{Figure 2}}\label{figure-2}}
+
+\newpage
+
+\hypertarget{figure-3}{%
+\subsection{\texorpdfstring{\emph{Figure 3}}{Figure 3}}\label{figure-3}}
+
+\newpage
+
+\hypertarget{figure-4}{%
+\subsection{\texorpdfstring{\emph{Figure 4}}{Figure 4}}\label{figure-4}}
+
+\newpage
+
+\hypertarget{figure-5}{%
+\subsection{\texorpdfstring{\emph{Figure 5}}{Figure 5}}\label{figure-5}}
+
+\newpage
+
+\hypertarget{figure-6}{%
+\subsection{\texorpdfstring{\emph{Figure 6}}{Figure 6}}\label{figure-6}}
+
+\newpage
+
+\textbf{Table 1}
+
+~
+
+\begin{ThreePartTable}
+\begin{TableNotes}
+\item[a] Adjusted to indicate change in Y for each 1\% unit increase in covariate
+\end{TableNotes}
+\begin{longtable}[l]{lllll}
+\toprule
+Model & $\beta$\textsuperscript{a} & $\chi$\textsubscript{2} & d.f. & \textit{P}\\
+\midrule
+\endfirsthead
+\multicolumn{5}{@{}l}{\textit{(continued)}}\\
+\toprule
+Model & $\beta$\textsuperscript{a} & $\chi$\textsubscript{2} & d.f. & \textit{P}\\
+\midrule
+\endhead
+
+\endfoot
+\bottomrule
+\insertTableNotes
+\endlastfoot
+\cellcolor{gray!6}{Default settings} & \cellcolor{gray!6}{1.02} & \cellcolor{gray!6}{1.77} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0.18}\\
+AUCtest & 1.07 & 13.00 & 1 & < 0.001\\
+\cellcolor{gray!6}{AUCdiff} & \cellcolor{gray!6}{1.14} & \cellcolor{gray!6}{14.95} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{< 0.001}\\
+OR10 & 1.10 & 14.38 & 1 & < 0.001\\
+\cellcolor{gray!6}{AICc} & \cellcolor{gray!6}{1.09} & \cellcolor{gray!6}{14.38} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{< 0.001}\\*
+\end{longtable}
+\end{ThreePartTable}
+
+\newpage
+
+\textbf{Table S1}
+
+~
+
+\begin{longtable}[l]{llllll}
+\toprule
+Model & RM & FC & AUC\textsubscript{test} & AUC\textsubscript{diff} & OR\textsubscript{10}\\
+\midrule
+\endfirsthead
+\multicolumn{6}{@{}l}{\textit{(continued)}}\\
+\toprule
+Model & RM & FC & AUC\textsubscript{test} & AUC\textsubscript{diff} & OR\textsubscript{10}\\
+\midrule
+\endhead
+
+\endfoot
+\bottomrule
+\endlastfoot
+\cellcolor{gray!6}{Default} & \cellcolor{gray!6}{1.0} & \cellcolor{gray!6}{HLQPT} & \cellcolor{gray!6}{0.94} & \cellcolor{gray!6}{0.03} & \cellcolor{gray!6}{0.15}\\
+AUCtest & 1.5 & HLQPT & 0.95 & 0.02 & 0.15\\
+\cellcolor{gray!6}{AUCdiff} & \cellcolor{gray!6}{4.0} & \cellcolor{gray!6}{HLQPT} & \cellcolor{gray!6}{0.94} & \cellcolor{gray!6}{0.01} & \cellcolor{gray!6}{0.14}\\
+OR10 & 6.0 & HLQ & 0.92 & 0.02 & 0.10\\
+\cellcolor{gray!6}{AICc} & \cellcolor{gray!6}{4.0} & \cellcolor{gray!6}{H} & \cellcolor{gray!6}{0.94} & \cellcolor{gray!6}{0.02} & \cellcolor{gray!6}{0.12}\\*
+\end{longtable}
+
+
+
+
+
+\newpage
+\singlespacing 
+\end{document}
