@@ -60,7 +60,7 @@ pacman::p_load(tidyverse,
 
 **Testing MaxEnt model performance in a novel geographic region using an intentionally introduced insect**
 
-Sutton, G. F.^1^$\dag$; Martin, G.D. ^1,^^2^
+Sutton, G. F.^1^$\dag$; Martin, G.D.^1,^^2^
 
 \
 
@@ -201,7 +201,7 @@ GFS and GDM acknowledge funding from the South African Working for Water (WfW) p
 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces}%
 {\par}
 
-<div id="refs" ></div>
+<div id="refs"></div>
 
 \newpage
 
