@@ -1,5 +1,5 @@
 # -----------------------------------------------------------------------------
-# Script: - Reproduce Figure 6
+# Script: - Reproduce Figure 5
 #
 # AUTHOR: Guy F. Sutton
 # AFFILIATION: Centre for Biological Control, Rhodes University, South Africa
@@ -79,7 +79,6 @@ theme_opts <- list(
 # ----------------------------------------------------------------------------
 # Plot default map: 
 # ----------------------------------------------------------------------------
-
 
 # Import Maxent prediction raster
 clim_map <- raster::raster("./models/rasters/raster_default.asc")
@@ -391,7 +390,7 @@ all_maps
 
 # Save the plot to your PC
 ggsave(
-  "./ms_body/ms_figs/fig_6_maxent_maps.png",
+  "./ms_body/ms_figs/fig_5_maxent_maps.png",
   width = 18,
   height = 12,
   dpi = 600
