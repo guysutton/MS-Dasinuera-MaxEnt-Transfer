@@ -161,10 +161,6 @@ mss <- dismo::mess(x = mess_pred,
 # Raster should be the MESS map raster
 test <- mss
 test <- raster::mask(test, world)
-
-tif=stars(rcp)
-sf=st_as_sf(tif)
-
 rcp <- raster::rasterToPoints(test)
 rcpdf <- base::data.frame(rcp)
 colnames(rcpdf) <- c("Longitude", "Latitude", "Species")

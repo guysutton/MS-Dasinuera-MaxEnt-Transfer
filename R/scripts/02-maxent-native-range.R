@@ -695,7 +695,7 @@ model_OR10 <- dismo::maxent(
 )
 
 # Model 5: Optimise AICc
-# - The top performing model by AICc had rm = 8 and only H features.
+# - The top performing model by AICc had rm = 5 and only H features.
 # Fit model with optimally tuned settings based on AICc
 model_AICc <- dismo::maxent(
   x = trainData,
@@ -704,7 +704,7 @@ model_AICc <- dismo::maxent(
                './models/models/optimal_settings_AICc',
                sep = ''),
   args = c(
-    'betamultiplier=8.0',
+    'betamultiplier=5.0',
     'linear=false',
     'quadratic=false',
     'product=false',
