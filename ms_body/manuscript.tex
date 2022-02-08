@@ -645,17 +645,16 @@ SDM's, notably when models are transferred in space or time (Blasi et
 al., 2021; Yates et al., 2018). Poor transferability may lead to
 erroneous model predictions that may have serious negative consequences
 for the application of the model, and resulting policies and management
-programmes (Soultan and Safi, 2017). Here, we report on the validation
-of a SDM for an insect, (\emph{D. rubiformis}), native to Australia,
-that has been intentionally introduced as a biological control agent
-into South Africa to reduce the invasiveness of its host-plant, \emph{A.
-mearnsii} (Impson et al., 2013). The the availability of independent
-testing data from South Africa, a separate continent to the data used to
-generate the models (Australia), makes this an ideal study system for
-assessing the transferability of SDM's. This study represents one of
-only a handful of studies to validate SDM's using independent testing
-data (Costa et al., 2010; Rebelo and Jones, 2010; Smith et al., 2021;
-West et al., 2016).
+programmes. Here, we report on the validation of a SDM for an insect,
+(\emph{D. rubiformis}), native to Australia, that has been intentionally
+introduced as a biological control agent into South Africa to reduce the
+invasiveness of its host-plant, \emph{A. mearnsii} (Impson et al.,
+2013). The the availability of independent testing data from South
+Africa, a separate continent to the data used to generate the models
+(Australia), makes this an ideal study system for assessing the
+transferability of SDM's. This study represents one of only a handful of
+studies to validate SDM's using independent testing data (Costa et al.,
+2010; Rebelo and Jones, 2010; Smith et al., 2021; West et al., 2016).
 
 Our results indicated that MaxEnt SDM's were able to provide robust
 estimates of climatic suitability for \emph{D. rubiformis} in South
@@ -727,16 +726,16 @@ statistically significant positive correlation between MaxEnt scores and
 models can be used in an applied setting. To visualise the potential
 geographic regions where \emph{D. rubiformis} may establish in South
 Africa, we thresholded the MaxEnt map that optimised AICc where the
-probability of establishment was \textgreater{} 50\% (i.e.~MaxEnt score
-= 0.30), given in Fig. 9. The map demonstrates that the entire south and
+probability of establishment was \textgreater{} 75\% (i.e.~MaxEnt score
+= 0.30), given in Fig. 7. The map demonstrates that the entire south and
 east coast regions of South Africa are climatically suitable for
 \emph{D. rubiformis}. Mass-releasing and releasing weed biological
-control agents is a time-consuming and costly endeavor (Coetzee et al.,
+control agents is a time-consuming and costly endeavor (Hill et al.,
 2021). As such, our models provide a statistically validated approach to
 optimising the redistribution of \emph{D. rubiformis} in South Africa by
 prioritising releases at field sites where MaxEnt scores are
 \textgreater{} 0.30, and therefore where the probability of
-establishment was \textgreater{} 50\%.
+establishment was \textgreater{} 75\%.
 
 \hypertarget{conclusions}{%
 \section{5. Conclusions}\label{conclusions}}
@@ -764,7 +763,7 @@ validating predictive models can be used to guide the implementation of
 a biological control programme by optimising the redistribution and
 release of \emph{D. rubiformis} in geographic areas that are
 climatically suitable and where the probability of the insect
-establishing is greater than 50\%.
+establishing is greater than 75\%.
 
 \hypertarget{acknowledgements}{%
 \section{Acknowledgements}\label{acknowledgements}}
@@ -939,6 +938,12 @@ areas. International Journal of Climatology 25, 1965--1978.
 Hijmans, R.J., Phillips, S., Leathwick, J., Elith, J., Hijmans, M.R.J.,
 2017. Package {`dismo.'} Circles 9, 1--68.
 
+\leavevmode\hypertarget{ref-Hill2021}{}%
+Hill, M., Conlong, D., Zachariades, C., Coetzee, J., Paterson, I.,
+Miller, B., Foxcroft, L., Van Der Westhuizen, L., 2021. The role of
+mass-rearing in weed biological control projects in {South Africa}.
+African Entomology 29, 1030--1044.
+
 \leavevmode\hypertarget{ref-Impson2013}{}%
 Impson, F.A.C., Post, J.A., Hoffmann, J.H., 2013. Impact of the
 flower-galling midge, {\emph{Dasineura rubiformis}} {Kolesik}, on the
@@ -969,6 +974,12 @@ Merow, C., Smith, M.J., Silander Jr, J.A., 2013. A practical guide to
 {MaxEnt} for modeling species' distributions: What it does, and why
 inputs and settings matter. Ecography 36, 1058--1069.
 \url{https://doi.org/10.1111/j.1600-0587.2013.07872.x}
+
+\leavevmode\hypertarget{ref-Mesgaran2014}{}%
+Mesgaran, M., Cousens, R., Webber, B., 2014. Here be dragons: {A} tool
+for quantifying novelty due to covariate range and correlation change
+when projecting species distribution models. Diversity and Distributions
+20, 1147--1159. \url{https://doi.org/10.1111/ddi.12209}
 
 \leavevmode\hypertarget{ref-Moreno-Amat2015}{}%
 Moreno-Amat, E., Mateo, R.G., Nieto-Lugilde, D., Morueta-Holme, N.,
@@ -1231,7 +1242,7 @@ Model & RM & FC & AUC\textsubscript{test} & AUC\textsubscript{diff} & OR\textsub
 \cellcolor{gray!6}{Default} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{HLQPT} & \cellcolor{gray!6}{0.89} & \cellcolor{gray!6}{0.04} & \cellcolor{gray!6}{0.18} & \cellcolor{gray!6}{564.46}\\
 AUCtest & 6 & H & 0.89 & 0.02 & 0.09 & 15.56\\
 \cellcolor{gray!6}{AUCdiff} & \cellcolor{gray!6}{4} & \cellcolor{gray!6}{HLQPT} & \cellcolor{gray!6}{0.89} & \cellcolor{gray!6}{0.02} & \cellcolor{gray!6}{0.13} & \cellcolor{gray!6}{485.91}\\
-OR10 & 6 & HLQPT & 0.92 & 0.02 & 0.12 & 144.39\\
+OR10 & 6 & HLQPT & 0.92 & 0.02 & 0.11 & 144.39\\
 \cellcolor{gray!6}{AICc} & \cellcolor{gray!6}{5} & \cellcolor{gray!6}{H} & \cellcolor{gray!6}{0.90} & \cellcolor{gray!6}{0.02} & \cellcolor{gray!6}{0.09} & \cellcolor{gray!6}{0.00}\\*
 \end{longtable}
 
