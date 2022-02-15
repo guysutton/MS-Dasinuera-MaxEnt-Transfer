@@ -87,6 +87,8 @@
 \usepackage{helvet}
 \usepackage{setspace}
 \renewcommand\familydefault{\sfdefault}
+\usepackage{fullpage}
+\usepackage{pdflscape}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -234,7 +236,10 @@ function of whether models were in extrapolation or interpolation. Our
 study demonstrates that MaxEnt models can prove useful when transferred
 in space, however, users need to be aware of the effect of different
 model settings configurations and model extrapolation can have on model
-transferability and usefulness in applied ecological settings.
+transferability and usefulness in applied ecological settings. We
+demonstrate how validating the \emph{D. rubiformis} MaxEnt models can be
+used to guide the biological control of \emph{A. mearnsii} using
+\emph{D. rubiformis}.
 
 ~
 
@@ -332,16 +337,16 @@ Here, we modelled the potential climatic suitability of an insect that
 is native to Australia, and that has been introduced into South Africa
 as a biological control agent. The insect, \emph{Dasineura rubiformis}
 Kolesik (Diptera: Cecidomyiidae) was introduced into South Africa from
-Australia in 2013, to curb the spread of the invasive Australian
-\emph{Acacia mearnsii} De Wild (Impson et al., 2013). Extensive field
-surveys have been performed in Australia (characterizing the native
-distribution of \emph{D. rubiformis}) (Adair, 2004) and long-term
-post-release monitoring has been performed in South Africa to measure
-establishment rates of the insect, following experimental releases of
-the insect (Impson et al., 2021). As such, the availability of
-independent testing data from a separate continent to the data used to
-generate the models makes this an ideal study system for assessing the
-transferability of SDM's.
+Australia in 2001, and found to be established in 2006, to curb the
+spread of the invasive Australian \emph{Acacia mearnsii} De Wild (Impson
+et al., 2013). Extensive field surveys have been performed in Australia
+(characterizing the native distribution of \emph{D. rubiformis}) (Adair,
+2004) and long-term post-release monitoring has been performed in South
+Africa to measure establishment rates of the insect, following
+experimental releases of the insect (Impson et al., 2021). As such, the
+availability of independent testing data from a separate continent to
+the data used to generate the models makes this an ideal study system
+for assessing the transferability of SDM's.
 
 We built MaxEnt models for \emph{D. rubiformis} using distribution
 records from its native distribution (Australia), and projected the
@@ -501,7 +506,7 @@ surfaces (hereafter `MESS') (Elith et al., 2010) were computed to assess
 whether MaxEnt models were extrapolating or interpolating. MESS analyses
 measure the similarity of any given point to a set of reference points
 (reference points were defined as only the species presence points used
-to calibrate models following Kriticos et al., 2014). Negative MESS
+to calibrate models following Kriticos et al. (2014)). Negative MESS
 values indicate geographic regions outside the range of climate
 variables used to calibrate the model (i.e.~extrapolation space or
 MESS-), while MESS values between 0 and 100 indicate geographic regions
@@ -673,16 +678,15 @@ valuable information to guide policy making and the development of
 management programmes. For example, biological control programmes such
 as the programme in which \emph{D. rubiformis} is used to curtail the
 spread of the highly invasive weed \emph{A. mearnsii} expend many
-resources (time and money) to mass-rear insect populations that are then
-released into the field. The positive correlation between MaxEnt
-suitability scores and \emph{D. rubiformis} establishment means that
-researchers can develop and implement mass-rearing and experimental
-release programmes for the insect that prioritise releasing the insect
-at sites that are highly climatically suitable, and thus, more likely
-the insect will establish viable populations. This may assist in
-improving the level of control over the target weed and increasing the
-efficiency of resources expended by increasing the chances of
-establishing viable insect populations.
+resources (time and money) to develop effective biological control
+agents. The positive correlation between MaxEnt suitability scores and
+\emph{D. rubiformis} establishment means that researchers can develop
+experimental release programmes that prioritise releasing the insect at
+sites that are highly climatically suitable, and thus, more likely the
+insect will establish viable populations. This may assist in improving
+the level of control over the target weed and increasing the efficiency
+of resources expended by increasing the chances of establishing viable
+insect populations.
 
 Our study adds to a growing body of literature indicating that SDM model
 complexity affects model performance and transferability when being
@@ -727,15 +731,15 @@ models can be used in an applied setting. To visualise the potential
 geographic regions where \emph{D. rubiformis} may establish in South
 Africa, we thresholded the MaxEnt map that optimised AICc where the
 probability of establishment was \textgreater{} 75\% (i.e.~MaxEnt score
-= 0.30), given in Fig. 7. The map demonstrates that the entire south and
-east coast regions of South Africa are climatically suitable for
-\emph{D. rubiformis}. Mass-releasing and releasing weed biological
-control agents is a time-consuming and costly endeavor (Hill et al.,
-2021). As such, our models provide a statistically validated approach to
-optimising the redistribution of \emph{D. rubiformis} in South Africa by
-prioritising releases at field sites where MaxEnt scores are
-\textgreater{} 0.30, and therefore where the probability of
-establishment was \textgreater{} 75\%.
+= 0.30), given in Fig. 7. The map demonstrates that the south and east
+coast regions of South Africa are climatically suitable for \emph{D.
+rubiformis}. Mass-releasing and releasing weed biological control agents
+is a time-consuming and costly endeavor (Hill et al., 2021). As such,
+our models provide a statistically validated approach to optimising the
+redistribution of \emph{D. rubiformis} in South Africa by prioritising
+releases at field sites where MaxEnt scores are \textgreater{} 0.30, and
+therefore where the probability of establishment was \textgreater{}
+75\%.
 
 \hypertarget{conclusions}{%
 \section{5. Conclusions}\label{conclusions}}
@@ -775,7 +779,10 @@ Funding was also provided by the South African Research Chairs
 Initiative of the Department of Science and Technology and the National
 Research Foundation (NRF) of South Africa. Any opinions, finding,
 conclusions or recommendations expressed in this material are those of
-the authors and the NRF does not accept any liability in this regard.
+the authors and the NRF does not accept any liability in this regard. We
+thank Fiona Impson, Robin Adair, Catharina Kleinjan and John Hoffmann
+for collecting and providing the invaluable data, and Fiona Impson for
+advice on a previous draft of this manuscript.
 
 \newpage
 
