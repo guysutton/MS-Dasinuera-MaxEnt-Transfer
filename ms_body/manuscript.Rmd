@@ -113,7 +113,7 @@ We built MaxEnt models for *D. rubiformis* using distribution records from its n
 
 ## 2.1. Species occurences records
 
-A total of 103 native-range records for *D. rubiformis* were obtained from [@Adair2004]. A total of 452 invaded-range records to evaluate model transferability were taken from Impson, Kleinjan and Hoffmann (unpublished). Distribution maps for *D. rubiformis* for both native and invaded range are provided in Fig. 1. 
+A total of 103 native-range records for *D. rubiformis* were obtained from @Adair2004. A total of 452 invaded-range records to evaluate model transferability were taken from Impson, Kleinjan and Hoffmann (unpublished). Distribution maps for *D. rubiformis* for both native and invaded range are provided in Fig. 1. 
 
 Spatial autocorrelation is an important factor that may affect model outputs. Filtering of species occurrence data may limit the inherent biases in the data and improve model quality [@Veloz2009]. To avoid pseudo-replication, only one occurrence record per 2.5 minute grid cell was used for model calibration. Species occurrence datasets were thinned using the `spThin` package [@Aiello-Lammens2015], and spatial autocorrelation analyses were performed using the `ecospat` package [@DiCola2017].
 
@@ -215,8 +215,21 @@ GFS and GDM acknowledge funding from the South African Working for Water (WfW) p
 \vspace*{-0.2in}
 \noindent
 
+**Figure 1:** Distribution records for *Dasineura rubiformis* in its (a) native range (Australia), and (b) introduced range (South Africa). Filled black circles indicate field sites where *D. rubiformis* has been recorded, and filled grey circles indicate field sites where it was not found. 
 
+**Figure 2:** Model tuning experiments to identify optimal MaxEnt model settings configurations for *D. rubiformis* native-range (Australia) models. Model tuning was performed across a range of regularisation multipliers (0.5 - 10), and feature classes (H = Hinge, L = Linear, Q = Quadratic). Model performance and optimal settings configurations were assessed using multiple metrics that reflected aspects of model (1) discriminatory ability (AUC~test~), (2) overfitting (AUC~diff~), (3) omission rates (OR~10~), and (4) overall parsimony (AICc).
 
+**Figure 3:** Relationships between MaxEnt climatic suitability scores (between the native and introduced range) and the probability of establishment for *D. rubiformis* in its introduced range. Five different MaxEnt models are compared, specified with either default MaxEnt settings, or four optimised settings configurations. Mean prediction curves $\pm$ 95% confidence intervals (indicated by grey-shaded ribbons) are derived from logistic General Linear Model's (GLM's). 
+
+**Figure 4::** MaxEnt model validation using out-of-sample Area under the Curve (AUC) and independent testing data from the introduced geographic range of *D. rubiformis* in South Africa. Five different MaxEnt models are compared, specified with either default MaxEnt settings, or four optimised settings configurations. The dashed horizontal line at y = 0.75 indicates the lowest bounds of acceptable model accuracy according to Fielding and Bell (1997). AUC values closer to 1 indicate improved model accuracy. Boxplots show the results obtained from n = 500 bootstrap resamples of the fitted logistic Generali Linear Models (GLM's). See text for further details. 
+
+**Figure 5::** Projected MaxEnt climatic similarity for *D. rubiformis* in its introduced range (South Africa) based on native-range MaxEnt models (Australia). Five different MaxEnt models are compared, specified with either default MaxEnt settings, or four optimised settings configurations. Climatic suitability scores closer to 1 indicate higher climatic similarity between climates in the introduced vs native-range. 
+
+**Figure 6:** Comparing *D. rubiformis* establishment in its introduced range (South Africa) given by MaxEnt model extrapolation. (a) Multivariate Environmental Similarity Surfaces (MESS) for *D. rubiformis*. MESS maps were thresholded to indicate regions where MaxEnt models were extrapolating (extrapolation - light grey fill) or not (interpolation - dark grey fill). (b) The probability that *D. rubiformis* was established or not at field sites in South Africa depending on whether the field site was in interpolation/extrapolation.  
+
+**Figure 7:** Projected MaxEnt climatic similarity for *D. rubiformis* in its introduced range (South Africa), thresholded to show geographic regions where the estimated probability of establishment for *D. rubiformis* was greater than 75% (i.e. MaxEnt score = 0.30, taken from Figure 4) (Suitable regions - dark grey fill) or not (unsuitable regions - light grey fill). 
+
+**Table 1:** Parameter estimates and Likelihood Ratio Tests (LRT's) comparing the relationships between MaxEnt climatic suitability scores (between the native and introduced range) and the probability of establishment for *D. rubiformis* in its introduced range. Five different MaxEnt models are compared, specified with either default MaxEnt settings, or four optimised settings configurations. $\\beta$\\textsuperscript{a} indicate the factor by which the probability of *D. rubiformis* establishment increases in South Africa for a 1% increase in climatic similarity between South Africa and its native-range (Australia). LRT's compare logistic General Linear Model's (GLM's) fitted with the climatic match score as a contiunous covariate and *D. rubiformis* establishment as a Boolean response variable against an analogous GLM fitted with a random intercept term only. 
 
 
 \newpage
@@ -247,7 +260,7 @@ knitr::include_graphics(here::here("./ms_body/ms_figs/fig_3_logits.png"), dpi = 
 
 ## *Figure 4*
 
-```{r import_fig_4, echo = FALSE}
+```{r import_fig_4, out.width="80%", out.height="80%",  echo = FALSE}
 knitr::include_graphics(here::here("./ms_body/ms_figs/fig_4_auc.png"), dpi = NA)
 ```
 
@@ -255,7 +268,7 @@ knitr::include_graphics(here::here("./ms_body/ms_figs/fig_4_auc.png"), dpi = NA)
 
 ## *Figure 5*
 
-```{r import_fig_5, echo = FALSE}
+```{r import_fig_5, out.width="100%", out.height="100%", echo = FALSE}
 knitr::include_graphics(here::here("./ms_body/ms_figs/fig_5_maxent_maps.png"), dpi = NA)
 ```
 
@@ -265,6 +278,15 @@ knitr::include_graphics(here::here("./ms_body/ms_figs/fig_5_maxent_maps.png"), d
 
 ```{r import_fig_6, echo = FALSE}
 knitr::include_graphics(here::here("./ms_body/ms_figs/fig_6_mess.png"), dpi = NA)
+```
+
+\newpage
+
+
+## *Figure 7*
+
+```{r import_fig_7, echo = FALSE}
+knitr::include_graphics(here::here("./ms_body/ms_figs/fig_7_biocontrol.png"), dpi = NA)
 ```
 
 \newpage
@@ -315,48 +337,4 @@ table1 <- table1 %>%
     threeparttable = TRUE) 
 table1
 ```
-
-
-\newpage
-
-**Table S1**  
-
- \  
- 
-```{r table_S1, echo = FALSE}
-# Import data to make Table S1
-tableS1_data <- readr::read_csv(here::here("./data/data_clean/table2_data.csv")) %>%
-  janitor::clean_names()
-
-
-# Create Table S1
-tableS1 <- tableS1_data %>%
-  knitr::kable(
-    format = "latex",
-    align = "l",
-    booktabs = TRUE,
-    longtable = TRUE,
-    linesep = "",
-    escape = FALSE,
-    col.names = c(
-      "Model",
-      "RM",
-      "FC",
-      "AUC\\textsubscript{test}",
-      "AUC\\textsubscript{diff}",
-      "OR\\textsubscript{10}",
-      "AIC\\textsubscript{c}"
-    )
-  ) %>%
-  kableExtra::kable_styling(
-    position = "left",
-    latex_options = c("striped", "repeat_header")
-    #,    stripe_color = "gray!15"
-  )
-
-# Display Table S1
-tableS1
-```
-
-
 

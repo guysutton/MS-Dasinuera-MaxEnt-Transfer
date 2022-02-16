@@ -391,7 +391,7 @@ all_maps
 # Save the plot to your PC
 ggsave(
   "./ms_body/ms_figs/fig_5_maxent_maps.png",
-  width = 18,
-  height = 12,
+  width = 24, # 18
+  height = 16, # 12
   dpi = 600
 )

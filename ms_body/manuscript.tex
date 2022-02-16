@@ -373,7 +373,7 @@ an array of optimised settings configurations.
 records}\label{species-occurences-records}}
 
 A total of 103 native-range records for \emph{D. rubiformis} were
-obtained from (Adair, 2004). A total of 452 invaded-range records to
+obtained from Adair (2004). A total of 452 invaded-range records to
 evaluate model transferability were taken from Impson, Kleinjan and
 Hoffmann (unpublished). Distribution maps for \emph{D. rubiformis} for
 both native and invaded range are provided in Fig. 1.
@@ -1151,6 +1151,81 @@ ecological models. Trends in Ecology \& Evolution 33, 790--802.
 
 \noindent
 
+\textbf{Figure 1:} Distribution records for \emph{Dasineura rubiformis}
+in its (a) native range (Australia), and (b) introduced range (South
+Africa). Filled black circles indicate field sites where \emph{D.
+rubiformis} has been recorded, and filled grey circles indicate field
+sites where it was not found.
+
+\textbf{Figure 2:} Model tuning experiments to identify optimal MaxEnt
+model settings configurations for \emph{D. rubiformis} native-range
+(Australia) models. Model tuning was performed across a range of
+regularisation multipliers (0.5 - 10), and feature classes (H = Hinge, L
+= Linear, Q = Quadratic). Model performance and optimal settings
+configurations were assessed using multiple metrics that reflected
+aspects of model (1) discriminatory ability (AUC\textsubscript{test}),
+(2) overfitting (AUC\textsubscript{diff}), (3) omission rates
+(OR\textsubscript{10}), and (4) overall parsimony (AICc).
+
+\textbf{Figure 3:} Relationships between MaxEnt climatic suitability
+scores (between the native and introduced range) and the probability of
+establishment for \emph{D. rubiformis} in its introduced range. Five
+different MaxEnt models are compared, specified with either default
+MaxEnt settings, or four optimised settings configurations. Mean
+prediction curves \(\pm\) 95\% confidence intervals (indicated by
+grey-shaded ribbons) are derived from logistic General Linear Model's
+(GLM's).
+
+\textbf{Figure 4::} MaxEnt model validation using out-of-sample Area
+under the Curve (AUC) and independent testing data from the introduced
+geographic range of \emph{D. rubiformis} in South Africa. Five different
+MaxEnt models are compared, specified with either default MaxEnt
+settings, or four optimised settings configurations. The dashed
+horizontal line at y = 0.75 indicates the lowest bounds of acceptable
+model accuracy according to Fielding and Bell (1997). AUC values closer
+to 1 indicate improved model accuracy. Boxplots show the results
+obtained from n = 500 bootstrap resamples of the fitted logistic
+Generali Linear Models (GLM's). See text for further details.
+
+\textbf{Figure 5::} Projected MaxEnt climatic similarity for \emph{D.
+rubiformis} in its introduced range (South Africa) based on native-range
+MaxEnt models (Australia). Five different MaxEnt models are compared,
+specified with either default MaxEnt settings, or four optimised
+settings configurations. Climatic suitability scores closer to 1
+indicate higher climatic similarity between climates in the introduced
+vs native-range.
+
+\textbf{Figure 6:} Comparing \emph{D. rubiformis} establishment in its
+introduced range (South Africa) given by MaxEnt model extrapolation. (a)
+Multivariate Environmental Similarity Surfaces (MESS) for \emph{D.
+rubiformis}. MESS maps were thresholded to indicate regions where MaxEnt
+models were extrapolating (extrapolation - light grey fill) or not
+(interpolation - dark grey fill). (b) The probability that \emph{D.
+rubiformis} was established or not at field sites in South Africa
+depending on whether the field site was in interpolation/extrapolation.
+
+\textbf{Figure 7:} Projected MaxEnt climatic similarity for \emph{D.
+rubiformis} in its introduced range (South Africa), thresholded to show
+geographic regions where the estimated probability of establishment for
+\emph{D. rubiformis} was greater than 75\% (i.e.~MaxEnt score = 0.30,
+taken from Figure 4) (Suitable regions - dark grey fill) or not
+(unsuitable regions - light grey fill).
+
+\textbf{Table 1:} Parameter estimates and Likelihood Ratio Tests (LRT's)
+comparing the relationships between MaxEnt climatic suitability scores
+(between the native and introduced range) and the probability of
+establishment for \emph{D. rubiformis} in its introduced range. Five
+different MaxEnt models are compared, specified with either default
+MaxEnt settings, or four optimised settings configurations.
+\(\\beta\)\textbackslash textsuperscript\{a\} indicate the factor by
+which the probability of \emph{D. rubiformis} establishment increases in
+South Africa for a 1\% increase in climatic similarity between South
+Africa and its native-range (Australia). LRT's compare logistic General
+Linear Model's (GLM's) fitted with the climatic match score as a
+contiunous covariate and \emph{D. rubiformis} establishment as a Boolean
+response variable against an analogous GLM fitted with a random
+intercept term only.
+
 \newpage
 
 \hypertarget{figure-1}{%
@@ -1177,14 +1252,14 @@ ecological models. Trends in Ecology \& Evolution 33, 790--802.
 \hypertarget{figure-4}{%
 \subsection{\texorpdfstring{\emph{Figure 4}}{Figure 4}}\label{figure-4}}
 
-\includegraphics{C:/Users/s1900332/OneDrive - Rhodes University/Manuscripts/MS-Dasinuera-MaxEnt-Transfer/./ms_body/ms_figs/fig_4_auc.png}
+\includegraphics[width=0.8\linewidth,height=0.8\textheight]{C:/Users/s1900332/OneDrive - Rhodes University/Manuscripts/MS-Dasinuera-MaxEnt-Transfer/./ms_body/ms_figs/fig_4_auc}
 
 \newpage
 
 \hypertarget{figure-5}{%
 \subsection{\texorpdfstring{\emph{Figure 5}}{Figure 5}}\label{figure-5}}
 
-\includegraphics{C:/Users/s1900332/OneDrive - Rhodes University/Manuscripts/MS-Dasinuera-MaxEnt-Transfer/./ms_body/ms_figs/fig_5_maxent_maps.png}
+\includegraphics[width=1\linewidth,height=1\textheight]{C:/Users/s1900332/OneDrive - Rhodes University/Manuscripts/MS-Dasinuera-MaxEnt-Transfer/./ms_body/ms_figs/fig_5_maxent_maps}
 
 \newpage
 
@@ -1192,6 +1267,13 @@ ecological models. Trends in Ecology \& Evolution 33, 790--802.
 \subsection{\texorpdfstring{\emph{Figure 6}}{Figure 6}}\label{figure-6}}
 
 \includegraphics{C:/Users/s1900332/OneDrive - Rhodes University/Manuscripts/MS-Dasinuera-MaxEnt-Transfer/./ms_body/ms_figs/fig_6_mess.png}
+
+\newpage
+
+\hypertarget{figure-7}{%
+\subsection{\texorpdfstring{\emph{Figure 7}}{Figure 7}}\label{figure-7}}
+
+\includegraphics{C:/Users/s1900332/OneDrive - Rhodes University/Manuscripts/MS-Dasinuera-MaxEnt-Transfer/./ms_body/ms_figs/fig_7_biocontrol.png}
 
 \newpage
 
@@ -1225,33 +1307,6 @@ OR10 & 1.02 & 9.01 & 1 & 0.003\\
 \cellcolor{gray!6}{AICc} & \cellcolor{gray!6}{1.04} & \cellcolor{gray!6}{16.21} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{< 0.001}\\*
 \end{longtable}
 \end{ThreePartTable}
-
-\newpage
-
-\textbf{Table S1}
-
-~
-
-\begin{longtable}[l]{lllllll}
-\toprule
-Model & RM & FC & AUC\textsubscript{test} & AUC\textsubscript{diff} & OR\textsubscript{10} & AIC\textsubscript{c}\\
-\midrule
-\endfirsthead
-\multicolumn{7}{@{}l}{\textit{(continued)}}\\
-\toprule
-Model & RM & FC & AUC\textsubscript{test} & AUC\textsubscript{diff} & OR\textsubscript{10} & AIC\textsubscript{c}\\
-\midrule
-\endhead
-
-\endfoot
-\bottomrule
-\endlastfoot
-\cellcolor{gray!6}{Default} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{HLQPT} & \cellcolor{gray!6}{0.89} & \cellcolor{gray!6}{0.04} & \cellcolor{gray!6}{0.18} & \cellcolor{gray!6}{564.46}\\
-AUCtest & 6 & H & 0.89 & 0.02 & 0.09 & 15.56\\
-\cellcolor{gray!6}{AUCdiff} & \cellcolor{gray!6}{4} & \cellcolor{gray!6}{HLQPT} & \cellcolor{gray!6}{0.89} & \cellcolor{gray!6}{0.02} & \cellcolor{gray!6}{0.13} & \cellcolor{gray!6}{485.91}\\
-OR10 & 6 & HLQPT & 0.92 & 0.02 & 0.11 & 144.39\\
-\cellcolor{gray!6}{AICc} & \cellcolor{gray!6}{5} & \cellcolor{gray!6}{H} & \cellcolor{gray!6}{0.90} & \cellcolor{gray!6}{0.02} & \cellcolor{gray!6}{0.09} & \cellcolor{gray!6}{0.00}\\*
-\end{longtable}
 
 
 
