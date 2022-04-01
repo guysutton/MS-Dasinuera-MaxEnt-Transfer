@@ -23,6 +23,7 @@ pacman::p_load(
   Hmisc,
   patchwork,
   ecospat,
+  kuenm,
   gridSVG,
   gridExtra,
   grid,
@@ -174,6 +175,10 @@ recordsSpatial <- sp::SpatialPointsDataFrame(
     '+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0'
   )
 )
+
+# Reproject KG-layer
+geo_proj = "+proj=longlat +datum=WGS84 +no_defs +ellps=WGS84 +towgs84=0,0,0"
+eco = spTransform(eco, geo_proj)
 
 # Plot to check we can overlay points on KG map
 sp::plot(eco)
